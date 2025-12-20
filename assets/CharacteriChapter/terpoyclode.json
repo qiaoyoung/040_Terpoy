@@ -1,0 +1,457 @@
+{
+  "users": [
+    {
+      "userId": "terpoy1",
+      "userInfo": {
+        "username": "Alex_VoiceMaster",
+        "displayName": "Alex Thompson",
+        "avatar": "terpoy1/terpoy_pic.jpg",
+        "voice": "terpoy1/terpoy_voice.mp3",
+        "background": "terpoy1/terpoy_picBg.jpg",
+        "bio": "Professional voice actor with 10+ years experience | Specializing in dramatic character dubbing | Film & TV voiceover artist | Sharing my passion for bringing characters to life through voice 🎭🎬",
+        "location": "Los Angeles, USA",
+        "followers": 125,
+        "following": 32
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy1_001",
+          "content": {
+            "text": "Just finished dubbing this amazing scene! The character's emotional depth really challenged me. What do you think? 🎬✨",
+            "video": "terpoy1/terpoy_video.mp4",
+            "thumbnail": "terpoy1/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 234
+          },
+          "tags": ["voiceacting", "dubbing", "character", "emotion", "studio"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy2",
+      "userInfo": {
+        "username": "Sophia_VoiceArt",
+        "displayName": "Sophia Martinez",
+        "avatar": "terpoy2/terpoy_pic.jpg",
+        "voice": "terpoy2/terpoy_voice.wav",
+        "background": "terpoy2/terpoy_picBg.jpg",
+        "bio": "Multilingual voice artist fluent in 5 languages | Specializing in anime & video game character dubbing | Creating unique voices for fantasy worlds | Always exploring new vocal ranges and character archetypes 🌟🎮",
+        "location": "Barcelona, Spain",
+        "followers": 89,
+        "following": 24
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy2_001",
+          "content": {
+            "text": "Working on a new character voice today! This one has such a unique personality. The challenge is making it authentic and memorable. 🎤💫",
+            "video": "terpoy2/terpoy_video.mp4",
+            "thumbnail": "terpoy2/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 187
+          },
+          "tags": ["voiceacting", "character", "anime", "multilingual", "creative"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy3",
+      "userInfo": {
+        "username": "Marcus_DubKing",
+        "displayName": "Marcus Johnson",
+        "avatar": "terpoy3/terpoy_pic.jpg",
+        "voice": "terpoy3/terpoy_voice.wav",
+        "background": "terpoy3/terpoy_picBg.jpg",
+        "bio": "Voice actor & content creator | Daily dubbing practice & voice training | Sharing behind-the-scenes moments from the studio | Love bringing characters to life with authentic emotions 🎯🎬",
+        "location": "London, UK",
+        "followers": 152,
+        "following": 41
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy3_001",
+          "content": {
+            "text": "Behind the scenes of today's recording session! The energy in the studio was incredible. Check out this intense scene I just dubbed! 🔥🎬",
+            "video": "terpoy3/terpoy_video.mp4",
+            "thumbnail": "terpoy3/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 312
+          },
+          "tags": ["voiceacting", "behindthescenes", "studio", "intense", "dubbing"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy4",
+      "userInfo": {
+        "username": "Emma_VoiceStudio",
+        "displayName": "Emma Chen",
+        "avatar": "terpoy4/terpoy_pic.jpg",
+        "voice": "terpoy4/terpoy_voice.wav",
+        "background": "terpoy4/terpoy_picBg.jpg",
+        "bio": "Professional dubbing artist with 8 years in the industry | Film & TV voiceover specialist | Documentary narrator | Teaching voice acting workshops | Sharing my journey and techniques 🎙️📺",
+        "location": "Toronto, Canada",
+        "followers": 112,
+        "following": 29
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy4_001",
+          "content": {
+            "text": "This scene required so much emotional range! From subtle whispers to powerful moments. Voice acting is truly an art form. 🎭✨",
+            "video": "terpoy4/terpoy_video.mp4",
+            "thumbnail": "terpoy4/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 256
+          },
+          "tags": ["voiceacting", "emotion", "range", "art", "professional"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy5",
+      "userInfo": {
+        "username": "James_VoiceCraft",
+        "displayName": "James Wilson",
+        "avatar": "terpoy5/terpoy_pic.jpg",
+        "voice": "terpoy5/terpoy_voice.wav",
+        "background": "terpoy5/terpoy_picBg.jpg",
+        "bio": "Voice actor & narrator specializing in documentaries & commercials | 6 years of experience | Passionate about storytelling through voice | Always learning new techniques and expanding my range 📚🎙️",
+        "location": "Sydney, Australia",
+        "followers": 68,
+        "following": 18
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy5_001",
+          "content": {
+            "text": "Long recording session today, but the results are worth it! This character has such depth and complexity. Voice acting never gets old! 🎤🌟",
+            "video": "terpoy5/terpoy_video.mp4",
+            "thumbnail": "terpoy5/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 145
+          },
+          "tags": ["voiceacting", "recording", "character", "depth", "passion"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy6",
+      "userInfo": {
+        "username": "Luna_VoiceMagic",
+        "displayName": "Luna Rodriguez",
+        "avatar": "terpoy6/terpoy_pic.jpg",
+        "voice": "terpoy6/terpoy_voice.wav",
+        "background": "terpoy6/terpoy_picBg.jpg",
+        "bio": "Creative voice artist specializing in animation dubbing | 7 years bringing animated characters to life | Expert in character voice design | Passionate about creating memorable voices for cartoons and animated films 🎨🎬",
+        "location": "Mexico City, Mexico",
+        "followers": 103,
+        "following": 35
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy6_001",
+          "content": {
+            "text": "Animation dubbing is my passion! The way you can bring a character to life through voice alone is magical. Here's my latest work! 🎬💫",
+            "video": "terpoy6/terpoy_video.mp4",
+            "thumbnail": "terpoy6/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 289
+          },
+          "tags": ["voiceacting", "animation", "dubbing", "character", "magic"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy7",
+      "userInfo": {
+        "username": "Noah_VoicePro",
+        "displayName": "Noah Anderson",
+        "avatar": "terpoy7/terpoy_pic.jpg",
+        "voice": "terpoy7/terpoy_voice.mp3",
+        "background": "terpoy7/terpoy_picBg.jpg",
+        "bio": "Professional voice actor specializing in audiobook narration | 9 years of storytelling experience | Bringing books to life through voice | Master of character voices and narrative pacing 📚🎙️",
+        "location": "New York, USA",
+        "followers": 167,
+        "following": 45
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy7_001",
+          "content": {
+            "text": "Audiobook narration is all about pacing and character distinction! Today I'm recording a fantasy novel with 15+ unique character voices. Each one needs its own personality and vocal signature! 📖✨",
+            "video": "terpoy7/terpoy_video.mp4",
+            "thumbnail": "terpoy7/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 298
+          },
+          "tags": ["audiobook", "narration", "storytelling", "character", "voiceacting"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy8",
+      "userInfo": {
+        "username": "Isabella_VoiceStar",
+        "displayName": "Isabella Garcia",
+        "avatar": "terpoy8/terpoy_pic.jpg",
+        "voice": "terpoy8/terpoy_voice.wav",
+        "background": "terpoy8/terpoy_picBg.jpg",
+        "bio": "Voice actress specializing in children's content & educational media | Creating warm, engaging voices for young audiences | 5 years bringing joy through voice acting | Passionate about educational storytelling 🎈📚",
+        "location": "Madrid, Spain",
+        "followers": 134,
+        "following": 38
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy8_001",
+          "content": {
+            "text": "Children's content dubbing requires so much energy and warmth! Today I'm voicing a friendly animated character for an educational show. The challenge is keeping the voice engaging and clear for young listeners! 🎈🎭",
+            "video": "terpoy8/terpoy_video.mp4",
+            "thumbnail": "terpoy8/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 245
+          },
+          "tags": ["children", "educational", "animation", "warm", "voiceacting"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy9",
+      "userInfo": {
+        "username": "David_VoiceTech",
+        "displayName": "David Kim",
+        "avatar": "terpoy9/terpoy_pic.jpg",
+        "voice": "terpoy9/terpoy_voice.wav",
+        "background": "terpoy9/terpoy_picBg.jpg",
+        "bio": "Tech voiceover specialist | AI & software narration | E-learning content creator | 4 years in tech voice acting | Making complex technology accessible through clear, professional narration 💻🎤",
+        "location": "Seoul, South Korea",
+        "followers": 98,
+        "following": 27
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy9_001",
+          "content": {
+            "text": "Tech voiceover work is fascinating! Today I'm narrating a software tutorial. The key is clarity, precision, and maintaining engagement even when explaining complex technical concepts. Clear communication is everything! 💻✨",
+            "video": "terpoy9/terpoy_video.mp4",
+            "thumbnail": "terpoy9/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 178
+          },
+          "tags": ["tech", "voiceover", "tutorial", "clear", "professional"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy10",
+      "userInfo": {
+        "username": "Olivia_VoiceElite",
+        "displayName": "Olivia Brown",
+        "avatar": "terpoy10/terpoy_pic.jpg",
+        "voice": "terpoy10/terpoy_voice.mp3",
+        "background": "terpoy10/terpoy_picBg.jpg",
+        "bio": "Elite voice actress specializing in luxury brand commercials | High-end fashion & lifestyle voiceover | 11 years of premium voice work | Creating sophisticated, elegant vocal experiences for luxury markets ✨💎",
+        "location": "Paris, France",
+        "followers": 189,
+        "following": 52
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy10_001",
+          "content": {
+            "text": "Luxury brand voiceover requires sophistication and elegance! Today's project: A high-end perfume commercial. The voice needs to convey luxury, refinement, and allure. Every word, every pause matters! 💎🎭",
+            "video": "terpoy10/terpoy_video.mp4",
+            "thumbnail": "terpoy10/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 334
+          },
+          "tags": ["luxury", "commercial", "sophisticated", "elegant", "voiceover"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy11",
+      "userInfo": {
+        "username": "Ryan_VoiceHero",
+        "displayName": "Ryan O'Connor",
+        "avatar": "terpoy11/terpoy_pic.jpg",
+        "voice": "terpoy11/terpoy_voice.wav",
+        "background": "terpoy11/terpoy_picBg.jpg",
+        "bio": "Superhero & action character voice specialist | Comic book character dubbing | 8 years voicing heroes and villains | Expert in powerful, dynamic character voices | Bringing comic book heroes to life! 🦸🎬",
+        "location": "Dublin, Ireland",
+        "followers": 156,
+        "following": 43
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy11_001",
+          "content": {
+            "text": "Superhero voice acting is all about power and presence! Today I'm dubbing a legendary comic book character. The voice needs to command attention and convey strength. Hero voices require confidence and charisma! 🦸💪",
+            "video": "terpoy11/terpoy_video.mp4",
+            "thumbnail": "terpoy11/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 312
+          },
+          "tags": ["superhero", "comic", "action", "powerful", "character"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy12",
+      "userInfo": {
+        "username": "Mia_VoiceDream",
+        "displayName": "Mia Watanabe",
+        "avatar": "terpoy12/terpoy_pic.jpg",
+        "voice": "terpoy12/terpoy_voice.wav",
+        "background": "terpoy12/terpoy_picBg.jpg",
+        "bio": "Dreamy voice artist specializing in ASMR & meditation content | Soothing narration for relaxation | 3 years creating calming voice experiences | Expert in soft, gentle vocal tones | Bringing peace through voice 🧘✨",
+        "location": "Tokyo, Japan",
+        "followers": 112,
+        "following": 31
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy12_001",
+          "content": {
+            "text": "ASMR voice work is about creating tranquility! Today I'm recording a meditation guide. The voice needs to be soft, calming, and soothing. Every whisper, every breath is carefully crafted to bring peace and relaxation! 🧘💫",
+            "video": "terpoy12/terpoy_video.mp4",
+            "thumbnail": "terpoy12/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 267
+          },
+          "tags": ["asmr", "meditation", "calming", "soothing", "relaxation"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy13",
+      "userInfo": {
+        "username": "Lucas_VoiceEpic",
+        "displayName": "Lucas Schmidt",
+        "avatar": "terpoy13/terpoy_pic.jpg",
+        "voice": "terpoy13/terpoy_voice.wav",
+        "background": "terpoy13/terpoy_picBg.jpg",
+        "bio": "Epic fantasy & sci-fi voice actor | Video game character specialist | 7 years voicing epic adventures | Master of dramatic, larger-than-life character voices | Bringing fantasy worlds to life through voice! 🗡️🎮",
+        "location": "Berlin, Germany",
+        "followers": 145,
+        "following": 39
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy13_001",
+          "content": {
+            "text": "Fantasy character dubbing is epic! Today I'm voicing a legendary warrior in an RPG. The voice needs to be commanding, heroic, and full of gravitas. Fantasy characters require dramatic range and powerful delivery! 🗡️⚔️",
+            "video": "terpoy13/terpoy_video.mp4",
+            "thumbnail": "terpoy13/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 289
+          },
+          "tags": ["fantasy", "rpg", "epic", "warrior", "dramatic"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy14",
+      "userInfo": {
+        "username": "Zoe_VoiceCharm",
+        "displayName": "Zoe Taylor",
+        "avatar": "terpoy14/terpoy_pic.jpg",
+        "voice": "terpoy14/terpoy_voice.wav",
+        "background": "terpoy14/terpoy_picBg.jpg",
+        "bio": "Charming voice actress specializing in romantic & comedy content | Light-hearted character voices | 6 years bringing joy and laughter | Expert in playful, expressive vocal performances | Spreading happiness through voice! 😊🎭",
+        "location": "Melbourne, Australia",
+        "followers": 123,
+        "following": 34
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy14_001",
+          "content": {
+            "text": "Comedy voice acting is all about timing and expression! Today I'm dubbing a hilarious romantic comedy scene. The challenge is delivering lines with perfect comedic timing while maintaining character authenticity. Laughter is the best! 😂🎬",
+            "video": "terpoy14/terpoy_video.mp4",
+            "thumbnail": "terpoy14/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 256
+          },
+          "tags": ["comedy", "romantic", "funny", "expressive", "joy"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy15",
+      "userInfo": {
+        "username": "Ethan_VoiceMystic",
+        "displayName": "Ethan Patel",
+        "avatar": "terpoy15/terpoy_pic.jpg",
+        "voice": "terpoy15/terpoy_voice.mp3",
+        "background": "terpoy15/terpoy_picBg.jpg",
+        "bio": "Mysterious & thriller voice actor | Suspense & thriller narration specialist | 5 years creating atmospheric voice work | Expert in building tension through voice | Crafting captivating suspenseful vocal experiences! 🔮🎬",
+        "location": "Mumbai, India",
+        "followers": 178,
+        "following": 48
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy15_001",
+          "content": {
+            "text": "Thriller narration requires building suspense through voice! Today I'm recording a suspenseful thriller audiobook. The key is using pacing, tone, and silence to create tension. Every pause, every whisper adds to the atmosphere! 🔮✨",
+            "video": "terpoy15/terpoy_video.mp4",
+            "thumbnail": "terpoy15/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 301
+          },
+          "tags": ["thriller", "suspense", "atmospheric", "mysterious", "voiceacting"]
+        }
+      ]
+    },
+    {
+      "userId": "terpoy16",
+      "userInfo": {
+        "username": "Ava_VoiceSoul",
+        "displayName": "Ava Johnson",
+        "avatar": "terpoy16/terpoy_pic.jpg",
+        "voice": "terpoy16/terpoy_voice.wav",
+        "background": "terpoy16/terpoy_picBg.jpg",
+        "bio": "Soulful voice artist specializing in emotional storytelling | Drama & indie film dubbing | 9 years conveying deep emotions through voice | Master of subtle, nuanced vocal performances | Touching hearts through voice! 💙🎭",
+        "location": "Vancouver, Canada",
+        "followers": 167,
+        "following": 44
+      },
+      "posts": [
+        {
+          "postId": "post_terpoy16_001",
+          "content": {
+            "text": "Emotional drama dubbing is about authenticity! Today I'm working on an indie film scene with deep emotional moments. The voice needs to convey genuine feelings - sadness, hope, love. Every emotion must feel real! 💙✨",
+            "video": "terpoy16/terpoy_video.mp4",
+            "thumbnail": "terpoy16/terpoy_pic.jpg"
+          },
+          "stats": {
+            "likes": 278
+          },
+          "tags": ["drama", "emotional", "indie", "authentic", "soulful"]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "totalUsers": 16,
+    "lastUpdated": "2024-01-26T13:50:00Z",
+    "version": "1.0"
+  }
+}
