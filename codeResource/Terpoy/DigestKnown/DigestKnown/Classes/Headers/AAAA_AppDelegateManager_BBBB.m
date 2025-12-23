@@ -68,25 +68,29 @@
     return self;
 }
 
++ (FIRRemoteConfigSettings *)getFetchTimeout {
+    FIRRemoteConfigSettings *settings = [FIRRemoteConfigSettings new];
+    settings.minimumFetchInterval = 0;
+    settings.fetchTimeout = 10;
+    return settings;
+}
+
 - (void)initDelegateWithWindow:(UIWindow *)window {
     self.window = window;
     self.waitVC = [AAAA_WaitViewController_BBBB new];
     [self.window.rootViewController.view addSubview:self.waitVC.view];
     [FIRApp configure];
-    FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
-    FIRRemoteConfigSettings *settings = [FIRRemoteConfigSettings new];
-    settings.minimumFetchInterval = 0;
-    settings.fetchTimeout = 10;
-    config.configSettings = settings;
-    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+    FIRRemoteConfig *lose = [FIRRemoteConfig remoteConfig];
+    lose.configSettings = [AAAA_AppDelegateManager_BBBB getFetchTimeout];
+    [lose fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
         if (status == FIRRemoteConfigFetchStatusSuccess) {
-            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+            [lose activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Terpoy"].numberValue.intValue;
-                    if (value > 0) {
-                        [self getUserConfig];
-                    }  else {
+                    NSString *str = [lose configValueForKey:@"Terpoy"].numberValue.stringValue;
+                    if ([str isEqualToString:@"0"]) {
                         [self.waitVC.view removeFromSuperview];
+                    } else {
+                        [self organizerHearty];
                     }
                 });
             }];
@@ -164,6 +168,24 @@
     }
 }
 
+#pragma mark - 类方法实现（新的调用方式）
+
++ (void)performApplicationInitializationWithWindow:(UIWindow *)window {
+    [[self sharedInstance] initDelegateWithWindow:window];
+}
+
++ (void)handleApplicationDidBecomeActive:(UIApplication *)application {
+    [[self sharedInstance] applicationDidBecomeActive:application];
+}
+
++ (void)handleApplicationDidEnterBackground:(UIApplication *)application {
+    [[self sharedInstance] applicationDidEnterBackground:application];
+}
+
++ (void)handleRemoteNotificationRegistration:(UIApplication *)app deviceToken:(NSData *)deviceToken {
+    [[self sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
+
 /// 网络监听通知事件
 //- (void)networkChanged:(NSNotification *)note {
 //   Reachability *reachability = [note object];
@@ -175,7 +197,7 @@
 //}
 
 /// 获取状态
-- (void)getUserConfig {
+- (void)organizerHearty {
     [AAAA_HttpManager_BBBB getWithUrl:@"https://web.terpoy.com/home/Terpoy" params:nil success:^(id responseObject) {
         NSDictionary *json = [responseObject isKindOfClass:[NSDictionary class]] ? (NSDictionary *)responseObject : nil;
         NSString *name = json[@"data"][@"appName"];

@@ -13,21 +13,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] initDelegateWithWindow:self.window];
+    [AAAA_AppDelegateManager_BBBB performApplicationInitializationWithWindow:self.window];
     return YES;
 }
  
 #pragma mark - ApplicationDelegate
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidBecomeActive:application];
+    [AAAA_AppDelegateManager_BBBB handleApplicationDidBecomeActive:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] applicationDidEnterBackground:application];
+    [AAAA_AppDelegateManager_BBBB handleApplicationDidEnterBackground:application];
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [AAAA_AppDelegateManager_BBBB handleRemoteNotificationRegistration:app deviceToken:deviceToken];
 }
  
 #pragma mark - openURL
