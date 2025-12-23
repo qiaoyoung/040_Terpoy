@@ -1,9 +1,9 @@
 //
 //  AAAA_PhotoContainerView_BBBB.m
-//  Riverla
+//  Terpoy
 //
 //  Created by mac on 2025/4/22.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Terpoy. All rights reserved.
 //
 
 #import "AAAA_PhotoContainerView_BBBB.h"

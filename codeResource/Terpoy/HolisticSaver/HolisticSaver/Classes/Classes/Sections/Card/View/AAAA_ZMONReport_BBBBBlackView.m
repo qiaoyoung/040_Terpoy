@@ -1,9 +1,9 @@
 //
 //  AAAA_ZMONReport_BBBBBlackView.m
-//  Riverla
+//  Terpoy
 //
 //  Created by Yan Wang on 2025/2/15.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Terpoy. All rights reserved.
 //
 
 #import "AAAA_ZMONReport_BBBBBlackView.h"

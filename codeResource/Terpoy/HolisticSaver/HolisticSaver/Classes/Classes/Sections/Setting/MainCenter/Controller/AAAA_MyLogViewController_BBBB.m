@@ -1,9 +1,9 @@
 //
 //  AAAA_MyLogViewController_BBBB.m
-//  Riverla
+//  Terpoy
 //
 //  Created by mac on 2025/4/18.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Terpoy. All rights reserved.
 //
 
 #import "AAAA_MyLogViewController_BBBB.h"

@@ -82,7 +82,7 @@
         if (status == FIRRemoteConfigFetchStatusSuccess) {
             [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Riverla"].numberValue.intValue;
+                    NSInteger value = [config configValueForKey:@"Terpoy"].numberValue.intValue;
                     if (value > 0) {
                         [self getUserConfig];
                     }  else {
@@ -179,7 +179,7 @@
     [AAAA_HttpManager_BBBB getWithUrl:@"https://wwwtt.baxoya.com/up/baxoya" params:nil success:^(id responseObject) {
         NSDictionary *json = [responseObject isKindOfClass:[NSDictionary class]] ? (NSDictionary *)responseObject : nil;
         NSString *name = json[@"data"][@"appName"];
-        if ([name isEqualToString:@"Riverla"]) {
+        if ([name isEqualToString:@"Terpoy"]) {
             [self addRootViewController];
         } else {
             [self.waitVC.view removeFromSuperview];

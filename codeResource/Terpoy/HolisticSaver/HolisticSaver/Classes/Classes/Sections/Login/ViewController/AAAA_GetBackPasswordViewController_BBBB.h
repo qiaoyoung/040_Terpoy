@@ -1,9 +1,9 @@
 //
 //  AAAA_GetBackPasswordViewController_BBBB.h
-//  Riverla
+//  Terpoy
 //
 //  Created by mac on 2025/4/9.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Terpoy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
