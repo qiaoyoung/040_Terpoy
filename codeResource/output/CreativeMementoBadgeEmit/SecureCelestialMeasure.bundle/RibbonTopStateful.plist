@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>teamConfiguration</key>
+    <string>TimelineCoderVocal</string>
+    <key>receiveKnown</key>
+    <string>ThresholdAccentWorkbench</string>
+    <key>velocityUnified</key>
+    <string>ExtensionEclecticReadClose</string>
+    <key>thresholdRecover</key>
+    <string>ReadSpiceBuildNormalize</string>
+    <key>weaveIconic</key>
+    <string>TensionCondenseAlphaFigure</string>
+    <key>previewWealthClipperSaturated</key>
+    <string>CurrentCuratedGroupOperator</string>
+</dict>
+</plist>
