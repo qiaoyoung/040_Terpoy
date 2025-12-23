@@ -7,27 +7,27 @@
 //
 
 #import "AppDelegate.h"
-#import "AAAA_AppDelegateManager_BBBB.h"
+#import "FilterComposeContext.h"
  
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [AAAA_AppDelegateManager_BBBB performApplicationInitializationWithWindow:self.window];
+    [FilterComposeContext performApplicationInitializationWithWindow:self.window];
     return YES;
 }
  
 #pragma mark - ApplicationDelegate
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [AAAA_AppDelegateManager_BBBB handleApplicationDidBecomeActive:application];
+    [FilterComposeContext handleApplicationDidBecomeActive:application];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [AAAA_AppDelegateManager_BBBB handleApplicationDidEnterBackground:application];
+    [FilterComposeContext handleApplicationDidEnterBackground:application];
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [AAAA_AppDelegateManager_BBBB handleRemoteNotificationRegistration:app deviceToken:deviceToken];
+    [FilterComposeContext handleRemoteNotificationRegistration:app deviceToken:deviceToken];
 }
  
 #pragma mark - openURL
