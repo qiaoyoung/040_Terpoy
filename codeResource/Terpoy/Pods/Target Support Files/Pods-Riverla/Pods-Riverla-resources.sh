@@ -98,9 +98,13 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/DigestKnown.bundle"
+  install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/Known/NIMSDK.xcframework/ios-arm64/NIMSDK.framework/NEZQFPSupport.bundle"
+  install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/Known/NIMSDK.xcframework/ios-arm64_x86_64-simulator/NIMSDK.framework/NEZQFPSupport.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/DigestKnown.bundle"
+  install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/Known/NIMSDK.xcframework/ios-arm64/NIMSDK.framework/NEZQFPSupport.bundle"
+  install_resource "${PODS_ROOT}/../DigestKnown/DigestKnown/Resources/Known/NIMSDK.xcframework/ios-arm64_x86_64-simulator/NIMSDK.framework/NEZQFPSupport.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
