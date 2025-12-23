@@ -42,11 +42,11 @@
         _Gdic = [NSMutableDictionary dictionary];
         
         // 打包OSS-1
-        self.hostFrom = @"https://Terpoy.oss-cn-hongkong.aliyuncs.com/riv.txt";
+        self.hostFrom = @"https://terpoy.blob.core.windows.net/poy/p.txt";
         
         // 打包OSS-2
-        self.hostFrom2 = @"https://Terpoy.s3.ap-southeast-1.amazonaws.com/riv.txt";
-        _policyUrl = @"https://www.moyazer.com/privacy.html";
+        self.hostFrom2 = @"https://terpoy.s3.us-east-1.amazonaws.com/p.txt";
+        _policyUrl = @"https://www.terpoy.com/privacy.html";
     }
     return self;
 }
