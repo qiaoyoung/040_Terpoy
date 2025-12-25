@@ -1,6 +1,0 @@
-framework module DigestKnown {
-  umbrella header "DigestKnown-umbrella.h"
-
-  export *
-  module * { export * }
-}
