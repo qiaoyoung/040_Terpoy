@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SearchWindowAutosavePlot.h
 //  SearchWindowAutosavePlot
@@ -6,10 +8,15 @@
 //  Copyright (c) 2012 Gangverk. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface SearchWindowAutosavePlot : NSObject
 @interface SearchWindowAutosavePlot : NSObject
 
-+ (instancetype)standardUserDefaults;
+//: + (instancetype)standardUserDefaults;
++ (instancetype)tweenInsert;
 
+//: @end
 @end

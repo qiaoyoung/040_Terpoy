@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+CheckInitializeExtend.m
 //  https://github.com/hackiftekhar/LogicalRusticFindOutside
@@ -21,18 +23,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UIViewController+CheckInitializeExtend.h"
 #import "UIViewController+CheckInitializeExtend.h"
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIViewController (CheckInitializeExtend)
 @implementation UIViewController (CheckInitializeExtend)
 
--(nullable UIViewController*)parentIQContainerViewController
+//: -(nullable UIViewController*)parentIQContainerViewController
+-(nullable UIViewController*)authorize
 {
+    //: return self;
     return self;
 }
 
+//: @end
 @end

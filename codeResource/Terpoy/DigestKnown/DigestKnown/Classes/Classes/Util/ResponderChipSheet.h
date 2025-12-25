@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ResponderChipSheet.h
 //  NIM
@@ -6,25 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define ImageExt   (@"jpg")
-
-
+//: @interface ResponderChipSheet : NSObject
 @interface ResponderChipSheet : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)single:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)getAppTempPath;
++ (NSString *)resistance;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)pureEnableVariable:(NSString *)filename;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)filepathForMergeForwardFile:(NSString *)filename;
++ (NSString *)tallTo:(NSString *)filename;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)key;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)absolute:(NSString *)ext;
 
-+ (NSString *)filepathForMergeForwardFile:(NSString *)filename;
+//: + (NSString *)userDirectory;
++ (NSString *)limit;
 
+//: @end
 @end

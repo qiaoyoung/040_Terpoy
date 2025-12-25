@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PlanetOrientationKinetic.h
 //  NIM
@@ -6,9 +8,15 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface PlanetOrientationKinetic : NSObject
 @interface PlanetOrientationKinetic : NSObject
-- (void)start:(NSString *)text;
-- (void)stop;
+//: - (void)start:(NSString *)text;
+- (void)mid:(NSString *)text;
+//: - (void)stop;
+- (void)cross;
+//: @end
 @end

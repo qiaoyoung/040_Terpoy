@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  BadgeAvatar.h
 // PerformAcknowledgePoolState
@@ -6,8 +8,12 @@
 //  Copyright (c) 2015 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "LineRecycleForwardMagic.h"
 #import "LineRecycleForwardMagic.h"
 
+//: @interface BadgeAvatar : NSObject<ProtectTraversalVertexStrategyPatch>
 @interface BadgeAvatar : NSObject<ProtectTraversalVertexStrategyPatch>
 
+//: @end
 @end

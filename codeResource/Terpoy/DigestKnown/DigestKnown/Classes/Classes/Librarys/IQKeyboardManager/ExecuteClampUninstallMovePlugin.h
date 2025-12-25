@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ExecuteClampUninstallMovePlugin.h
 //  https://github.com/hackiftekhar/LogicalRusticFindOutside
@@ -21,41 +23,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "OperationSummarizeInitialLoose.h"
 #import "OperationSummarizeInitialLoose.h"
-
 
 /**
  ExecuteClampUninstallMovePlugin for LogicalRusticFindOutside.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface ExecuteClampUninstallMovePlugin : UIToolbar <UIInputViewAudioFeedback>
 @interface ExecuteClampUninstallMovePlugin : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SincereEntityPivot *previousBarButton;
+/**
+ Fixed space bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) SincereEntityPivot *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) SincereEntityPivot *extendQuantityerrupt;
 
 /**
  Next bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SincereEntityPivot *nextBarButton;
+//: @property(nonnull, nonatomic, strong) SincereEntityPivot *nextBarButton;
+@property(nonnull, nonatomic, strong) SincereEntityPivot *petTrim;
 
 /**
  Title bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong, readonly) OperationSummarizeInitialLoose *titleBarButton;
+//: @property(nonnull, nonatomic, strong, readonly) OperationSummarizeInitialLoose *titleBarButton;
+@property(nonnull, nonatomic, strong, readonly) OperationSummarizeInitialLoose *guide;
+
+//: @property(nonnull, nonatomic, strong) SincereEntityPivot *previousBarButton;
+@property(nonnull, nonatomic, strong) SincereEntityPivot *bubble;
 
 /**
  Done bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) SincereEntityPivot *doneBarButton;
+//: @property(nonnull, nonatomic, strong) SincereEntityPivot *doneBarButton;
+@property(nonnull, nonatomic, strong) SincereEntityPivot *compute;
 
-/**
- Fixed space bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) SincereEntityPivot *fixedSpaceBarButton;
-
+//: @end
 @end
-

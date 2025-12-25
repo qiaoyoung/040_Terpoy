@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+HideFitAwait.h
 //  Kitalker
@@ -6,25 +8,38 @@
 //  Copyright (c) 2012年 ibm. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDictionary (HideFitAwait)
 @interface NSDictionary (HideFitAwait)
 
-- (NSString *)jsonString;
+//: - (NSInteger)integerValueForKey:(id)key;
+- (NSInteger)heroDenseWatchMulti:(id)key;
 
-- (BOOL)boolValueForKey:(id)key;
+//: - (id)valueObjectForKey:(id)aKey;
+- (id)book:(id)aKey;
 
-- (int)intValueForKey:(id)key;
+//: - (int)intValueForKey:(id)key;
+- (int)norm:(id)key;
 
-- (NSInteger)integerValueForKey:(id)key;
+//: - (BOOL)boolValueForKey:(id)key;
+- (BOOL)component:(id)key;
 
-- (float)floatValueForKey:(id)key;
+//: - (NSString *)newStringValueForKey:(id)key;
+- (NSString *)m:(id)key;
 
-- (double)doubleValueForKey:(id)key;
+//: - (float)floatValueForKey:(id)key;
+- (float)sea:(id)key;
 
-- (NSString *)newStringValueForKey:(id)key;
+//: - (NSString *)jsonString;
+- (NSString *)sense;
 
-- (id)valueObjectForKey:(id)aKey;
+//: - (double)doubleValueForKey:(id)key;
+- (double)tillAbsolute:(id)key;
 
-- (NSArray *)arrayValueForKey:(id)aKey;
+//: - (NSArray *)arrayValueForKey:(id)aKey;
+- (NSArray *)persist:(id)aKey;
+//: @end
 @end

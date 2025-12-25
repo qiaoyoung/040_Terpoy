@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LogicalRusticFindOutsideConstants.h
 //  https://github.com/hackiftekhar/LogicalRusticFindOutside
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef LogicalRusticFindOutsideConstants_h
-#define LogicalRusticFindOutsideConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name AgentClipperWhitenVideoManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `AgentClipperWhitenVideoBySubviews`
@@ -40,10 +40,15 @@
  `AgentClipperWhitenVideoByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, AgentClipperWhitenVideoManageBehavior) {
 typedef NS_ENUM(NSInteger, AgentClipperWhitenVideoManageBehavior) {
+    //: AgentClipperWhitenVideoBySubviews,
     AgentClipperWhitenVideoBySubviews,
+    //: AgentClipperWhitenVideoByTag,
     AgentClipperWhitenVideoByTag,
+    //: AgentClipperWhitenVideoByPosition,
     AgentClipperWhitenVideoByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, AgentClipperWhitenVideoManageBehavior) {
  `SpeakWaitAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, SpeakWait) {
 typedef NS_ENUM(NSUInteger, SpeakWait) {
+    //: SpeakWaitDefault,
     SpeakWaitDefault,
+    //: SpeakWaitAlwaysHide,
     SpeakWaitAlwaysHide,
+    //: SpeakWaitAlwaysShow,
     SpeakWaitAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, SpeakWait) {
  `MeasuredParseRestrictDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, MeasuredParseRestrict) {
 typedef NS_ENUM(NSUInteger, MeasuredParseRestrict) {
+    //: MeasuredParseRestrictDefault,
     MeasuredParseRestrictDefault,
+    //: MeasuredParseRestrictEnabled,
     MeasuredParseRestrictEnabled,
+    //: MeasuredParseRestrictDisabled,
     MeasuredParseRestrictDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

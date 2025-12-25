@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // PerformAcknowledgePoolStateCommentUtil.h
 // PerformAcknowledgePoolState
@@ -6,33 +8,52 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NIMQuickComment;
 @class NIMQuickComment;
+//: @class DepthConsolidateCreekAutosave;
 @class DepthConsolidateCreekAutosave;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface WiseBaseOperandEnhance : NSObject
 @interface WiseBaseOperandEnhance : NSObject
 
-+ (UIFont *)commentFont;
+//: + (DepthConsolidateCreekAutosave *)newCommentLabel;
++ (DepthConsolidateCreekAutosave *)within;
 
-+ (NSString *)commentContent:(NIMQuickComment *)comment;
+//: + (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
++ (NSArray *)ensure:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
 
-+ (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
+//: + (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
++ (CGSize)lab:(NIMQuickComment *)comment;
 
-+ (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
+//: + (NSString *)commentContent:(NIMQuickComment *)comment;
++ (NSString *)area:(NIMQuickComment *)comment;
 
-+ (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
+//: + (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
++ (NIMQuickComment * _Nullable)entry:(NSInteger )keyIndex
+                                      //: keys:(NSArray *)keys
+                                      target:(NSArray *)keys
+                                  //: comments:(NSMapTable *)map;
+                                  shift:(NSMapTable *)map;
+//: + (UIFont *)commentFont;
++ (UIFont *)with;
 
-+ (CGSize)containerSizeWithComments:(NSMapTable *)comments;
+//: + (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
++ (NSString *)momentum:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
-                                      keys:(NSArray *)keys
-                                  comments:(NSMapTable *)map;
 
-+ (DepthConsolidateCreekAutosave *)newCommentLabel;
+//: + (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
++ (CGSize)trim:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: + (CGSize)containerSizeWithComments:(NSMapTable *)comments;
++ (CGSize)mirrorAdvanced:(NSMapTable *)comments;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

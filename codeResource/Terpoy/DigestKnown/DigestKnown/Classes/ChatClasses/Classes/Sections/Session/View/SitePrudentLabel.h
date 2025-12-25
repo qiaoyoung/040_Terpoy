@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionTipCell.h
 //  NIMDemo
@@ -6,16 +8,26 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "ExtraLimitElemental.h"
 #import "ExtraLimitElemental.h"
+
+//: @class SparkOperatorDispatch;
 @class SparkOperatorDispatch;
 
+//: @interface SitePrudentLabel : UITableViewCell
 @interface SitePrudentLabel : UITableViewCell
 
-@property (strong, nonatomic) UIImageView *timeBGView;
+//: @property (strong, nonatomic) UIImageView *timeBGView;
+@property (strong, nonatomic) UIImageView *bridgeMore;
 
-@property (strong, nonatomic) UILabel *timeLabel;
+//: @property (strong, nonatomic) UILabel *timeLabel;
+@property (strong, nonatomic) UILabel *work;
 
-- (void)refreshData:(SparkOperatorDispatch *)data;
+//: - (void)refreshData:(SparkOperatorDispatch *)data;
+- (void)supplyEndless:(SparkOperatorDispatch *)data;
 
+//: @end
 @end

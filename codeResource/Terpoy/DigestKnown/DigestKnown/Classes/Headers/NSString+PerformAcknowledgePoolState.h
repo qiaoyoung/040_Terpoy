@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // PerformAcknowledgePoolState
@@ -6,30 +8,45 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (PerformAcknowledgePoolState)
 @interface NSString (PerformAcknowledgePoolState)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)yardFeedback;
 
-- (NSString *)nim_MD5String;
+//: - (NSDictionary *)toDictionary ;
+- (NSDictionary *)keepBy ;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (NSString *)nim_MD5String;
+- (NSString *)bubble;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)skyAcross;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)carrier;
 
-- (BOOL)nim_fileIsExist;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)tip:(UIFont *)font;
 
 
-- (NSString *)nim_localized;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)dense;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)centralTo;
 
-- (BOOL)nim_containsEmoji;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)theoryOrDiamond:(NSString *)table;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)style;
 
-- (NSDictionary *)toDictionary ;
+//: - (NSString *)nim_localized;
+- (NSString *)root;
+//: @end
 @end

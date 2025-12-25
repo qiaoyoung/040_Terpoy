@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DryDaintyScreen.h
 //  JYImageTextCombine
@@ -6,21 +8,31 @@
 //  Copyright © 2022 Jack Young. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface DryDaintyScreen : UIView
 @interface DryDaintyScreen : UIView
-
-+ (instancetype)shareMenuView;// 单例模式
 
 //type：类型  selectionTextRectInWindow：选中文本在window坐标系中的frame
 //cursorStartRect:start的光标位置
 //block是选择功能按钮的title
-- (void)showViewWithButtonModels:(NSArray *)array
-                 cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(WidescreenEvaluateResponsiveInside *item))block
-                     praiseBlock:(void(^)(NSInteger tag))praiseblock;
+//: - (void)showViewWithButtonModels:(NSArray *)array
+- (void)royalHumor:(NSArray *)array
+                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(WidescreenEvaluateResponsiveInside *item))block
+                 modeSpectrum:(CGRect)cursorStartRect protection:(CGRect)rect generateOwner:(void(^)(WidescreenEvaluateResponsiveInside *item))block
+                     //: praiseBlock:(void(^)(NSInteger tag))praiseblock;
+                     shade:(void(^)(NSInteger tag))praiseblock;
+//: + (instancetype)shareMenuView;
++ (instancetype)implementation;// 单例模式
 
+
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

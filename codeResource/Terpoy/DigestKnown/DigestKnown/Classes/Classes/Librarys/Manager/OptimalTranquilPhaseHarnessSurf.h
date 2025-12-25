@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OptimalTranquilPhaseHarnessSurf.h
 //  NIM
@@ -6,25 +8,39 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "PatchWithinFacet.h"
 #import "PatchWithinFacet.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface OptimalTranquilPhaseHarnessSurf : NSObject
 @interface OptimalTranquilPhaseHarnessSurf : NSObject
-@property (nonatomic ,strong) PatchWithinFacet *loginVC;
-@property (nonatomic ,strong) NSMutableDictionary *registDict;
-@property (nonatomic ,strong) UIImage *headerImage;
+//: @property (nonatomic ,strong) NSMutableDictionary *registDict;
+@property (nonatomic ,strong) NSMutableDictionary *rational;
+//: @property (nonatomic ,strong) PatchWithinFacet *loginVC;
+@property (nonatomic ,strong) PatchWithinFacet *sunnyLegacy;
+//: @property (nonatomic ,strong) UIImage *headerImage;
+@property (nonatomic ,strong) UIImage *sign;
 
-+ (OptimalTranquilPhaseHarnessSurf *)shareConfigManager;
+//: + (void)refreshRegistConfig;
++ (void)thePriority;
 
-+ (void)refreshRegistConfig;
+//: + (void)firstSendRegistName:(NSString *)name pd:(NSString *)pd RequestWithComplete:(void(^)(BOOL ,NSString *))complete;
++ (void)followPrimary:(NSString *)name theGo:(NSString *)pd capability:(void(^)(BOOL ,NSString *))complete;
 
-+ (void)sendRegistRequest:(UINavigationController *)nav;
+//: + (void)sendRegistRequest:(UINavigationController *)nav;
++ (void)richHouse:(UINavigationController *)nav;
 
 
-+ (void)firstSendRegistName:(NSString *)name pd:(NSString *)pd RequestWithComplete:(void(^)(BOOL ,NSString *))complete;
+//: + (OptimalTranquilPhaseHarnessSurf *)shareConfigManager;
++ (OptimalTranquilPhaseHarnessSurf *)examineByMinimal;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

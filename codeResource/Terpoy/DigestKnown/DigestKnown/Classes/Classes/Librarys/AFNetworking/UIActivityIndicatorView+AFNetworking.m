@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // UIActivityIndicatorView+AFNetworking.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,96 +21,147 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIActivityIndicatorView+AFNetworking.h"
 #import "UIActivityIndicatorView+AFNetworking.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
-#if TARGET_OS_IOS || TARGET_OS_TV
-
+//: #import "AFURLSessionManager.h"
 #import "AFURLSessionManager.h"
 
+//: @interface AFActivityIndicatorViewNotificationObserver : NSObject
 @interface AFActivityIndicatorViewNotificationObserver : NSObject
-@property (readonly, nonatomic, weak) UIActivityIndicatorView *activityIndicatorView;
-- (instancetype)initWithActivityIndicatorView:(UIActivityIndicatorView *)activityIndicatorView;
+//: @property (readonly, nonatomic, weak) UIActivityIndicatorView *activityIndicatorView;
+@property (readonly, nonatomic, weak) UIActivityIndicatorView *forget;
+//: - (instancetype)initWithActivityIndicatorView:(UIActivityIndicatorView *)activityIndicatorView;
+- (instancetype)initWithRefuse:(UIActivityIndicatorView *)activityIndicatorView;
 
-- (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task;
+//: - (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task;
+- (void)setRoute:(NSURLSessionTask *)task;
 
+//: @end
 @end
 
+//: @implementation UIActivityIndicatorView (AFNetworking)
 @implementation UIActivityIndicatorView (AFNetworking)
 
-- (AFActivityIndicatorViewNotificationObserver *)af_notificationObserver {
-    AFActivityIndicatorViewNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
+//: - (AFActivityIndicatorViewNotificationObserver *)af_notificationObserver {
+- (AFActivityIndicatorViewNotificationObserver *)frameParticle {
+    //: AFActivityIndicatorViewNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(af_notificationObserver));
+    AFActivityIndicatorViewNotificationObserver *notificationObserver = objc_getAssociatedObject(self, @selector(frameParticle));
+    //: if (notificationObserver == nil) {
     if (notificationObserver == nil) {
-        notificationObserver = [[AFActivityIndicatorViewNotificationObserver alloc] initWithActivityIndicatorView:self];
-        objc_setAssociatedObject(self, @selector(af_notificationObserver), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        //: notificationObserver = [[AFActivityIndicatorViewNotificationObserver alloc] initWithActivityIndicatorView:self];
+        notificationObserver = [[AFActivityIndicatorViewNotificationObserver alloc] initWithRefuse:self];
+        //: objc_setAssociatedObject(self, @selector(af_notificationObserver), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, @selector(frameParticle), notificationObserver, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
+    //: return notificationObserver;
     return notificationObserver;
 }
 
-- (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task {
-    [[self af_notificationObserver] setAnimatingWithStateOfTask:task];
+//: - (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task {
+- (void)setMeasure:(NSURLSessionTask *)task {
+    //: [[self af_notificationObserver] setAnimatingWithStateOfTask:task];
+    [[self frameParticle] setRoute:task];
 }
 
+//: @end
 @end
 
+//: @implementation AFActivityIndicatorViewNotificationObserver
 @implementation AFActivityIndicatorViewNotificationObserver
 
-- (instancetype)initWithActivityIndicatorView:(UIActivityIndicatorView *)activityIndicatorView
+//: #pragma mark -
+#pragma mark -
+
+//: - (void)af_startAnimating {
+- (void)sinceForm {
+    //: dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        //: [self.activityIndicatorView startAnimating];
+        [self.forget startAnimating];
+    //: });
+    });
+}
+
+//: #pragma mark -
+#pragma mark -
+
+//: - (void)dealloc {
+- (void)dealloc {
+    //: NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
+    [notificationCenter removeObserver:self name:themePushEvent(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
+    [notificationCenter removeObserver:self name:colorCollectionMeasureName(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
+    [notificationCenter removeObserver:self name:userLittleName(nil) object:nil];
+}
+
+//: - (instancetype)initWithActivityIndicatorView:(UIActivityIndicatorView *)activityIndicatorView
+- (instancetype)initWithRefuse:(UIActivityIndicatorView *)activityIndicatorView
 {
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
-        _activityIndicatorView = activityIndicatorView;
+        //: _activityIndicatorView = activityIndicatorView;
+        _forget = activityIndicatorView;
     }
+    //: return self;
     return self;
 }
 
-- (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task {
+//: - (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task {
+- (void)setRoute:(NSURLSessionTask *)task {
+    //: NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
 
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
-    
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
+    [notificationCenter removeObserver:self name:colorCollectionMeasureName(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
+    [notificationCenter removeObserver:self name:userLittleName(nil) object:nil];
+    //: [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
+    [notificationCenter removeObserver:self name:themePushEvent(nil) object:nil];
+
+    //: if (task) {
     if (task) {
+        //: if (task.state != NSURLSessionTaskStateCompleted) {
         if (task.state != NSURLSessionTaskStateCompleted) {
-            UIActivityIndicatorView *activityIndicatorView = self.activityIndicatorView;
+            //: UIActivityIndicatorView *activityIndicatorView = self.activityIndicatorView;
+            UIActivityIndicatorView *activityIndicatorView = self.forget;
+            //: if (task.state == NSURLSessionTaskStateRunning) {
             if (task.state == NSURLSessionTaskStateRunning) {
+                //: [activityIndicatorView startAnimating];
                 [activityIndicatorView startAnimating];
+            //: } else {
             } else {
+                //: [activityIndicatorView stopAnimating];
                 [activityIndicatorView stopAnimating];
             }
 
-            [notificationCenter addObserver:self selector:@selector(af_startAnimating) name:AFNetworkingTaskDidResumeNotification object:task];
-            [notificationCenter addObserver:self selector:@selector(af_stopAnimating) name:AFNetworkingTaskDidCompleteNotification object:task];
-            [notificationCenter addObserver:self selector:@selector(af_stopAnimating) name:AFNetworkingTaskDidSuspendNotification object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_startAnimating) name:AFNetworkingTaskDidResumeNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(sinceForm) name:colorCollectionMeasureName(nil) object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_stopAnimating) name:AFNetworkingTaskDidCompleteNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(briefHumor) name:themePushEvent(nil) object:task];
+            //: [notificationCenter addObserver:self selector:@selector(af_stopAnimating) name:AFNetworkingTaskDidSuspendNotification object:task];
+            [notificationCenter addObserver:self selector:@selector(briefHumor) name:userLittleName(nil) object:task];
         }
     }
 }
 
-#pragma mark -
-
-- (void)af_startAnimating {
+//: - (void)af_stopAnimating {
+- (void)briefHumor {
+    //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.activityIndicatorView startAnimating];
+        //: [self.activityIndicatorView stopAnimating];
+        [self.forget stopAnimating];
+    //: });
     });
 }
 
-- (void)af_stopAnimating {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.activityIndicatorView stopAnimating];
-    });
-}
-
-#pragma mark -
-
-- (void)dealloc {
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidCompleteNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidResumeNotification object:nil];
-    [notificationCenter removeObserver:self name:AFNetworkingTaskDidSuspendNotification object:nil];
-}
-
+//: @end
 @end
-
-#endif

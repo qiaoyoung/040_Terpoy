@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PopulateServiceFriendlyModel.m
 //  PopulateServiceFriendlyDemo
@@ -6,8 +8,11 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PopulateServiceFriendlyModel.h"
 #import "PopulateServiceFriendlyModel.h"
 
+//: @implementation PopulateServiceFriendlyModel
 @implementation PopulateServiceFriendlyModel
 
 /**
@@ -19,12 +24,19 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
++ (instancetype)streamConstrain:(NSString *)menuItemTitle key:(NSString *)menuItemIconName flag:(FFMenuBlock)menuBlock {
+    //: PopulateServiceFriendlyModel *model = [PopulateServiceFriendlyModel new];
     PopulateServiceFriendlyModel *model = [PopulateServiceFriendlyModel new];
-    model.menuItemTitle = menuItemTitle;
-    model.menuItemIconName = menuItemIconName;
-    model.menuBlock = menuBlock;
+    //: model.menuItemTitle = menuItemTitle;
+    model.land = menuItemTitle;
+    //: model.menuItemIconName = menuItemIconName;
+    model.hostStrike = menuItemIconName;
+    //: model.menuBlock = menuBlock;
+    model.fail = menuBlock;
+    //: return model;
     return model;
 }
 
+//: @end
 @end

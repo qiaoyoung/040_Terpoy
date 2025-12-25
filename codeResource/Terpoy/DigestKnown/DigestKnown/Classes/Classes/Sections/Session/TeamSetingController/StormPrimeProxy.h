@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  StormPrimeProxy.h
 //  NIM
@@ -6,21 +8,35 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "KeypathHubReference.h"
 #import "KeypathHubReference.h"
 
+//: @interface StormPrimeProxy : KeypathHubReference
 @interface StormPrimeProxy : KeypathHubReference
 
 
-@property (nonatomic,assign)    BOOL canAddFriend;
+//: @property (nonatomic,assign) BOOL canAddFriend;
+@property (nonatomic,assign) BOOL gender;
 
-- (void)enterMemberCard;//查看群成员
-- (void)didSelectAddOpeartor;//添加新成员
+//: - (void)updateTeamIntro;
+- (void)boldBody;
+//: - (void)dismissTeam;
+- (void)beforeAction;
 
-- (void)updateTeamName;
-- (void)updateTeamNick;
-- (void)updateTeamIntro;
-- (void)updateTeamAnnouncement;
-- (void)enterMuteList;//禁言列表
-- (void)quitTeam;
-- (void)dismissTeam;
+//: - (void)didSelectAddOpeartor;
+- (void)pastBe;//添加新成员
+//: - (void)updateTeamName;
+- (void)fadeWatchOccasion;
+//: - (void)quitTeam;
+- (void)outsideEdgeEstimated;
+//: - (void)updateTeamAnnouncement;
+- (void)elementWithAdmin;
+//: - (void)enterMemberCard;
+- (void)independentFriend;//查看群成员
+//: - (void)updateTeamNick;
+- (void)externalRegular;
+//: - (void)enterMuteList;
+- (void)freshMuse;//禁言列表
+//: @end
 @end

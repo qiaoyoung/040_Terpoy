@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+CompletionIndex.m
 //  NIM
@@ -6,104 +8,157 @@
 //  Copyright (c) 2013年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @implementation NSDictionary (CompletionIndex)
 @implementation NSDictionary (CompletionIndex)
 
-- (NSString *)jsonString: (NSString *)key
+//: - (NSArray *)jsonStringArray: (NSString *)key
+- (NSArray *)outsideDisturbing: (NSString *)key
 {
-    id object = [self objectForKey:key];
-    if ([object isKindOfClass:[NSString class]])
+    //: NSArray *array = [self jsonArray:key];
+    NSArray *array = [self flexGenerous:key];
+    //: BOOL invalid = NO;
+    BOOL invalid = NO;
+    //: for (id item in array)
+    for (id item in array)
     {
-        return object;
+        //: if (![item isKindOfClass:[NSString class]])
+        if (![item isKindOfClass:[NSString class]])
+        {
+            //: invalid = YES;
+            invalid = YES;
+        }
     }
-    else if([object isKindOfClass:[NSNumber class]])
-    {
-        return [object stringValue];
-    }
-    return nil;
+    //: return invalid ? nil : array;
+    return invalid ? nil : array;
 }
 
-- (NSDictionary *)jsonDict: (NSString *)key
+//: - (unsigned long long)jsonUnsignedLongLong:(NSString *)key
+- (unsigned long long)outHill:(NSString *)key
 {
+    //: id object = [self objectForKey:key];
     id object = [self objectForKey:key];
-    return [object isKindOfClass:[NSDictionary class]] ? object : nil;
+    //: if ([object isKindOfClass:[NSString class]] ||
+    if ([object isKindOfClass:[NSString class]] ||
+        //: [object isKindOfClass:[NSNumber class]])
+        [object isKindOfClass:[NSNumber class]])
+    {
+        //: return [object unsignedLongLongValue];
+        return [object unsignedLongLongValue];
+    }
+    //: return 0;
+    return 0;
 }
 
 
-- (NSArray *)jsonArray: (NSString *)key
+//: - (NSArray *)jsonArray: (NSString *)key
+- (NSArray *)flexGenerous: (NSString *)key
 {
+    //: id object = [self objectForKey:key];
     id object = [self objectForKey:key];
+    //: return [object isKindOfClass:[NSArray class]] ? object : nil;
     return [object isKindOfClass:[NSArray class]] ? object : nil;
 
 }
 
-- (NSArray *)jsonStringArray: (NSString *)key
+//: - (NSDictionary *)jsonDict: (NSString *)key
+- (NSDictionary *)keepWorld: (NSString *)key
 {
-    NSArray *array = [self jsonArray:key];
-    BOOL invalid = NO;
-    for (id item in array)
-    {
-        if (![item isKindOfClass:[NSString class]])
-        {
-            invalid = YES;
-        }
-    }
-    return invalid ? nil : array;
+    //: id object = [self objectForKey:key];
+    id object = [self objectForKey:key];
+    //: return [object isKindOfClass:[NSDictionary class]] ? object : nil;
+    return [object isKindOfClass:[NSDictionary class]] ? object : nil;
 }
 
-- (BOOL)jsonBool: (NSString *)key
+//: - (long long)jsonLongLong: (NSString *)key
+- (long long)systemAllow: (NSString *)key
 {
+    //: id object = [self objectForKey:key];
     id object = [self objectForKey:key];
+    //: if ([object isKindOfClass:[NSString class]] ||
     if ([object isKindOfClass:[NSString class]] ||
+        //: [object isKindOfClass:[NSNumber class]])
         [object isKindOfClass:[NSNumber class]])
     {
+        //: return [object longLongValue];
+        return [object longLongValue];
+    }
+    //: return 0;
+    return 0;
+}
+
+//: - (BOOL)jsonBool: (NSString *)key
+- (BOOL)replacement: (NSString *)key
+{
+    //: id object = [self objectForKey:key];
+    id object = [self objectForKey:key];
+    //: if ([object isKindOfClass:[NSString class]] ||
+    if ([object isKindOfClass:[NSString class]] ||
+        //: [object isKindOfClass:[NSNumber class]])
+        [object isKindOfClass:[NSNumber class]])
+    {
+        //: return [object boolValue];
         return [object boolValue];
     }
+    //: return NO;
     return NO;
 }
 
-- (NSInteger)jsonInteger: (NSString *)key
+//: - (NSString *)jsonString: (NSString *)key
+- (NSString *)fitLiberal: (NSString *)key
 {
+    //: id object = [self objectForKey:key];
     id object = [self objectForKey:key];
+    //: if ([object isKindOfClass:[NSString class]])
+    if ([object isKindOfClass:[NSString class]])
+    {
+        //: return object;
+        return object;
+    }
+    //: else if([object isKindOfClass:[NSNumber class]])
+    else if([object isKindOfClass:[NSNumber class]])
+    {
+        //: return [object stringValue];
+        return [object stringValue];
+    }
+    //: return nil;
+    return nil;
+}
+
+//: - (NSInteger)jsonInteger: (NSString *)key
+- (NSInteger)address: (NSString *)key
+{
+    //: id object = [self objectForKey:key];
+    id object = [self objectForKey:key];
+    //: if ([object isKindOfClass:[NSString class]] ||
     if ([object isKindOfClass:[NSString class]] ||
+        //: [object isKindOfClass:[NSNumber class]])
         [object isKindOfClass:[NSNumber class]])
     {
+        //: return [object integerValue];
         return [object integerValue];
     }
-    return 0;
-}
-
-- (long long)jsonLongLong: (NSString *)key
-{
-    id object = [self objectForKey:key];
-    if ([object isKindOfClass:[NSString class]] ||
-        [object isKindOfClass:[NSNumber class]])
-    {
-        return [object longLongValue];
-    }
-    return 0;
-}
-
-- (unsigned long long)jsonUnsignedLongLong:(NSString *)key
-{
-    id object = [self objectForKey:key];
-    if ([object isKindOfClass:[NSString class]] ||
-        [object isKindOfClass:[NSNumber class]])
-    {
-        return [object unsignedLongLongValue];
-    }
+    //: return 0;
     return 0;
 }
 
 
-- (double)jsonDouble: (NSString *)key{
+//: - (double)jsonDouble: (NSString *)key{
+- (double)stern: (NSString *)key{
+    //: id object = [self objectForKey:key];
     id object = [self objectForKey:key];
+    //: if ([object isKindOfClass:[NSString class]] ||
     if ([object isKindOfClass:[NSString class]] ||
+        //: [object isKindOfClass:[NSNumber class]])
         [object isKindOfClass:[NSNumber class]])
     {
+        //: return [object doubleValue];
         return [object doubleValue];
     }
+    //: return 0;
     return 0;
 }
 
+//: @end
 @end

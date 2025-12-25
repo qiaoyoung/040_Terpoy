@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  GraciousErrorSubtle.h
 //  NIM
@@ -6,17 +8,25 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @interface GraciousErrorSubtle : NSObject
 @interface GraciousErrorSubtle : NSObject
 
-+ (instancetype)sharedManager;
+//: + (instancetype)sharedManager;
++ (instancetype)cartOff;
 
-- (void)start;
+//: - (void)subscribeTempConstraintBoxUnusualState:(NSString *)userId;
+- (void)seekResult:(NSString *)userId;
 
-- (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+//: - (void)unsubscribeTempConstraintBoxUnusualState:(NSString *)userId;
+- (void)stackAccess:(NSString *)userId;
 
-- (void)subscribeTempConstraintBoxUnusualState:(NSString *)userId;
+//: - (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+- (NSDictionary<NIMSubscribeEvent *, NSString *> *)controlWith:(NSInteger)type;
 
-- (void)unsubscribeTempConstraintBoxUnusualState:(NSString *)userId;
+//: - (void)start;
+- (void)belowOcean;
 
+//: @end
 @end

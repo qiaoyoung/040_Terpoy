@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OwlMagnifyWallSlider.h
 // PerformAcknowledgePoolState
@@ -6,33 +8,50 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
+//: @class PerformAcknowledgePoolStateLocationPoint;
 @class PerformAcknowledgePoolStateLocationPoint;
 
+//: @interface OwlMagnifyWallSlider : NSObject
 @interface OwlMagnifyWallSlider : NSObject
 
-+ (NIMMessage*)msgWithText:(NSString *)text;
+//: + (NIMMessage *)msgWithImage:(UIImage *)image;
++ (NIMMessage *)theFollowWriting:(UIImage *)image;
 
-+ (NIMMessage *)msgWithAudio:(NSString *)filePath;
+//: + (NIMMessage *)msgWithImagePath:(NSString *)path;
++ (NIMMessage *)consume:(NSString *)path;
 
-+ (NIMMessage *)msgWithImage:(UIImage *)image;
+//: + (NIMMessage*)msgWithText:(NSString *)text;
++ (NIMMessage*)unityYard:(NSString *)text;
 
-+ (NIMMessage *)msgWithImagePath:(NSString *)path;
+//: + (NIMMessage *)msgWithAudio:(NSString *)filePath;
++ (NIMMessage *)operation:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithImageData:(NSData *)data extension:(NSString *)extension;
+//: + (NIMMessage *)msgWithVideo:(NSString *)filePath;
++ (NIMMessage *)woman:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithVideo:(NSString *)filePath;
+//: + (NIMMessage *)msgWithImageData:(NSData *)data extension:(NSString *)extension;
++ (NIMMessage *)gentle:(NSData *)data shape:(NSString *)extension;
 
 
+//: @end
 @end
 
 
+//: @interface OfClipMuseOuter : NSObject
 @interface OfClipMuseOuter : NSObject
 
-+ (NIMQuickComment *)commentWithType:(int64_t)type
-                             content:(NSString *)content
-                                 ext:(NSString *)ext;
+//: + (NIMQuickComment *)commentWithType:(int64_t)type
++ (NIMQuickComment *)big:(int64_t)type
+                             //: content:(NSString *)content
+                             horizonIntervaleract:(NSString *)content
+                                 //: ext:(NSString *)ext;
+                                 betweenBlue:(NSString *)ext;
 
+//: @end
 @end

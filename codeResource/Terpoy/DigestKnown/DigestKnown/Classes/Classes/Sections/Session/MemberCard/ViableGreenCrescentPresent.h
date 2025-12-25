@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ViableGreenCrescentPresent.h
 //  Terpoy
@@ -6,18 +8,27 @@
 //  Copyright © 2025 Terpoy. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface ViableGreenCrescentPresent : UICollectionViewCell
 @interface ViableGreenCrescentPresent : UICollectionViewCell
 
-@property (nonatomic,strong) UIImageView *ImageView;
+//: @property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UILabel *equipment;
 
-@property (nonatomic,strong) UILabel *titleLabel;
+//: @property (nonatomic,strong) UIImageView *ImageView;
+@property (nonatomic,strong) UIImageView *trust;
 
-- (void)refreshWithModel:(NIMTeamMember *)member;
+//: - (void)refreshWithModel:(NIMTeamMember *)member;
+- (void)localBy:(NIMTeamMember *)member;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

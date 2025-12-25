@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // AFSecurityPolicy.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,13 +21,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <Security/Security.h>
 #import <Security/Security.h>
 
+//: typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
 typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
+    //: AFSSLPinningModeNone,
     AFSSLPinningModeNone,
+    //: AFSSLPinningModePublicKey,
     AFSSLPinningModePublicKey,
+    //: AFSSLPinningModeCertificate,
     AFSSLPinningModeCertificate,
+//: };
 };
 
 /**
@@ -34,15 +44,15 @@ typedef NS_ENUM(NSUInteger, AFSSLPinningMode) {
  Adding pinned SSL certificates to your app helps prevent man-in-the-middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an HTTPS connection with SSL pinning configured and enabled.
  */
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface AFSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 @interface AFSecurityPolicy : NSObject <NSSecureCoding, NSCopying>
 
 /**
  The criteria by which server trust should be evaluated against the pinned SSL certificates. Defaults to `AFSSLPinningModeNone`.
  */
-@property (readonly, nonatomic, assign) AFSSLPinningMode SSLPinningMode;
-
 /**
  The certificates used to evaluate server trust according to the SSL pinning mode. 
  
@@ -50,28 +60,23 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see policyWithPinningMode:withPinnedCertificates:
  */
-@property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
+//: @property (nonatomic, strong, nullable) NSSet <NSData *> *pinnedCertificates;
+@property (nonatomic, strong, nullable) NSSet <NSData *> *tabYears;
+
+//: @property (readonly, nonatomic, assign) AFSSLPinningMode SSLPinningMode;
+@property (readonly, nonatomic, assign) AFSSLPinningMode logicalSpecials;
 
 /**
  Whether or not to trust servers with an invalid or expired SSL certificates. Defaults to `NO`.
  */
-@property (nonatomic, assign) BOOL allowInvalidCertificates;
+//: @property (nonatomic, assign) BOOL allowInvalidCertificates;
+@property (nonatomic, assign) BOOL presentServerred;
 
 /**
  Whether or not to validate the domain name in the certificate's CN field. Defaults to `YES`.
  */
-@property (nonatomic, assign) BOOL validatesDomainName;
-
-///-----------------------------------------
-/// @name Getting Certificates from the Bundle
-///-----------------------------------------
-
-/**
- Returns any certificates included in the bundle. If you are using AFNetworking as an embedded framework, you must use this method to find the certificates you have included in your app bundle, and use them when creating your security policy by calling `policyWithPinningMode:withPinnedCertificates`.
-
- @return The certificates included in the given bundle.
- */
-+ (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
+//: @property (nonatomic, assign) BOOL validatesDomainName;
+@property (nonatomic, assign) BOOL lastThumbed;
 
 ///-----------------------------------------
 /// @name Getting Specific Security Policies
@@ -82,7 +87,20 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The default security policy.
  */
-+ (instancetype)defaultPolicy;
+//: + (instancetype)defaultPolicy;
++ (instancetype)strength;
+
+///-----------------------------------------
+/// @name Getting Certificates from the Bundle
+///-----------------------------------------
+
+/**
+ Returns any certificates included in the bundle. If you are using AFNetworking as an embedded framework, you must use this method to find the certificates you have included in your app bundle, and use them when creating your security policy by calling `policyWithPinningMode:withPinnedCertificates`.
+
+ @return The certificates included in the given bundle.
+ */
+//: + (NSSet <NSData *> *)certificatesInBundle:(NSBundle *)bundle;
++ (NSSet <NSData *> *)per:(NSBundle *)bundle;
 
 ///---------------------
 /// @name Initialization
@@ -99,7 +117,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see -policyWithPinningMode:withPinnedCertificates:
  */
-+ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode;
+//: + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode;
++ (instancetype)each:(AFSSLPinningMode)pinningMode;
 
 /**
  Creates and returns a security policy with the specified pinning mode.
@@ -112,7 +131,8 @@ NS_ASSUME_NONNULL_BEGIN
  @see +certificatesInBundle:
  @see -pinnedCertificates
 */
-+ (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
+//: + (instancetype)policyWithPinningMode:(AFSSLPinningMode)pinningMode withPinnedCertificates:(NSSet <NSData *> *)pinnedCertificates;
++ (instancetype)fileForce:(AFSSLPinningMode)pinningMode standard:(NSSet <NSData *> *)pinnedCertificates;
 
 ///------------------------------
 /// @name Evaluating Server Trust
@@ -128,11 +148,15 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return Whether or not to trust the server.
  */
-- (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
-                  forDomain:(nullable NSString *)domain;
+//: - (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust
+- (BOOL)strip:(SecTrustRef)serverTrust
+                  //: forDomain:(nullable NSString *)domain;
+                  roundTrainTransition:(nullable NSString *)domain;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
 
 ///----------------

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSBundle+PerformAcknowledgePoolState.h
 // PerformAcknowledgePoolState
@@ -6,22 +8,33 @@
 //  Copyright © 2019 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface NSBundle (PerformAcknowledgePoolState)
 @interface NSBundle (PerformAcknowledgePoolState)
 
-+ (NSBundle *)nim_defaultEmojiBundle;
+//: + (NSString *)nim_EmojiImage:(NSString *)imageName;
++ (NSString *)common:(NSString *)imageName;
 
-+ (nullable NSBundle *)nim_defaultLanguageBundle;
+//: + (NSString *)nim_EmojiPlistFile;
++ (NSString *)coordinate;
 
-+ (NSString *)nim_EmojiPlistFile;
+//: + (NSString *)nim_EmojiGifPlistFile;
++ (NSString *)handle;
 
-+ (NSString *)nim_EmojiGifPlistFile;
+//: + (NSBundle *)nim_defaultEmojiBundle;
++ (NSBundle *)positive;
 
-+ (NSString *)nim_EmojiImage:(NSString *)imageName;
+//: + (nullable NSBundle *)nim_defaultLanguageBundle;
++ (nullable NSBundle *)forget;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

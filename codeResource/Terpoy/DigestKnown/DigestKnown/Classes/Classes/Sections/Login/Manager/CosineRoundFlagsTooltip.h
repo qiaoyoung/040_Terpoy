@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CosineRoundFlagsTooltip.h
 //  sohunews
@@ -7,10 +9,11 @@
 //
 //  modify by tengli on 2022.8.1 (V6.7.8)
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
-
+//: @interface CosineRoundFlagsTooltip : NSObject
 @interface CosineRoundFlagsTooltip : NSObject
 
 
@@ -19,12 +22,16 @@
  IUUID 生成后保存至磁盘,卸载重装后重新生成
  IDFA & IDFV & MCI 变化,也会重新生成
  */
-+ (NSString *)deviceIUUID;
+//: #pragma mark - CAID
+#pragma mark - CAID
 
-/**
- IDFA & IDFV & MCI 变化,重新生成
- */
-+ (void)updateDeviceIUUID;
+/// 设备启动时间
+//: + (NSString *)bootTimeInSec;
++ (NSString *)anyUpon;
+
+/// 语言
+//: + (NSString *)language;
++ (NSString *)hidden;
 
 /*
  * @method uniqueDeviceIdentifier
@@ -32,7 +39,13 @@
  * It generates a hash from the MAC-address in combination with the bundle identifier
  * of your app.
  */
-- (NSString *)uniqueDeviceIdentifier;
+//: - (NSString *)uniqueDeviceIdentifier;
+- (NSString *)sweet;
+
+/// 国家
+//: + (NSString *)countryCode;
++ (NSString *)resolutionScan;
+
 
 /*
  * @method uniqueGlobalDeviceIdentifier
@@ -41,33 +54,36 @@
  * from different apps.
  * It generates a hash from the MAC-address only.
  */
-- (NSString *)uniqueGlobalDeviceIdentifier;
+//: - (NSString *)uniqueGlobalDeviceIdentifier;
+- (NSString *)hero;
+
+//: + (NSString *)deviceIUUID;
++ (NSString *)notKitThorough;
+
+//get system uptime since last boot 获取系统当前运行了多长时间
+//: + (NSTimeInterval)uptime;
++ (NSTimeInterval)accelerate;
 
 
-#pragma mark - CAID
-
-/// 设备启动时间
-+ (NSString *)bootTimeInSec;
-
-/// 国家
-+ (NSString *)countryCode;
-
-/// 语言
-+ (NSString *)language;
-
-
-/// 运营商
-+(NSString* )carrierInfo;
+/**
+ IDFA & IDFV & MCI 变化,重新生成
+ */
+//: + (void)updateDeviceIUUID;
++ (void)safety;
 
 /// 系统更新时间
-+ (NSString *)sysFileTime;
+//: + (NSString *)sysFileTime;
++ (NSString *)regionPost;
 
 
 ///时区
-+ (NSString *)timeZone;
+//: + (NSString *)timeZone;
++ (NSString *)pressureDown;
 
-//get system uptime since last boot 获取系统当前运行了多长时间
-+ (NSTimeInterval)uptime;
+/// 运营商
+//: +(NSString* )carrierInfo;
++(NSString* )radarBy;
 
 
+//: @end
 @end

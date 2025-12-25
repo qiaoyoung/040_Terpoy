@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DistributeInvokeOrganicAccumulate.h
 //  NIM
@@ -6,8 +8,12 @@
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface DistributeInvokeOrganicAccumulate : NSObject<NIMCustomAttachmentCoding>
 @interface DistributeInvokeOrganicAccumulate : NSObject<NIMCustomAttachmentCoding>
 
+//: @end
 @end

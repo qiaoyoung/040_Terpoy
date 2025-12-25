@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+FaithfulSpiritWarm.h
 //  NIMDemo
@@ -6,24 +8,36 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-NSString * emptyString(NSString *anMaybeEmptyString);
+//: NSString * emptyString(NSString *anMaybeEmptyString);
+NSString * processingData(NSString *anMaybeEmptyString);
 
+//: @interface NSString (FaithfulSpiritWarm)
 @interface NSString (FaithfulSpiritWarm)
 
-- (CGSize)stringSizeWithFont:(UIFont *)font;
+//: - (NSString *)user_localized;
+- (NSString *)equalByRecording;
 
-- (NSString *)MD5String;
+//: - (CGSize)stringSizeWithFont:(UIFont *)font;
+- (CGSize)outsideSheet:(UIFont *)font;
 
-- (NSUInteger)getBytesLength;
+//: - (NSString *)MD5String;
+- (NSString *)upon;
 
-- (NSString *)stringByDeletingPictureResolution;
+//: - (NSUInteger)getBytesLength;
+- (NSUInteger)honey;
 
-- (NSString *)tokenByPassword;
+//: + (NSString *)randomStringWithLength:(NSUInteger)length;
++ (NSString *)policy:(NSUInteger)length;
 
-- (NSString *)user_localized;
+//: - (NSString *)tokenByPassword;
+- (NSString *)effectArtistic;
 
-+ (NSString *)randomStringWithLength:(NSUInteger)length;
+//: - (NSString *)stringByDeletingPictureResolution;
+- (NSString *)storageEasy;
 
+//: @end
 @end

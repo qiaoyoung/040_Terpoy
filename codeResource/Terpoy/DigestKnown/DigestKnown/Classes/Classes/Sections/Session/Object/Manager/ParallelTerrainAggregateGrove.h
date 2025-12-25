@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ParallelTerrainAggregateGrove.h
 //  NIM
@@ -15,29 +17,42 @@
 //     "message_count": 1234   //必填,最终写入文件中的消息数
 //   }
 
-
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface ParallelTerrainAggregateGrove : NSObject
 @interface ParallelTerrainAggregateGrove : NSObject
 
-@property (nonatomic, assign) NSInteger version;
+//: @property (nonatomic, copy) NSString *sdkVersion;
+@property (nonatomic, copy) NSString *venture;
 
-@property (nonatomic, assign) NIMLoginClientType clientType;
+//: @property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *attachUnder;
 
-@property (nonatomic, copy) NSString *sdkVersion;
+//: @property (nonatomic, assign) NIMLoginClientType clientType;
+@property (nonatomic, assign) NIMLoginClientType res;
 
-@property (nonatomic, copy) NSString *appVersion;
+//: @property (nonatomic, assign) NSInteger version;
+@property (nonatomic, assign) NSInteger pair;
 
-@property (nonatomic, assign) NSInteger totalInfoCount;
+//: @property (nonatomic, assign) NSInteger totalInfoCount;
+@property (nonatomic, assign) NSInteger specialPan;
 
-+ (instancetype)initWithDefaultConfig;
+//: + (nullable instancetype)initWithRawContent:(NSData *)data;
++ (nullable instancetype)initWithSigner:(NSData *)data;
 
-+ (nullable instancetype)initWithRawContent:(NSData *)data;
+//: + (instancetype)initWithDefaultConfig;
++ (instancetype)initWithRetreat;
 
-- (nullable NSData *)toRawContent;
+//: - (nullable NSData *)toRawContent;
+- (nullable NSData *)resolutionBook;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

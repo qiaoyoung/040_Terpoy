@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ValidateSlashResponsive.h
 //  ValidateSlashResponsive
@@ -5,52 +7,68 @@
 //  Created by Sam Soffes on 5/19/10.
 //  Copyright (c) 2010-2014 Sam Soffes. All rights reserved.
 //
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "ValidateSlashResponsiveQuery.h"
 #import "ValidateSlashResponsiveQuery.h"
 
-NS_ASSUME_NONNULL_BEGIN
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+//: #import "ValidateSlashResponsiveQuery.h"
+#import "ValidateSlashResponsiveQuery.h"
 
 /**
  Error code specific to ValidateSlashResponsive that can be returned in NSError objects.
  For codes returned by the operating system, refer to SecBase.h for your
  platform.
  */
-typedef NS_ENUM(OSStatus, ValidateSlashResponsiveErrorCode) {
-	/** Some of the arguments were invalid. */
-	ValidateSlashResponsiveErrorBadArguments = -1001,
+//: typedef enum __attribute__((enum_extensibility(open))) ValidateSlashResponsiveErrorCode : OSStatus ValidateSlashResponsiveErrorCode; enum ValidateSlashResponsiveErrorCode : OSStatus {
+typedef enum __attribute__((enum_extensibility(open))) ValidateSlashResponsiveErrorCode : OSStatus ValidateSlashResponsiveErrorCode; enum ValidateSlashResponsiveErrorCode : OSStatus {
+ /** Some of the arguments were invalid. */
+ //: ValidateSlashResponsiveErrorBadArguments = -1001,
+ ValidateSlashResponsiveErrorBadArguments = -1001,
+//: };
 };
 
 /** ValidateSlashResponsive error domain */
-extern NSString *const kValidateSlashResponsiveErrorDomain;
+//: extern NSString *const kValidateSlashResponsiveErrorDomain;
+extern NSString *const styleFlashLogicTitle(NSString *value);
 
 /** Account name. */
-extern NSString *const kValidateSlashResponsiveAccountKey;
+//: extern NSString *const kValidateSlashResponsiveAccountKey;
+extern NSString *const kExpectedMessage(NSString *value);
 
 /**
  Time the item was created.
 
  The value will be a string.
  */
-extern NSString *const kValidateSlashResponsiveCreatedAtKey;
+//: extern NSString *const kValidateSlashResponsiveCreatedAtKey;
+extern NSString *const moduleRunningError(NSString *value);
 
 /** Item class. */
-extern NSString *const kValidateSlashResponsiveClassKey;
+//: extern NSString *const kValidateSlashResponsiveClassKey;
+extern NSString *const moduleControlResource(NSString *value);
 
 /** Item description. */
-extern NSString *const kValidateSlashResponsiveDescriptionKey;
+//: extern NSString *const kValidateSlashResponsiveDescriptionKey;
+extern NSString *const constImpressionName(NSString *value);
 
 /** Item label. */
-extern NSString *const kValidateSlashResponsiveLabelKey;
+//: extern NSString *const kValidateSlashResponsiveLabelKey;
+extern NSString *const commonShouldFormat(NSString *value);
 
 /** Time the item was last modified.
 
  The value will be a string.
  */
-extern NSString *const kValidateSlashResponsiveLastModifiedKey;
+//: extern NSString *const kValidateSlashResponsiveLastModifiedKey;
+extern NSString *const styleRestrictionNumber(NSString *value);
 
 /** Where the item was created. */
-extern NSString *const kValidateSlashResponsiveWhereKey;
+//: extern NSString *const kValidateSlashResponsiveWhereKey;
+extern NSString *const widgetReplacementTeamPreference(NSString *value);
 
 /**
  Simple wrapper for accessing accounts, getting passwords, setting passwords, and deleting passwords using the system
@@ -59,9 +77,10 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
  This was originally inspired by EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors.
  ValidateSlashResponsive has since switched to a simpler implementation that was abstracted from [SSToolkit](http://sstoolk.it).
  */
+//: @interface ValidateSlashResponsive : NSObject
 @interface ValidateSlashResponsive : NSObject
 
-#pragma mark - Classic methods
+
 
 /**
  Returns a string containing the password for a given account and service, or `nil` if the Keychain doesn't have a
@@ -74,23 +93,19 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
  @return Returns a string containing the password for a given account and service, or `nil` if the Keychain doesn't
  have a password for the given parameters.
  */
-+ (nullable NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account;
-+ (nullable NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
-
+//: + (BOOL)setPassword:(NSString *)password forService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
++ (BOOL)gradualFeedback:(NSString *)password port:(NSString *)serviceName value:(NSString *)account backEstimate:(NSError **)error __attribute__((swift_error(none)));
 /**
- Returns a nsdata containing the password for a given account and service, or `nil` if the Keychain doesn't have a
- password for the given parameters.
+ Returns an array containing the Keychain's accounts, or `nil` if the Keychain has no accounts.
 
- @param serviceName The service for which to return the corresponding password.
+ See the `NSString` constants declared in ValidateSlashResponsive.h for a list of keys that can be used when accessing the
+ dictionaries returned by this method.
 
- @param account The account for which to return the corresponding password.
-
- @return Returns a nsdata containing the password for a given account and service, or `nil` if the Keychain doesn't
- have a password for the given parameters.
+ @return An array of dictionaries containing the Keychain's accounts, or `nil` if the Keychain doesn't have any
+ accounts. The order of the objects in the array isn't defined.
  */
-+ (nullable NSData *)passwordDataForService:(NSString *)serviceName account:(NSString *)account;
-+ (nullable NSData *)passwordDataForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
-
+//: + (nullable NSArray<NSDictionary<NSString *, id> *> *)allAccounts;
++ (nullable NSArray<NSDictionary<NSString *, id> *> *)everyStarSuite;
 
 /**
  Deletes a password from the Keychain.
@@ -101,49 +116,10 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
 
  @return Returns `YES` on success, or `NO` on failure.
  */
-+ (BOOL)deletePasswordForService:(NSString *)serviceName account:(NSString *)account;
-+ (BOOL)deletePasswordForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
-
-
-/**
- Sets a password in the Keychain.
-
- @param password The password to store in the Keychain.
-
- @param serviceName The service for which to set the corresponding password.
-
- @param account The account for which to set the corresponding password.
-
- @return Returns `YES` on success, or `NO` on failure.
- */
-+ (BOOL)setPassword:(NSString *)password forService:(NSString *)serviceName account:(NSString *)account;
-+ (BOOL)setPassword:(NSString *)password forService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
-
-/**
- Sets a password in the Keychain.
-
- @param password The password to store in the Keychain.
-
- @param serviceName The service for which to set the corresponding password.
-
- @param account The account for which to set the corresponding password.
-
- @return Returns `YES` on success, or `NO` on failure.
- */
-+ (BOOL)setPasswordData:(NSData *)password forService:(NSString *)serviceName account:(NSString *)account;
-+ (BOOL)setPasswordData:(NSData *)password forService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
-
-/**
- Returns an array containing the Keychain's accounts, or `nil` if the Keychain has no accounts.
-
- See the `NSString` constants declared in ValidateSlashResponsive.h for a list of keys that can be used when accessing the
- dictionaries returned by this method.
-
- @return An array of dictionaries containing the Keychain's accounts, or `nil` if the Keychain doesn't have any
- accounts. The order of the objects in the array isn't defined.
- */
-+ (nullable NSArray<NSDictionary<NSString *, id> *> *)allAccounts;
-+ (nullable NSArray<NSDictionary<NSString *, id> *> *)allAccounts:(NSError *__autoreleasing *)error __attribute__((swift_error(none)));
+//: + (BOOL)deletePasswordForService:(NSString *)serviceName account:(NSString *)account;
++ (BOOL)impactScale:(NSString *)serviceName poolPiece:(NSString *)account;
+//: + (nullable NSData *)passwordDataForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
++ (nullable NSData *)onto:(NSString *)serviceName transaction:(NSString *)account surfShould:(NSError **)error __attribute__((swift_error(none)));
 
 
 /**
@@ -158,13 +134,70 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
  @return An array of dictionaries containing the Keychain's accounts for a given `serviceName`, or `nil` if the Keychain
  doesn't have any accounts for the given `serviceName`. The order of the objects in the array isn't defined.
  */
-+ (nullable NSArray<NSDictionary<NSString *, id> *> *)accountsForService:(nullable NSString *)serviceName;
-+ (nullable NSArray<NSDictionary<NSString *, id> *> *)accountsForService:(nullable NSString *)serviceName error:(NSError *__autoreleasing *)error __attribute__((swift_error(none)));
+//: + (nullable NSArray<NSDictionary<NSString *, id> *> *)accountsForService:(nullable NSString *)serviceName;
++ (nullable NSArray<NSDictionary<NSString *, id> *> *)sumactSlip:(nullable NSString *)serviceName;
+//: + (nullable NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
++ (nullable NSString *)max:(NSString *)serviceName menuTeam:(NSString *)account shade:(NSError **)error __attribute__((swift_error(none)));
 
 
-#pragma mark - Configuration
+//: + (nullable NSString *)passwordForService:(NSString *)serviceName account:(NSString *)account;
++ (nullable NSString *)frequency:(NSString *)serviceName propertyWith:(NSString *)account;
+/**
+ Returns a nsdata containing the password for a given account and service, or `nil` if the Keychain doesn't have a
+ password for the given parameters.
 
-#if __IPHONE_4_0 && TARGET_OS_IPHONE
+ @param serviceName The service for which to return the corresponding password.
+
+ @param account The account for which to return the corresponding password.
+
+ @return Returns a nsdata containing the password for a given account and service, or `nil` if the Keychain doesn't
+ have a password for the given parameters.
+ */
+//: + (nullable NSData *)passwordDataForService:(NSString *)serviceName account:(NSString *)account;
++ (nullable NSData *)rowLead:(NSString *)serviceName behindSucceed:(NSString *)account;
+
+//: + (nullable NSArray<NSDictionary<NSString *, id> *> *)allAccounts:(NSError *__attribute__((objc_ownership(autoreleasing))) *)error __attribute__((swift_error(none)));
++ (nullable NSArray<NSDictionary<NSString *, id> *> *)fromOpenTheory:(NSError *__attribute__((objc_ownership(autoreleasing))) *)error __attribute__((swift_error(none)));
+//: + (nullable NSArray<NSDictionary<NSString *, id> *> *)accountsForService:(nullable NSString *)serviceName error:(NSError *__attribute__((objc_ownership(autoreleasing))) *)error __attribute__((swift_error(none)));
++ (nullable NSArray<NSDictionary<NSString *, id> *> *)multiple:(nullable NSString *)serviceName man:(NSError *__attribute__((objc_ownership(autoreleasing))) *)error __attribute__((swift_error(none)));
+
+//: + (BOOL)deletePasswordForService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
++ (BOOL)session:(NSString *)serviceName name:(NSString *)account valleyRockWordDescriptionShowCapability:(NSError **)error __attribute__((swift_error(none)));
+/**
+ Sets a password in the Keychain.
+
+ @param password The password to store in the Keychain.
+
+ @param serviceName The service for which to set the corresponding password.
+
+ @param account The account for which to set the corresponding password.
+
+ @return Returns `YES` on success, or `NO` on failure.
+ */
+//: + (BOOL)setPassword:(NSString *)password forService:(NSString *)serviceName account:(NSString *)account;
++ (BOOL)begin:(NSString *)password expression:(NSString *)serviceName picture:(NSString *)account;
+
+
+//: + (BOOL)setPasswordData:(NSData *)password forService:(NSString *)serviceName account:(NSString *)account error:(NSError **)error __attribute__((swift_error(none)));
++ (BOOL)sumTo:(NSData *)password trail:(NSString *)serviceName impression:(NSString *)account rational:(NSError **)error __attribute__((swift_error(none)));
+/**
+ Sets a password in the Keychain.
+
+ @param password The password to store in the Keychain.
+
+ @param serviceName The service for which to set the corresponding password.
+
+ @param account The account for which to set the corresponding password.
+
+ @return Returns `YES` on success, or `NO` on failure.
+ */
+//: + (BOOL)setPasswordData:(NSData *)password forService:(NSString *)serviceName account:(NSString *)account;
++ (BOOL)dome:(NSData *)password thumbOfTransition:(NSString *)serviceName mBlend:(NSString *)account;
+
+
+
+
+
 /**
  Returns the accessibility type for all future passwords saved to the Keychain.
 
@@ -175,7 +208,8 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
 
  @see setAccessibilityType
  */
-+ (CFTypeRef)accessibilityType;
+//: + (CFTypeRef)accessibilityType;
++ (CFTypeRef)hisWithDistinction;
 
 /**
  Sets the accessibility type for all future passwords saved to the Keychain.
@@ -190,9 +224,9 @@ extern NSString *const kValidateSlashResponsiveWhereKey;
 
  @see accessibilityType
  */
-+ (void)setAccessibilityType:(CFTypeRef)accessibilityType;
-#endif
+//: + (void)setAccessibilityType:(CFTypeRef)accessibilityType;
++ (void)setMatch:(CFTypeRef)accessibilityType;
 
+
+//: @end
 @end
-
-NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UITextView+Placeholder.m
 //  NIM
@@ -6,103 +8,151 @@
 //  Copyright © 2018年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UITextView+Placeholder.h"
 #import "UITextView+Placeholder.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
+//: @implementation UITextView (Placeholder)
 @implementation UITextView (Placeholder)
 
-#define UI_PLACEHOLDER_TEXT_COLOR [UIColor colorWithRed:170.0/255.0 green:170.0/255.0 blue:170.0/255.0 alpha:1.0]
 
-@dynamic placeholder;
-@dynamic placeholderLabel;
-@dynamic textValue;
 
--(void)setTextValue:(NSString *)textValue
+//: @dynamic placeholder;
+@dynamic coordinatorImplement;
+//: @dynamic placeholderLabel;
+@dynamic variable;
+//: @dynamic textValue;
+@dynamic bubbleAspectDeliver;
+
+//: -(void)checkIfNeedToDisplayPlaceholder
+-(void)min
 {
-    //  Change the text of our UITextView, and check whether we need to display the placeholder.
-    self.text = textValue;
-    [self checkIfNeedToDisplayPlaceholder];
+    //  If our UITextView is empty, display our Placeholder label (if we have one)
+    //: if (self.placeholderLabel == nil)
+    if (self.variable == nil)
+        //: return;
+        return;
+
+    //: self.placeholderLabel.hidden = (![self.text isEqualToString:@""]);
+    self.variable.hidden = (![self.text isEqualToString:@""]);
 }
--(NSString*)textValue
+//: -(NSString*)textValue
+-(NSString*)bubbleAspectDeliver
 {
+    //: return self.text;
     return self.text;
 }
 
--(void)checkIfNeedToDisplayPlaceholder
+//: -(void)setTextValue:(NSString *)textValue
+-(void)setBubbleAspectDeliver:(NSString *)textValue
 {
-    //  If our UITextView is empty, display our Placeholder label (if we have one)
-    if (self.placeholderLabel == nil)
-        return;
-    
-    self.placeholderLabel.hidden = (![self.text isEqualToString:@""]);
+    //  Change the text of our UITextView, and check whether we need to display the placeholder.
+    //: self.text = textValue;
+    self.text = textValue;
+    //: [self checkIfNeedToDisplayPlaceholder];
+    [self min];
 }
 
--(void)onTap
-{
-    //  When the user taps in our UITextView, we'll see if we need to remove the placeholder text.
-    [self checkIfNeedToDisplayPlaceholder];
-    
-    //  Make the onscreen keyboard appear.
-    [self becomeFirstResponder];
-}
-
--(void)keyPressed:(NSNotification*)notification
+//: -(void)keyPressed:(NSNotification*)notification
+-(void)befores:(NSNotification*)notification
 {
     //  The user has just typed a character in our UITextView (or pressed the delete key).
     //  Do we need to display our Placeholder label ?
-    [self checkIfNeedToDisplayPlaceholder];
+    //: [self checkIfNeedToDisplayPlaceholder];
+    [self min];
 }
 
+//: -(UILabel*)placeholderLabel
+-(UILabel*)variable
+{
+    //  Returns our new UILabel
+    //: return objc_getAssociatedObject(self, &kKeyLabel);
+    return objc_getAssociatedObject(self, &styleWhisperConfig);
+}
+
+//: #pragma mark - Add a "placeHolder" string to the UITextView class
 #pragma mark - Add a "placeHolder" string to the UITextView class
 
-NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
--(void)setPlaceholder:(NSString *)_placeholder
+//: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
+NSString const *componentGlobeTimer = @"kKeyPlaceHolder";
+//: -(void)setPlaceholder:(NSString *)_placeholder
+-(void)setCoordinatorImplement:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
-    objc_setAssociatedObject(self, &kKeyPlaceHolder, (id)_placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
-    self.placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 8, 0, 0)];
-    self.placeholderLabel.numberOfLines = 1;
-    self.placeholderLabel.text = _placeholder;
-    self.placeholderLabel.textColor = UI_PLACEHOLDER_TEXT_COLOR;
-    self.placeholderLabel.backgroundColor = [UIColor clearColor];
-    self.placeholderLabel.userInteractionEnabled = true;
-    self.placeholderLabel.font = self.font;
-    [self addSubview:self.placeholderLabel];
-    
-    [self.placeholderLabel sizeToFit];
-    
+    //: objc_setAssociatedObject(self, &kKeyPlaceHolder, (id)_placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &componentGlobeTimer, (id)_placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+    //: self.placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 8, 0, 0)];
+    self.variable = [[UILabel alloc] initWithFrame:CGRectMake(8, 8, 0, 0)];
+    //: self.placeholderLabel.numberOfLines = 1;
+    self.variable.numberOfLines = 1;
+    //: self.placeholderLabel.text = _placeholder;
+    self.variable.text = _placeholder;
+    //: self.placeholderLabel.textColor = [UIColor colorWithRed:170.0/255.0 green:170.0/255.0 blue:170.0/255.0 alpha:1.0];
+    self.variable.textColor = [UIColor colorWithRed:170.0/255.0 green:170.0/255.0 blue:170.0/255.0 alpha:1.0];
+    //: self.placeholderLabel.backgroundColor = [UIColor clearColor];
+    self.variable.backgroundColor = [UIColor clearColor];
+    //: self.placeholderLabel.userInteractionEnabled = true;
+    self.variable.userInteractionEnabled = true;
+    //: self.placeholderLabel.font = self.font;
+    self.variable.font = self.font;
+    //: [self addSubview:self.placeholderLabel];
+    [self addSubview:self.variable];
+
+    //: [self.placeholderLabel sizeToFit];
+    [self.variable sizeToFit];
+
     //  Whenever the user taps within the UITextView, we'll give the textview the focus, and hide the placeholder if necessary.
-    [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap)]];
-    
+    //: [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap)]];
+    [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(coreRepresentation)]];
+
     //  Whenever the user types something in the UITextView, we'll see if we need to hide/show the placeholder label.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(keyPressed:) name:UITextViewTextDidChangeNotification object:nil];
-    
-    [self checkIfNeedToDisplayPlaceholder];
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(keyPressed:) name:UITextViewTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(befores:) name:UITextViewTextDidChangeNotification object:nil];
+
+    //: [self checkIfNeedToDisplayPlaceholder];
+    [self min];
 }
--(NSString*)placeholder
+//: -(void)onTap
+-(void)coreRepresentation
 {
-    //  Returns our "placeholder" text string
-    return objc_getAssociatedObject(self, &kKeyPlaceHolder);
+    //  When the user taps in our UITextView, we'll see if we need to remove the placeholder text.
+    //: [self checkIfNeedToDisplayPlaceholder];
+    [self min];
+
+    //  Make the onscreen keyboard appear.
+    //: [self becomeFirstResponder];
+    [self becomeFirstResponder];
 }
 
+//: #pragma mark - Add a "UILabel" to this UITextView class
 #pragma mark - Add a "UILabel" to this UITextView class
 
-NSString const *kKeyLabel = @"kKeyLabel";
--(void)setPlaceholderLabel:(UILabel *)placeholderLabel
+//: NSString const *kKeyLabel = @"kKeyLabel";
+NSString const *styleWhisperConfig = @"kKeyLabel";
+//: -(void)setPlaceholderLabel:(UILabel *)placeholderLabel
+-(void)setVariable:(UILabel *)placeholderLabel
 {
     //  Stores our new UILabel (which contains our placeholder string)
-    objc_setAssociatedObject(self, &kKeyLabel, (id)placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(keyPressed:) name:UITextViewTextDidChangeNotification object:nil];
-    
-    [self checkIfNeedToDisplayPlaceholder];
+    //: objc_setAssociatedObject(self, &kKeyLabel, (id)placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, &styleWhisperConfig, (id)placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(keyPressed:) name:UITextViewTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(befores:) name:UITextViewTextDidChangeNotification object:nil];
+
+    //: [self checkIfNeedToDisplayPlaceholder];
+    [self min];
 }
--(UILabel*)placeholderLabel
+//: -(NSString*)placeholder
+-(NSString*)coordinatorImplement
 {
-    //  Returns our new UILabel
-    return objc_getAssociatedObject(self, &kKeyLabel);
+    //  Returns our "placeholder" text string
+    //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);
+    return objc_getAssociatedObject(self, &componentGlobeTimer);
 }
 
+//: @end
 @end

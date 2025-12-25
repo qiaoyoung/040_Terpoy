@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+HideDataSwitch_internal.h
 //
@@ -20,13 +22,19 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UIViewController (HideDataSwitch_internal)
 @interface UIViewController (HideDataSwitch_internal)
 
-@property (nonatomic, strong) UINavigationBar *km_transitionNavigationBar;
+//: @property (nonatomic, strong) UINavigationBar *km_transitionNavigationBar;
+@property (nonatomic, strong) UINavigationBar *engineDecided;
 
-- (void)km_addTransitionNavigationBarIfNeeded;
+//: - (void)km_addTransitionNavigationBarIfNeeded;
+- (void)mechanism;
 
+//: @end
 @end

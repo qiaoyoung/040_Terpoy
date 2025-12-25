@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // AFHTTPSessionManager.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,12 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-#if !TARGET_OS_WATCH
+//: #import <SystemConfiguration/SystemConfiguration.h>
 #import <SystemConfiguration/SystemConfiguration.h>
-#endif
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
-
+//: #import "AFURLSessionManager.h"
 #import "AFURLSessionManager.h"
 
 /**
@@ -63,28 +67,25 @@
  @warning Managers for background sessions must be owned for the duration of their use. This can be accomplished by creating an application-wide or shared singleton instance.
  */
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface AFHTTPSessionManager : AFURLSessionManager <NSSecureCoding, NSCopying>
 @interface AFHTTPSessionManager : AFURLSessionManager <NSSecureCoding, NSCopying>
 
 /**
  The URL used to construct requests from relative paths in methods like `requestWithMethod:URLString:parameters:`, and the `GET` / `POST` / et al. convenience methods.
  */
-@property (readonly, nonatomic, strong, nullable) NSURL *baseURL;
-
-/**
- Requests created with `requestWithMethod:URLString:parameters:` & `multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:` are constructed with a set of default headers using a parameter serialization specified by this property. By default, this is set to an instance of `AFHTTPRequestSerializer`, which serializes query string parameters for `GET`, `HEAD`, and `DELETE` requests, or otherwise URL-form-encodes HTTP message bodies.
-
- @warning `requestSerializer` must not be `nil`.
- */
-@property (nonatomic, strong) AFHTTPRequestSerializer <AFURLRequestSerialization> * requestSerializer;
-
 /**
  Responses sent from the server in data tasks created with `dataTaskWithRequest:success:failure:` and run using the `GET` / `POST` / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an instance of `AFJSONResponseSerializer`.
 
  @warning `responseSerializer` must not be `nil`.
  */
-@property (nonatomic, strong) AFHTTPResponseSerializer <AFURLResponseSerialization> * responseSerializer;
+//: @property (nonatomic, strong) AFHTTPResponseSerializer <AFURLResponseSerialization> * responseSerializer;
+@property (nonatomic, strong) AFHTTPResponseSerializer <AFURLResponseSerialization> * inspectNewses;
+
+//: @property (readonly, nonatomic, strong, nullable) NSURL *baseURL;
+@property (readonly, nonatomic, strong, nullable) NSURL *reportAgrees;
 
 ///-------------------------------
 /// @name Managing Security Policy
@@ -93,16 +94,92 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The security policy used by created session to evaluate server trust for secure connections. `AFURLSessionManager` uses the `defaultPolicy` unless otherwise specified. A security policy configured with `AFSSLPinningModePublicKey` or `AFSSLPinningModeCertificate` can only be applied on a session manager initialized with a secure base URL (i.e. https). Applying a security policy with pinning enabled on an insecure session manager throws an `Invalid Security Policy` exception.
  */
-@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
-
-///---------------------
-/// @name Initialization
-///---------------------
+//: @property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
+@property (nonatomic, strong) AFSecurityPolicy *detailedTailled;
 
 /**
- Creates and returns an `AFHTTPSessionManager` object.
+ Requests created with `requestWithMethod:URLString:parameters:` & `multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:` are constructed with a set of default headers using a parameter serialization specified by this property. By default, this is set to an instance of `AFHTTPRequestSerializer`, which serializes query string parameters for `GET`, `HEAD`, and `DELETE` requests, or otherwise URL-form-encodes HTTP message bodies.
+
+ @warning `requestSerializer` must not be `nil`.
  */
-+ (instancetype)manager;
+//: @property (nonatomic, strong) AFHTTPRequestSerializer <AFURLRequestSerialization> * requestSerializer;
+@property (nonatomic, strong) AFHTTPRequestSerializer <AFURLRequestSerialization> * stepFielding;
+
+/**
+ Creates and runs an `NSURLSessionDataTask` with a `HEAD` request.
+ 
+ @param URLString The URL string used to create the request URL.
+ @param parameters The parameters to be encoded according to the client request serializer.
+ @param headers The headers appended to the default headers for this request.
+ @param success A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.
+ @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
+ 
+ @see -dataTaskWithRequest:completionHandler:
+ */
+//: - (nullable NSURLSessionDataTask *)HEAD:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)top:(NSString *)URLString
+                             //: parameters:(nullable id)parameters
+                             already:(nullable id)parameters
+                                //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                outsideResource:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                //: success:(nullable void (^)(NSURLSessionDataTask *task))success
+                                star:(nullable void (^)(NSURLSessionDataTask *task))success
+                                //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                leapDown:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+/**
+ Creates and runs an `NSURLSessionDataTask` with a `POST` request.
+ 
+ @param URLString The URL string used to create the request URL.
+ @param parameters The parameters to be encoded according to the client request serializer.
+ @param headers The headers appended to the default headers for this request.
+ @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
+ @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
+ @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
+ 
+ @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
+ */
+//: - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)openDecisionWrite:(NSString *)URLString
+                             //: parameters:(nullable id)parameters
+                             aboveKey:(nullable id)parameters
+                                //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                minimal:(nullable NSDictionary <NSString *, NSString *> *)headers
+                               //: progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                               might:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                                //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                growing:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                windNumbero:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+/**
+ Creates an `NSURLSessionDataTask` with a custom `HTTPMethod` request.
+
+ @param method The HTTPMethod string used to create the request.
+ @param URLString The URL string used to create the request URL.
+ @param parameters The parameters to be encoded according to the client request serializer.
+ @param headers The headers appended to the default headers for this request.
+ @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
+ @param downloadProgress A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.
+ @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
+ @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
+
+ @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
+ */
+//: - (nullable NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
+- (nullable NSURLSessionDataTask *)figure:(NSString *)method
+                                                //: URLString:(NSString *)URLString
+                                                wait:(NSString *)URLString
+                                               //: parameters:(nullable id)parameters
+                                               desert:(nullable id)parameters
+                                                  //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                                  exception:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                           //: uploadProgress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                                           improved:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                                         //: downloadProgress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+                                         resolveStrike:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+                                                  //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                                  below:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                                  //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                                  connectionRunning:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
  Initializes an `AFHTTPSessionManager` object with the specified base URL.
@@ -111,20 +188,31 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The newly-initialized HTTP client
  */
-- (instancetype)initWithBaseURL:(nullable NSURL *)url;
+//: - (instancetype)initWithBaseURL:(nullable NSURL *)url;
+- (instancetype)initWithExpression:(nullable NSURL *)url;
+
 
 /**
- Initializes an `AFHTTPSessionManager` object with the specified base URL.
-
- This is the designated initializer.
-
- @param url The base URL for the HTTP client.
- @param configuration The configuration used to create the managed session.
-
- @return The newly-initialized HTTP client
+ Creates and runs an `NSURLSessionDataTask` with a `PUT` request.
+ 
+ @param URLString The URL string used to create the request URL.
+ @param parameters The parameters to be encoded according to the client request serializer.
+ @param headers The headers appended to the default headers for this request.
+ @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
+ @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
+ 
+ @see -dataTaskWithRequest:completionHandler:
  */
-- (instancetype)initWithBaseURL:(nullable NSURL *)url
-           sessionConfiguration:(nullable NSURLSessionConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
+//: - (nullable NSURLSessionDataTask *)PUT:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)flexible:(NSString *)URLString
+                            //: parameters:(nullable id)parameters
+                            factory:(nullable id)parameters
+                               //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                               decision:(nullable NSDictionary <NSString *, NSString *> *)headers
+                               //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                               panel:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                               //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                               photo:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 ///---------------------------
 /// @name Making HTTP Requests
@@ -142,48 +230,73 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
  */
-- (nullable NSURLSessionDataTask *)GET:(NSString *)URLString
-                            parameters:(nullable id)parameters
-                               headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                              progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
-                               success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                               failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+//: - (nullable NSURLSessionDataTask *)GET:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)tiny:(NSString *)URLString
+                            //: parameters:(nullable id)parameters
+                            general:(nullable id)parameters
+                               //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                               highlight:(nullable NSDictionary <NSString *, NSString *> *)headers
+                              //: progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+                              tribe:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+                               //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                               dawnHeaven:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                               //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                               sign:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `HEAD` request.
+ Creates and runs an `NSURLSessionDataTask` with a `DELETE` request.
  
  @param URLString The URL string used to create the request URL.
  @param parameters The parameters to be encoded according to the client request serializer.
  @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.
+ @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
  @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
  
  @see -dataTaskWithRequest:completionHandler:
  */
-- (nullable NSURLSessionDataTask *)HEAD:(NSString *)URLString
-                             parameters:(nullable id)parameters
-                                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                                success:(nullable void (^)(NSURLSessionDataTask *task))success
-                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+//: - (nullable NSURLSessionDataTask *)DELETE:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)wealth:(NSString *)URLString
+                               //: parameters:(nullable id)parameters
+                               flash:(nullable id)parameters
+                                  //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                  camera:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                  //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                  definiteOpinion:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                  //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                  kind:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+
+///---------------------
+/// @name Initialization
+///---------------------
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `POST` request.
+ Creates and returns an `AFHTTPSessionManager` object.
+ */
+//: + (instancetype)manager;
++ (instancetype)freshMission;
+
+
+/**
+ Creates and runs an `NSURLSessionDataTask` with a `PATCH` request.
  
  @param URLString The URL string used to create the request URL.
  @param parameters The parameters to be encoded according to the client request serializer.
  @param headers The headers appended to the default headers for this request.
- @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
  @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
  @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
  
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
+ @see -dataTaskWithRequest:completionHandler:
  */
-- (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
-                             parameters:(nullable id)parameters
-                                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                               progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
-                                success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+//: - (nullable NSURLSessionDataTask *)PATCH:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)backOrShot:(NSString *)URLString
+                              //: parameters:(nullable id)parameters
+                              schedulePackage:(nullable id)parameters
+                                 //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                 hour:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                 //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                 pullWith:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                 //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                 siteLake:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
  Creates and runs an `NSURLSessionDataTask` with a multipart `POST` request.
@@ -198,88 +311,38 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
  */
-- (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
-                             parameters:(nullable id)parameters
-                                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-              constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
-                               progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
-                                success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+//: - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
+- (nullable NSURLSessionDataTask *)place:(NSString *)URLString
+                             //: parameters:(nullable id)parameters
+                             hero:(nullable id)parameters
+                                //: headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                                artistic:(nullable NSDictionary <NSString *, NSString *> *)headers
+              //: constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
+              suggestResign:(nullable void (^)(id <AFMultipartFormData> formData))block
+                               //: progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                               redValley:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
+                                //: success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                utility:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                                //: failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+                                sound:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 /**
- Creates and runs an `NSURLSessionDataTask` with a `PUT` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
+ Initializes an `AFHTTPSessionManager` object with the specified base URL.
+
+ This is the designated initializer.
+
+ @param url The base URL for the HTTP client.
+ @param configuration The configuration used to create the managed session.
+
+ @return The newly-initialized HTTP client
  */
-- (nullable NSURLSessionDataTask *)PUT:(NSString *)URLString
-                            parameters:(nullable id)parameters
-                               headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                               success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                               failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+//: - (instancetype)initWithBaseURL:(nullable NSURL *)url
+- (instancetype)initWithBehavior:(nullable NSURL *)url
+           //: sessionConfiguration:(nullable NSURLSessionConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
+           track:(nullable NSURLSessionConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
 
-/**
- Creates and runs an `NSURLSessionDataTask` with a `PATCH` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
-- (nullable NSURLSessionDataTask *)PATCH:(NSString *)URLString
-                              parameters:(nullable id)parameters
-                                 headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                                 success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
-/**
- Creates and runs an `NSURLSessionDataTask` with a `DELETE` request.
- 
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
- 
- @see -dataTaskWithRequest:completionHandler:
- */
-- (nullable NSURLSessionDataTask *)DELETE:(NSString *)URLString
-                               parameters:(nullable id)parameters
-                                  headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
-/**
- Creates an `NSURLSessionDataTask` with a custom `HTTPMethod` request.
-
- @param method The HTTPMethod string used to create the request.
- @param URLString The URL string used to create the request URL.
- @param parameters The parameters to be encoded according to the client request serializer.
- @param headers The headers appended to the default headers for this request.
- @param uploadProgress A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.
- @param downloadProgress A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.
- @param success A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.
- @param failure A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.
-
- @see -dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:
- */
-- (nullable NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
-                                                URLString:(NSString *)URLString
-                                               parameters:(nullable id)parameters
-                                                  headers:(nullable NSDictionary <NSString *, NSString *> *)headers
-                                           uploadProgress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
-                                         downloadProgress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
-                                                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-                                                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
-
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NovelStepShiftTribe.h
 // PerformAcknowledgePoolState
@@ -6,20 +8,30 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NovelStepShiftTribe : NSObject
 @interface NovelStepShiftTribe : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)domeStrength:(NSString *)ext;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)owlExclusive:(NSString *)filename;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)userDirectory;
++ (NSString *)opera;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)without;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)getAppTempPath;
++ (NSString *)representation;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)house:(NSString *)filename;
 
+//: @end
 @end

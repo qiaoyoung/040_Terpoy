@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ReflectGridConstantMutualBroad.h
 //  Terpoy
@@ -6,26 +8,38 @@
 //  Copyright © 2025 Terpoy. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @protocol ReflectGridConstantMutualBroadDelegate <NSObject>
 @protocol ReflectGridConstantMutualBroadDelegate <NSObject>
 
-- (void)didTouchDeleteSureButton;
+//: - (void)didTouchDeleteSureButton;
+- (void)handleInterval;
 
+//: @end
 @end
 
+//: @interface ReflectGridConstantMutualBroad : UIView
 @interface ReflectGridConstantMutualBroad : UIView
 
-@property (nonatomic,weak) id<ReflectGridConstantMutualBroadDelegate> delegate;
-
-/** 动画显示 */
-- (void)animationShow;
+//: @property (nonatomic,weak) id<ReflectGridConstantMutualBroadDelegate> delegate;
+@property (nonatomic,weak) id<ReflectGridConstantMutualBroadDelegate> carefulSlipsed;
 
 /** 动画关闭 */
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)snapTable;
 
+/** 动画显示 */
+//: - (void)animationShow;
+- (void)consumer;
+
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HistogramYieldIndex.h
 //  NIM
@@ -6,18 +8,28 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface HistogramYieldIndex : UIView
 @interface HistogramYieldIndex : UIView
 
-- (void)addQRCodeTarget:(id)aTarget action:(SEL)aAction;
-- (void)addAlbumTarget:(id)aTarget action:(SEL)aAction;
+//: - (void)dismissTorch;
+- (void)woman;
+//: - (void)addAlbumTarget:(id)aTarget action:(SEL)aAction;
+- (void)gradual:(id)aTarget ocean:(SEL)aAction;
 
-- (void)showTorch;
-- (void)dismissTorch;
+//: - (void)addQRCodeTarget:(id)aTarget action:(SEL)aAction;
+- (void)evenWorth:(id)aTarget dominant:(SEL)aAction;
+//: - (void)showTorch;
+- (void)realmVerse;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

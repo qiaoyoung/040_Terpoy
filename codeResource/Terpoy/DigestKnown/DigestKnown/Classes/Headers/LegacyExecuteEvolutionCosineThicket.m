@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LegacyExecuteEvolutionCosineThicket.m
 //  fanxingxue
@@ -5,36 +7,27 @@
 //  Created by 曹宇 on 2018/3/28.
 //  Copyright © 2018年 caoyu. All rights reserved.
 //
-
-#import "LegacyExecuteEvolutionCosineThicket.h"
 //#import "JPushManager.h"
 
+// __M_A_C_R_O__
+//: #import "LegacyExecuteEvolutionCosineThicket.h"
+#import "LegacyExecuteEvolutionCosineThicket.h"
 
+//: @implementation LegacyExecuteEvolutionCosineThicket
 @implementation LegacyExecuteEvolutionCosineThicket
 
 //判断是否登录
-+(BOOL)isLogin
-{
-//    if ([SearchWindowAutosavePlot standardUserDefaults].user_id.length>0) {
-//        return YES;
-//    }else{
-//        return NO;
-//    }
-    return YES;
-}
+//: + (void)saveUserInfo:(id)responseObject{
++ (void)silverRadar:(id)responseObject{
 
-
-+ (void)refrushNewData{
-    
-}
-
-+ (void)saveUserInfo:(id)responseObject{
-    
+    //: NSDictionary *resultListDict = (NSDictionary *)responseObject;
     NSDictionary *resultListDict = (NSDictionary *)responseObject;
-    
-    
+
+
+    //: NSDictionary *data = (NSDictionary *)responseObject;
     NSDictionary *data = (NSDictionary *)responseObject;
-    SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot standardUserDefaults];
+    //: SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot standardUserDefaults];
+    SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot tweenInsert];
 //    userDefaults.user_id         = [data newStringValueForKey:@"id"];
 //    userDefaults.mobile          = [data newStringValueForKey:@"mobile"];
 //    userDefaults.user_name       = [data newStringValueForKey:@"user_name"];
@@ -47,13 +40,13 @@
 //    userDefaults.freeze_deposit_money = [data newStringValueForKey:@"freeze_deposit_money"];
 //    userDefaults.freeze_guarantee_money = [data newStringValueForKey:@"freeze_guarantee_money"];
 //    userDefaults.auction_number         = [data newStringValueForKey:@"auction_number"];
-    
 
-    
-    
+
+
+
 //    AppDelegate *delegate =  (AppDelegate*)[[UIApplication sharedApplication]delegate];
 //    [delegate setRootControllerWithLoginStatus];
-    
+
 //    [[JPushManager shareManager]bindJpushId];
 //
 //    [[NSNotificationCenter defaultCenter]postNotificationName:BYLoginSucceedNotification object:nil];
@@ -66,9 +59,20 @@
 }
 
 
+//: +(BOOL)isLogin
++(BOOL)pastSelect
+{
+//    if ([SearchWindowAutosavePlot standardUserDefaults].user_id.length>0) {
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+    //: return YES;
+    return YES;
+}
 
-
-+ (void)logout{
+//: + (void)logout{
++ (void)brightWisdom{
 
 //    userDefaults.user_id         = @"";
 //    userDefaults.mobile          = @"";
@@ -85,8 +89,8 @@
 //    userDefaults.freeze_deposit_money = @"";
 //    userDefaults.freeze_guarantee_money = @"";
 //    userDefaults.auction_number = @"";
-    
-    
+
+
 //    userDefaults.headPortrait = @"";
 //    userDefaults.mobile       = @"";
 //    userDefaults.realName     = @"";
@@ -96,12 +100,12 @@
 //    userDefaults.UserPassword = @"";
 //    userDefaults.apikey       = @"";
 //    userDefaults.apisecret    = @"";
-    
+
 //    AppDelegate *delegate =  (AppDelegate*)[[UIApplication sharedApplication]delegate];
 //    [delegate setRootControllerWithLoginStatus];
-    
+
 //    [[NSNotificationCenter defaultCenter]postNotificationName:BYLoginSucceedNotification object:nil];
-    
+
 //    SK_MAIN_THREAD_START{
 //        //[BYPLVVodSDK setCacheDir];
 //
@@ -110,10 +114,7 @@
 //    }SK_MAIN_THREAD_END
 }
 
-+ (NSString *)getUserId{
-    NSString *userId = [SearchWindowAutosavePlot standardUserDefaults].accid;
-    return userId;
-}
+
 
 
 //+ (NSString *)getMobileNumber{
@@ -205,16 +206,40 @@
 //}
 
 
-+ (NSString *)getLocaleString {
-    NSString * preferredLanguage = Language_Default;
-    SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot standardUserDefaults];
-    NSString *langType = userDefaults.language;
+//: + (NSString *)getLocaleString {
++ (NSString *)net {
+    //: NSString * preferredLanguage = @"en";
+    NSString * preferredLanguage = @"en";
+    //: SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot standardUserDefaults];
+    SearchWindowAutosavePlot *userDefaults = [SearchWindowAutosavePlot tweenInsert];
+    //: NSString *langType = userDefaults.language;
+    NSString *langType = userDefaults.oval;
+    //: if (langType.length <= 0) {
     if (langType.length <= 0) {
-        preferredLanguage = Language_Default;
+        //: preferredLanguage = @"en";
+        preferredLanguage = @"en";
+    //: } else {
     } else {
+        //: preferredLanguage = langType;
         preferredLanguage = langType;
     }
+    //: return preferredLanguage;
     return preferredLanguage;
 }
 
+//: + (NSString *)getUserId{
++ (NSString *)assist{
+    //: NSString *userId = [SearchWindowAutosavePlot standardUserDefaults].accid;
+    NSString *userId = [SearchWindowAutosavePlot tweenInsert].mist;
+    //: return userId;
+    return userId;
+}
+
+
+//: + (void)refrushNewData{
++ (void)sweet{
+
+}
+
+//: @end
 @end

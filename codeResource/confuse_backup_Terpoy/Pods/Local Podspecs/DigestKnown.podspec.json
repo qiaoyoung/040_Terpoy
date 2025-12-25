@@ -1,0 +1,46 @@
+{
+  "name": "DigestKnown",
+  "version": "1.0.0",
+  "summary": "iOS DigestKnown Module.",
+  "authors": {
+    "DigestKnown": "DigestKnown.me"
+  },
+  "homepage": "DigestKnown",
+  "source": {
+    "git": "http://DigestKnown.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "requires_arc": true,
+  "source_files": "DigestKnown/Classes/**/*",
+  "resources": "DigestKnown/**/*.bundle",
+  "prefix_header_file": "DigestKnown/Classes/DigestKnown.pch",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(inherited) \"${PODS_TARGET_SRCROOT}\" \"${PODS_TARGET_SRCROOT}/DigestKnown/Classes\""
+  },
+  "vendored_frameworks": [
+    "DigestKnown/Resources/Known/NIMSDK.xcframework",
+    "DigestKnown/Resources/Known/NIMNOS.xcframework",
+    "DigestKnown/Resources/Known/NIMQuic.xcframework",
+    "DigestKnown/Resources/Known/NIMSocketRocket.xcframework"
+  ],
+  "dependencies": {
+    "Reachability": [],
+    "SDWebImageFLPlugin": [],
+    "YYImage": [],
+    "YYImage/WebP": [],
+    "LEEAlert": [],
+    "YYText": [],
+    "YYModel": [],
+    "Firebase/Core": [],
+    "Firebase/RemoteConfig": [],
+    "SSZipArchive": [],
+    "TZImagePickerController": [],
+    "SDWebImage": [],
+    "Masonry": [],
+    "FMDB": []
+  }
+}

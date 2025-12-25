@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SunnyCandidReloadContour.m
 //  sohunews
@@ -6,78 +8,117 @@
 //  Copyright © 2020 Sohu.com. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "SunnyCandidReloadContour.h"
 #import "SunnyCandidReloadContour.h"
+//: #import "EvaluateRotateAssemblePlay.h"
 #import "EvaluateRotateAssemblePlay.h"
+//: #import "BinaryDigestInterruptFill.h"
 #import "BinaryDigestInterruptFill.h"
 
-#define kLeadCompleteFlag @"LeadCompleteFlag"
-
-#define kIsDefaultUserIcon @"isDefaultUserIcon"
-#define kIsDefaultNikeName @"isDefaultNikeName"
-#define kIsDefaultUserSlogan @"isDefaultUserSlogan"
-#define kNowDate @"nowDate"
-
-
+//: @interface SunnyCandidReloadContour ()
 @interface SunnyCandidReloadContour ()
 
-@property (nonatomic, assign) BOOL isShow;
+//: @property (nonatomic, strong) EvaluateRotateAssemblePlay *leadVIEW;
+@property (nonatomic, strong) EvaluateRotateAssemblePlay *popGraph;
 
-@property (nonatomic, strong) EvaluateRotateAssemblePlay *leadVIEW;
+//: @property (nonatomic, assign) BOOL isShow;
+@property (nonatomic, assign) BOOL easySpeed;
 
+//: @end
 @end
 
+//: @implementation SunnyCandidReloadContour
 @implementation SunnyCandidReloadContour
 
-dSINGLETON_FOR_CLASS(SunnyCandidReloadContour);
+//: - (void)dismissLeadView {
+- (void)generalAcross {
 
-
-- (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
-                                           withMessage:(NSString *)msg
-                                           cancleBlock:(void (^)(void))callback
-{
-        
-    // 已经展示引导浮层
-    if (self.isShow) {
-        self.leadVIEW.title = msg;
-        [self.leadVIEW.leftwardMarqueeView reloadData];
-        [self.leadVIEW.leftwardMarqueeView start];
-        self.leadVIEW.completion   = callback;
+    //: if (!self.isShow) {
+    if (!self.easySpeed) {
+        //: return;
         return;
     }
-    
-    @weakify(self);
+
+    //: if (!self.leadVIEW) {
+    if (!self.popGraph) {
+        //: return;
+        return;
+    }
+
+    //: [self.leadVIEW p_dismiss];
+    [self.popGraph qualityData];
+    //: self.leadVIEW = nil;
+    self.popGraph = nil;
+
+};
+
+
+//: - (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
+- (void)praise:(UIView *)superView
+                                           //: withMessage:(NSString *)msg
+                                           error:(NSString *)msg
+                                           //: cancleBlock:(void (^)(void))callback
+                                           searched:(void (^)(void))callback
+{
+
+    // 已经展示引导浮层
+    //: if (self.isShow) {
+    if (self.easySpeed) {
+        //: self.leadVIEW.title = msg;
+        self.popGraph.running = msg;
+        //: [self.leadVIEW.leftwardMarqueeView reloadData];
+        [self.popGraph.net show];
+        //: [self.leadVIEW.leftwardMarqueeView start];
+        [self.popGraph.net select];
+        //: self.leadVIEW.completion = callback;
+        self.popGraph.depthPrevious = callback;
+        //: return;
+        return;
+    }
+
+    @
+     //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+     autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+                  ;
+    //: void (^finishShow)(CalmKeyframePrism type) = ^(CalmKeyframePrism type){
     void (^finishShow)(CalmKeyframePrism type) = ^(CalmKeyframePrism type){
-      
+
+        //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-          
-            @strongify(self);
-            self.isShow = YES;
-            self.leadVIEW = [EvaluateRotateAssemblePlay showTipViewForCompletingUserInfolWithDelay:0 superView:superView CalmKeyframePrism:(type) withMessage:msg trueBlock:^{
+
+            @
+             //: try{} @finally{} __typeof__(self) self = __weak_self__;
+             try{} @finally{} __typeof__(self) self = __weak_self__;
+                            ;
+            //: self.isShow = YES;
+            self.easySpeed = YES;
+            //: self.leadVIEW = [EvaluateRotateAssemblePlay showTipViewForCompletingUserInfolWithDelay:0 superView:superView CalmKeyframePrism:(type) withMessage:msg trueBlock:^{
+            self.popGraph = [EvaluateRotateAssemblePlay tingAcrossFuse:0 mission:superView tense:(type) sink:msg shade:^{
+                //: !callback ? : callback();
                 !callback ? : callback();
-            } cancleBlock:^{
-                @strongify(self);
-                self.isShow = NO;
+            //: } cancleBlock:^{
+            } gender:^{
+                @
+                 //: try{} @finally{} __typeof__(self) self = __weak_self__;
+                 try{} @finally{} __typeof__(self) self = __weak_self__;
+                                ;
+                //: self.isShow = NO;
+                self.easySpeed = NO;
+            //: }];
             }];
+        //: });
         });
+    //: };
     };
-    
+
+    //: finishShow(CalmKeyframePrism_headicon);
     finishShow(CalmKeyframePrism_headicon);
 
 }
 
-- (void)dismissLeadView {
-    
-    if (!self.isShow) {
-        return;
-    }
-    
-    if (!self.leadVIEW) {
-        return;
-    }
-    
-    [self.leadVIEW p_dismiss];
-    self.leadVIEW = nil;
-    
-}
+//: + (instancetype)sharedInstance { static SunnyCandidReloadContour *sharedSunnyCandidReloadContour = nil; static dispatch_once_t pred; _dispatch_once(&pred, ^{ sharedSunnyCandidReloadContour = [[SunnyCandidReloadContour alloc] init]; }); return sharedSunnyCandidReloadContour; };
++ (instancetype)anMinimal { static SunnyCandidReloadContour *sharedSunnyCandidReloadContour = nil; static dispatch_once_t pred; _dispatch_once(&pred, ^{ sharedSunnyCandidReloadContour = [[SunnyCandidReloadContour alloc] init]; }); return sharedSunnyCandidReloadContour; }
 
+//: @end
 @end

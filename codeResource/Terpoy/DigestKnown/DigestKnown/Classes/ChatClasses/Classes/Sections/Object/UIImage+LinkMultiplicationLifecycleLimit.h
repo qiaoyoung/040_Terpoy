@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIImage+LinkMultiplicationLifecycleLimit.h
 //  sohunews
@@ -6,10 +8,14 @@
 //  Copyright © 2018 Sohu.com. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface UIImage (LinkMultiplicationLifecycleLimit)
 @interface UIImage (LinkMultiplicationLifecycleLimit)
 
 
@@ -19,12 +25,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param maxLength max
  @return back data
  */
-- (NSData *)compressQualityWithMaxLength:(NSInteger)maxLength ;
+//: - (NSData *)compressWithMaxLength:(NSUInteger)maxLength;
+- (NSData *)on:(NSUInteger)maxLength;
 
 
-- (NSData *)compressWithMaxLength:(NSUInteger)maxLength;
+//: - (NSData *)compressQualityWithMaxLength:(NSInteger)maxLength ;
+- (NSData *)wander:(NSInteger)maxLength ;
 
-- (NSData *)compressionQualityCompress;
+//: - (NSData *)compressionQualityCompress;
+- (NSData *)anyWarehouseCommon;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

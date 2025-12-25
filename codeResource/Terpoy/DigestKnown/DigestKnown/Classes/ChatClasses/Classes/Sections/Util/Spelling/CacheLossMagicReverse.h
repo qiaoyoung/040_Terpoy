@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DividerAbortMixer.h
 //  NIM
@@ -6,21 +8,35 @@
 //  Copyright (c) 2013年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface CollectionSchemaDecodeAction : NSObject
 @interface CollectionSchemaDecodeAction : NSObject
-@property (nonatomic,strong)    NSString *fullSpelling;
-@property (nonatomic,strong)    NSString *shortSpelling;
+//: @property (nonatomic,strong) NSString *fullSpelling;
+@property (nonatomic,strong) NSString *ray;
+//: @property (nonatomic,strong) NSString *shortSpelling;
+@property (nonatomic,strong) NSString *group;
+//: @end
 @end
 
+//: @interface CacheLossMagicReverse : NSObject
 @interface CacheLossMagicReverse : NSObject
 {
-    NSMutableDictionary *_spellingCache;    //全拼，简称cache
-    NSString *_filepath;
+    //: NSMutableDictionary *_spellingCache; 
+    NSMutableDictionary *_consumer; //全拼，简称cache
+    //: NSString *_filepath;
+    NSString *_variable;
 }
-+ (CacheLossMagicReverse *)sharedCenter;
-- (void)saveSpellingCache;          //写入缓存
+//: + (CacheLossMagicReverse *)sharedCenter;
++ (CacheLossMagicReverse *)book;
+//: - (void)saveSpellingCache; 
+- (void)accept; //写入缓存
 
-- (CollectionSchemaDecodeAction *)spellingForString: (NSString *)source;    //全拼，简拼 (全是小写)
-- (NSString *)firstLetter: (NSString *)input;               //首字母
+//: - (CollectionSchemaDecodeAction *)spellingForString: (NSString *)source; 
+- (CollectionSchemaDecodeAction *)question: (NSString *)source; //全拼，简拼 (全是小写)
+//: - (NSString *)firstLetter: (NSString *)input; 
+- (NSString *)anti: (NSString *)input; //首字母
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RelayCascadeSpokeVision.h
 //  PlotKeyframeLandSubmit
@@ -5,6 +7,10 @@
 //  Created by aier on 15-3-22.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
+
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 /*
  
@@ -30,21 +36,31 @@
 
 
 
-#import <UIKit/UIKit.h>
 
+
+//: @interface RelayCascadeSpokeVision : UICollectionViewCell
 @interface RelayCascadeSpokeVision : UICollectionViewCell
 
-@property (weak, nonatomic) UIImageView *imageView;
-@property (copy, nonatomic) NSString *title;
+//: @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
+@property (nonatomic, strong) UIColor *fireMajor;
+//: @property (nonatomic, assign) BOOL showGradient;
+@property (nonatomic, assign) BOOL neutralLabel;
 
-@property (nonatomic, strong) UIColor *titleLabelTextColor;
-@property (nonatomic, strong) UIFont *titleLabelTextFont;
-@property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
-@property (nonatomic, assign) CGFloat titleLabelHeight;
+//: @property (nonatomic, assign) CGFloat titleLabelHeight;
+@property (nonatomic, assign) CGFloat associateCrop;
+//: @property (nonatomic, assign) BOOL hasConfigured;
+@property (nonatomic, assign) BOOL exit;
+//: @property (nonatomic, strong) UIFont *titleLabelTextFont;
+@property (nonatomic, strong) UIFont *candid;
+//: @property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *positive;
 
-@property (nonatomic, assign) BOOL hasConfigured;
+//: @property (weak, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) UIImageView *secret;
 
-@property (nonatomic, assign) BOOL showGradient;
+//: @property (nonatomic, strong) UIColor *titleLabelTextColor;
+@property (nonatomic, strong) UIColor *triumph;
 
 
+//: @end
 @end

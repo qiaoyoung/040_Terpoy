@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CautiousMindDraw.h
 //  Terpoy
@@ -6,14 +8,21 @@
 //  Copyright © 2025 Terpoy. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface CautiousMindDraw : UIViewController
 @interface CautiousMindDraw : UIViewController
 
-@property (nonatomic,strong) NSString *accountName;
+//: @property (nonatomic,strong) NSString *accountName;
+@property (nonatomic,strong) NSString *whiteDimension;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

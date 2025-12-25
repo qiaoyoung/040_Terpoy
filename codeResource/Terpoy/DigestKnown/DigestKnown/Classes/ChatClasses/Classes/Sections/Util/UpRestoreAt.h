@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UpRestoreAt.h
 //  NIM
@@ -6,20 +8,29 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UpRestoreAt : NSObject
 @interface UpRestoreAt : NSObject
 
-+ (UpRestoreAt *)currentDevice;
-
 /// 语言
-+ (NSString *)language;
+//: + (NSString *)language;
++ (NSString *)tableDesert;
+
+//: - (CGFloat)compressQuality;
+- (CGFloat)acceptableSunny;
+
+//: - (CGFloat)statusBarHeight;
+- (CGFloat)become;
 
 //图片/音频推荐参数
-- (CGFloat)suggestImagePixels;
+//: - (CGFloat)suggestImagePixels;
+- (CGFloat)information;
 
-- (CGFloat)compressQuality;
+//: + (UpRestoreAt *)currentDevice;
++ (UpRestoreAt *)pressStartingFluent;
 
-- (CGFloat)statusBarHeight;
-
+//: @end
 @end

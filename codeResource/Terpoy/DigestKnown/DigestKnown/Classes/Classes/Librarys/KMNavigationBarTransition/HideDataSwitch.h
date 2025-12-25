@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HideDataSwitch.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for HideDataSwitch.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double HideDataSwitchVersionNumber;
 FOUNDATION_EXPORT double HideDataSwitchVersionNumber;
 
 //! Project version string for HideDataSwitch.
+//: FOUNDATION_EXPORT const unsigned char HideDataSwitchVersionString[];
 FOUNDATION_EXPORT const unsigned char HideDataSwitchVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <HideDataSwitch/PublicHeader.h>
 
+//: #import <HideDataSwitch/UINavigationController+HideDataSwitch.h>
 #import <HideDataSwitch/UINavigationController+HideDataSwitch.h>

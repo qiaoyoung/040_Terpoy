@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LogicalDebounceBadgeYoung.h
 //  AroundEnforceListShard
@@ -6,10 +8,15 @@
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "HardBehindMetricsConverge.h"
 #import "HardBehindMetricsConverge.h"
 
+//: @interface LogicalDebounceBadgeYoung : HardBehindMetricsConverge
 @interface LogicalDebounceBadgeYoung : HardBehindMetricsConverge
 
-@property (nonatomic, strong) UIColor *dotColor;
+//: @property (nonatomic, strong) UIColor *dotColor;
+@property (nonatomic, strong) UIColor *songVessel;
 
+//: @end
 @end
