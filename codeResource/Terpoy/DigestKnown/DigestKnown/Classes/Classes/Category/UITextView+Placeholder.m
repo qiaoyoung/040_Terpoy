@@ -20,7 +20,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic coordinatorImplement;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic variable;
 //: @dynamic textValue;
@@ -77,8 +77,7 @@
 
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *componentGlobeTimer = @"kKeyPlaceHolder";
-//: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setCoordinatorImplement:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
@@ -147,7 +146,7 @@ NSString const *styleWhisperConfig = @"kKeyLabel";
     [self min];
 }
 //: -(NSString*)placeholder
--(NSString*)coordinatorImplement
+-(NSString*)placeholder
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);

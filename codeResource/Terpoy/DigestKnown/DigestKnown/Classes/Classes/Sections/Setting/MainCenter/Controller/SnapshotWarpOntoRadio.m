@@ -193,7 +193,7 @@ typedef struct {
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _sessionView.textColor = [UIColor readReach:[Water_Data dataTreasureName]];
         //: _textView.placeholder = [PoolFormatStructure getTextWithKey:@"activity_set_bio_title"];
-        _sessionView.coordinatorImplement = [PoolFormatStructure dimension:[Water_Data layoutLogicalError]];
+        _sessionView.placeholder = [PoolFormatStructure dimension:[Water_Data layoutLogicalError]];
         //: _textView.delegate = self;
         _sessionView.delegate = self;
 //        _textView.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);

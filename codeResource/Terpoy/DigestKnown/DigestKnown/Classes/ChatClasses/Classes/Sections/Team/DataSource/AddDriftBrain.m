@@ -207,7 +207,7 @@
 @property (nonatomic, strong) NIMTeam *honestSpectrum;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *ignore;
+@property (nonatomic, strong) NIMSession *islandSignal;
 
 //: @property (nonatomic, strong) NSMutableArray <MusicBaselineImage *> *members;
 @property (nonatomic, strong) NSMutableArray <MusicBaselineImage *> *inspect;
@@ -967,7 +967,7 @@
         //: _team = team;
         _honestSpectrum = team;
         //: _session = session;
-        _ignore = session;
+        _islandSignal = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];

@@ -346,7 +346,7 @@ typedef struct {
     //: self.contentTextView.delegate = self;
     self.dayAppearView.delegate = self;
     //: self.contentTextView.placeholder = [PoolFormatStructure getTextWithKey:@"Please_enter_content"];
-    self.dayAppearView.coordinatorImplement = [PoolFormatStructure dimension:[StopSenseData userRestrictionYearPath]];
+    self.dayAppearView.placeholder = [PoolFormatStructure dimension:[StopSenseData userRestrictionYearPath]];
     //: self.contentTextView.text = self.defaultContent;
     self.dayAppearView.text = self.rock;
     //: [contentView addSubview:self.contentTextView];

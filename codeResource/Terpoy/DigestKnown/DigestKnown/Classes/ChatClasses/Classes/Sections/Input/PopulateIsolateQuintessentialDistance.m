@@ -555,7 +555,7 @@ PrimaryCanvasData colorAssetScopeEvent = (PrimaryCanvasData){24, (Byte []){123, 
     self.calculate.commandWall.calculate = nil;
 
     //: NSString *placeholder = [PerformAcknowledgePoolState sharedKit].config.placeholder;
-    NSString *placeholder = [PerformAcknowledgePoolState rock].allowException.coordinatorImplement;
+    NSString *placeholder = [PerformAcknowledgePoolState rock].allowException.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_calculate setSearch:placeholder];
 

@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation ProtocolEntropyShortcutSkirt
 
 //: @synthesize placeholder = _placeholder;
-@synthesize coordinatorImplement = _section;
+@synthesize placeholder = _section;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize variable = _genuine;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -249,8 +249,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     return CGRectMake(placeholderInsets.left, placeholderInsets.top, maxWidth, expectedSize.height);
 }
 
-//: -(void)setPlaceholder:(NSString *)placeholder
--(void)setCoordinatorImplement:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
     _section = placeholder;

@@ -109,8 +109,7 @@ static const void *globalDetectModelHelper = &globalDetectModelHelper;
     objc_setAssociatedObject(self, componentOriginalDecorateConfig, [NSString stringWithFormat:@"%lf", minHeight], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-//: - (void)setPlaceholder:(NSString *)placeholder
-- (void)setCoordinatorImplement:(NSString *)placeholder
+- (void)setPlaceholder:(NSString *)placeholder
 {
     // 为placeholder赋值
     //: [self placeholderView].text = placeholder;
@@ -147,7 +146,7 @@ static const void *globalDetectModelHelper = &globalDetectModelHelper;
 }
 
 //: - (NSString *)placeholder
-- (NSString *)coordinatorImplement
+- (NSString *)placeholder
 {
     // 如果有placeholder值才去调用，这步很重要
     //: if (self.placeholderExist) {

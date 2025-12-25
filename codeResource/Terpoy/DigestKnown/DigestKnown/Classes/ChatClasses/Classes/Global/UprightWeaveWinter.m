@@ -504,7 +504,7 @@ typedef struct {
     //: _recordMaxDuration = 60.f;
     _distinctive = 60.f;
     //: _placeholder = [PoolFormatStructure getTextWithKey:@"message_please_enter_content"];
-    _coordinatorImplement = [PoolFormatStructure dimension:[[File_Data sharedInstance] commonStayAlert]];//@"请输入消息".;
+    _placeholder = [PoolFormatStructure dimension:[[File_Data sharedInstance] commonStayAlert]];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _mendCollection = 1000;
     //: _nickFont = [UIFont boldSystemFontOfSize:15];

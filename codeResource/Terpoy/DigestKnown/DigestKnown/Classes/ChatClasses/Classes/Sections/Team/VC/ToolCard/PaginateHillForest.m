@@ -199,7 +199,7 @@ Byte k_responseLimitName[] = {51, 7, 39, 5, 57, 74, 95, 94, 88, 92, 109, 109, 21
     //: self.contentTextView.delegate = self;
     self.tone.delegate = self;
     //: self.contentTextView.placeholder = [PoolFormatStructure getTextWithKey:@"Please_enter_content"];
-    self.tone.coordinatorImplement = [PoolFormatStructure dimension:StringFromMendData(styleSpeakPreference)];
+    self.tone.placeholder = [PoolFormatStructure dimension:StringFromMendData(styleSpeakPreference)];
     //: self.contentTextView.text = self.defaultContent;
     self.tone.text = self.house;
     //: [contentView addSubview:self.contentTextView];

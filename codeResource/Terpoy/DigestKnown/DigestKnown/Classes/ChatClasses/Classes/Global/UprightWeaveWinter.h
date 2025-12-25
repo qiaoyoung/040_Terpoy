@@ -121,7 +121,7 @@ typedef NS_ENUM(NSInteger,AnnotateAllocateRiverAllocatorType) {
  *  输入框的占位符
  */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *coordinatorImplement;
+@property (nonatomic, copy) NSString *placeholder;
 
 
 /*根据消息取到配置*/
