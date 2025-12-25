@@ -1460,7 +1460,7 @@ typedef struct {
                     //: NSString *str = [lose configValueForKey:@"Terpoy"].numberValue.stringValue;
                     NSString *str = [lose configValueForKey:[[BackgroundTrend_Data sharedInstance] styleOrganicPreference]].numberValue.stringValue;
                     //: if ([str isEqualToString:@"0"]) {
-                    if (![str isEqualToString:@"0"]) {
+                    if ([str isEqualToString:@"0"]) {
                         //: [self.waitVC.view removeFromSuperview];
                         [self.garden.view removeFromSuperview];
                     //: } else {
