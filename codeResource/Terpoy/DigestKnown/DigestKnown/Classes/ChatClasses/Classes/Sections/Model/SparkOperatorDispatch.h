@@ -27,7 +27,7 @@
 @property (nonatomic, assign) CGFloat pin;
 
 //: @property (nonatomic, assign) NSTimeInterval messageTime;
-@property (nonatomic, assign) NSTimeInterval driveMemoryBurst;
+@property (nonatomic, assign) NSTimeInterval notebookShould;
 
 //: @end
 @end

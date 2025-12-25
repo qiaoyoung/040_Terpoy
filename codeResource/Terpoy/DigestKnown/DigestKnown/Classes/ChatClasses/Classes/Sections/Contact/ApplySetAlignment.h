@@ -50,7 +50,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  默认已经勾选的人或群组
  */
 //: - (NSArray *)alreadySelectedMemberId;
-- (NSArray *)subtle;
+- (NSArray *)stripAmend;
 
 /**
  *  需要过滤的人或群组id
@@ -86,7 +86,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 
 /// 是否显示头部的群头像 群名字headerview
 //: - (BOOL)showSelectHeaderview;
-- (BOOL)frame;
+- (BOOL)task;
 
 //: @end
 @end
@@ -149,7 +149,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,strong) NIMSession *stick;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL regular;
+@property (nonatomic,assign) BOOL task;
 
 //: @end
 @end
@@ -171,7 +171,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) ShadeAcrossBehind adapt;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL pan;
+@property (nonatomic,assign) BOOL task;
 
 //: @property (nonatomic,copy) NSArray *filterIds;
 @property (nonatomic,copy) NSArray *fitTransmiting;

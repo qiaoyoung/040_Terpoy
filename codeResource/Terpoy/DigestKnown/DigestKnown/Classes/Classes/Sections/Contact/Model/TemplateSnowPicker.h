@@ -16,11 +16,11 @@
 @protocol IvorySuperHumane <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)spoke;
+- (NSString *)plot;
 //: - (NSString *)memberId;
-- (NSString *)entity;
+- (NSString *)shade;
 //: - (id)sortKey;
-- (id)signer;
+- (id)transmit;
 
 //: @end
 @end

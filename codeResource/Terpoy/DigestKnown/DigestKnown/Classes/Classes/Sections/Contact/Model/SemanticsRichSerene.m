@@ -81,7 +81,7 @@
 }
 
 //: - (id)sortKey {
-- (id)quit {
+- (id)transmit {
     //: return [[DividerAbortMixer sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[DividerAbortMixer wild] tiny:self.info.circle].notice;
 }
@@ -104,7 +104,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)transport{
+- (NSString *)always{
     //: return self.info.showName;
     return self.info.circle;
 }
@@ -116,13 +116,13 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)account{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.pin;
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)seek {
+- (NSString *)plot {
     //: NSString *title = [[DividerAbortMixer sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[DividerAbortMixer wild] roundEqualNeed:self.info.circle].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -147,13 +147,13 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)task{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
 
 //: - (NSString *)memberId{
-- (NSString *)skirt{
+- (NSString *)shade{
     //: return self.info.infoId;
     return self.info.pin;
 }

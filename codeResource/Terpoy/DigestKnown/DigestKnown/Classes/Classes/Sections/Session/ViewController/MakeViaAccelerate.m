@@ -2012,7 +2012,7 @@ LevelCornerDensePinNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(WidescreenEvaluateResponsiveInside *)item
-- (void)dawnLeaf:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemReply:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self spokeReplaceHard];
@@ -2020,7 +2020,7 @@ LevelCornerDensePinNextDelegate>
     if ([self.content respondsToSelector:@selector(setPhotoBrillianted:)])
     {
         //: [self.sessionConfig setThreadMessage:menuMessage];
-        [self.content setNeutral:menuMessage];
+        [self.content setPhotoBrillianted:menuMessage];
     }
 
     //: [self.sessionInputView refreshStatus:ImmenseNatureBalanceText];
@@ -2105,7 +2105,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(WidescreenEvaluateResponsiveInside *)item
-- (void)amid:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemTranslation:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -2209,7 +2209,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(WidescreenEvaluateResponsiveInside *)item
-- (void)isPriority:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemDelete:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -2637,7 +2637,7 @@ LevelCornerDensePinNextDelegate>
 
 
 //: - (void)onTapMenuItemMutiSelect:(WidescreenEvaluateResponsiveInside *)item
-- (void)basicAcross:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemMutiSelect:(WidescreenEvaluateResponsiveInside *)item
 {
     //: [self switchUIWithSessionState:OperatorSchemaDisableKernelSturdySelect];
     [self assembleAssign:OperatorSchemaDisableKernelSturdySelect];
@@ -2852,7 +2852,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (id<MeritTaskFunctionArray>)sessionConfig
-- (id<MeritTaskFunctionArray>)content
+- (id<MeritTaskFunctionArray>)detailTurn
 {
     //: if (_sessionConfig == nil) {
     if (_content == nil) {
@@ -2916,7 +2916,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemPin:(WidescreenEvaluateResponsiveInside *)item
-- (void)collapse:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemPin:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -3010,7 +3010,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)section:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -3090,7 +3090,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemForword:(WidescreenEvaluateResponsiveInside *)item
-- (void)ground:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemForword:(WidescreenEvaluateResponsiveInside *)item
 {
     //: PetiteFrequencyHandy *vc = [[PetiteFrequencyHandy alloc]init];
     PetiteFrequencyHandy *vc = [[PetiteFrequencyHandy alloc]init];
@@ -3101,7 +3101,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemUnpin:(WidescreenEvaluateResponsiveInside *)item
-- (void)uponMerit:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemUnpin:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -3172,14 +3172,14 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemAudio2Text:(WidescreenEvaluateResponsiveInside *)item
-- (void)less:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemAudio2Text:(WidescreenEvaluateResponsiveInside *)item
 {
 
 }
 
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)unit:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -3246,7 +3246,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(WidescreenEvaluateResponsiveInside *)item
-- (void)attribute:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemRevoke:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -3272,7 +3272,7 @@ LevelCornerDensePinNextDelegate>
 }
 
 //: - (void)onTapMenuItemMark:(WidescreenEvaluateResponsiveInside *)item
-- (void)shade:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemMark:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];
@@ -4155,7 +4155,7 @@ LevelCornerDensePinNextDelegate>
 
 
 //: - (void)onTapMenuItemReport:(WidescreenEvaluateResponsiveInside *)item
-- (void)sink:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemReport:(WidescreenEvaluateResponsiveInside *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.seek];
@@ -4505,7 +4505,7 @@ LevelCornerDensePinNextDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)piece:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;

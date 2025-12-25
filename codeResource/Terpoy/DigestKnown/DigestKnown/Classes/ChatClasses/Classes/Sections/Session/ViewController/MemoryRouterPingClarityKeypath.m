@@ -770,7 +770,7 @@ typedef struct {
 }
 
 //: - (void)onTapMenuItemCopy:(WidescreenEvaluateResponsiveInside *)item
-- (void)behindSteam:(WidescreenEvaluateResponsiveInside *)item
+- (void)onTapMenuItemCopy:(WidescreenEvaluateResponsiveInside *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self spokeReplaceHard];

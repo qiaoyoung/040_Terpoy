@@ -110,7 +110,7 @@ Byte themeUmpTimer[] = {71, 20, 45, 14, 37, 162, 177, 90, 239, 194, 57, 69, 203,
         //: SparkOperatorDispatch *model = (SparkOperatorDispatch *)data;
         SparkOperatorDispatch *model = (SparkOperatorDispatch *)data;
         //: [_timeLabel setText:[NumberJungleEntity showTime:model.messageTime showDetail:YES]];
-        [_work setText:[NumberJungleEntity moreAgile:model.driveMemoryBurst related:YES]];
+        [_work setText:[NumberJungleEntity moreAgile:model.notebookShould related:YES]];
     }
 }
 

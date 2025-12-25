@@ -53,7 +53,7 @@ ObserverDawn_Data screenLineNameResource = (ObserverDawn_Data){29, (Byte []){86,
 }
 
 //: @property (nonatomic,weak) id<SurgeFeasibleDuplicateDry> delegate;
-@property (nonatomic,weak) id<SurgeFeasibleDuplicateDry> carefulSlipsed;
+@property (nonatomic,weak) id<SurgeFeasibleDuplicateDry> tailCollection;
 
 //: @property (nonatomic,strong) UIRefreshControl *refreshControl;
 @property (nonatomic,strong) UIRefreshControl *sendPrimary;
@@ -253,10 +253,10 @@ ObserverDawn_Data screenLineNameResource = (ObserverDawn_Data){29, (Byte []){86,
 - (void)steamGravity:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.carefulSlipsed respondsToSelector:@selector(canvasNotice)])
+    if ([self.tailCollection respondsToSelector:@selector(canvasNotice)])
     {
         //: [self.delegate onRefresh];
-        [self.carefulSlipsed canvasNotice];
+        [self.tailCollection canvasNotice];
     }
 }
 

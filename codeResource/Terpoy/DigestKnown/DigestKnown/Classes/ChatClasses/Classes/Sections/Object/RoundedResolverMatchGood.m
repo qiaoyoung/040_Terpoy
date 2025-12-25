@@ -193,7 +193,7 @@ dispatch_queue_t demandAnti()
 @interface RoundedResolverMatchGood()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
-@property (nonatomic,strong) NIMMessage *state;
+@property (nonatomic,strong) NIMMessage *deleteOnto;
 
 //: @property (nonatomic,strong) DeltaUniqueStableBeautify *mediaFetcher;
 @property (nonatomic,strong) DeltaUniqueStableBeautify *fair;
@@ -502,10 +502,10 @@ dispatch_queue_t demandAnti()
         }];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.child respondsToSelector:@selector(photoBrillianted)] && [self.child neutral])
+    else if ([self.child respondsToSelector:@selector(photoBrillianted)] && [self.child photoBrillianted])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.child neutral];
+        NIMMessage *threadMessage = [self.child photoBrillianted];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -605,10 +605,10 @@ dispatch_queue_t demandAnti()
                                                 error:nil];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.child respondsToSelector:@selector(photoBrillianted)] && [self.child neutral])
+    else if ([self.child respondsToSelector:@selector(photoBrillianted)] && [self.child photoBrillianted])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.child neutral];
+        NIMMessage *threadMessage = [self.child photoBrillianted];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -1807,7 +1807,7 @@ dispatch_queue_t demandAnti()
              ready:(void(^)(NSError *error))completion
 {
     //: NIMMessage *message = self.referenceMessage;
-    NIMMessage *message = self.state;
+    NIMMessage *message = self.deleteOnto;
     //: if (message)
     if (message)
     {
@@ -1827,7 +1827,7 @@ dispatch_queue_t demandAnti()
         //: }];
         }];
         //: self.referenceMessage = nil;
-        self.state = nil;
+        self.deleteOnto = nil;
     }
 }
 
@@ -2167,7 +2167,7 @@ dispatch_queue_t demandAnti()
                                                   completion:^(NSError * _Nullable error)
     {
         //: weakSelf.referenceMessage = nil;
-        weakSelf.state = nil;
+        weakSelf.deleteOnto = nil;
         //: [weakSelf refreshQuickComments:message completion:nil];
         [weakSelf beforeWith:message necessary:nil];
         //: if (completion)

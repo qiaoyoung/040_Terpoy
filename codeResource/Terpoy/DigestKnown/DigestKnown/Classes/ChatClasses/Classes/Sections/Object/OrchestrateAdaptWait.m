@@ -152,7 +152,7 @@
             //: SparkOperatorDispatch *timeModel = [[SparkOperatorDispatch alloc] init];
             SparkOperatorDispatch *timeModel = [[SparkOperatorDispatch alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.driveMemoryBurst = model.notebookShould;
+            timeModel.notebookShould = model.notebookShould;
             //: [self.items insertObject:timeModel atIndex:index];
             [self.terrain insertObject:timeModel atIndex:index];
             //: [inserts addObject:@(index)];
@@ -580,7 +580,7 @@
         //: SparkOperatorDispatch *timeModel = [[SparkOperatorDispatch alloc] init];
         SparkOperatorDispatch *timeModel = [[SparkOperatorDispatch alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.driveMemoryBurst = model.notebookShould;
+        timeModel.notebookShould = model.notebookShould;
         //: [self.items insertObject:timeModel atIndex:0];
         [self.terrain insertObject:timeModel atIndex:0];
     }

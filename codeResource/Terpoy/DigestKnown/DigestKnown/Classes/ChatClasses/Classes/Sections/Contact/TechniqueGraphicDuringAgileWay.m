@@ -392,7 +392,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.alongAcknowledge.frame) {
+    if (self.alongAcknowledge.task) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.artisticPassingFollowSucceed];
@@ -531,7 +531,7 @@
     if ([self.alongAcknowledge respondsToSelector:@selector(stripAmend)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _topic = [[self.alongAcknowledge subtle] mutableCopy];
+        _topic = [[self.alongAcknowledge stripAmend] mutableCopy];
     }
 
     //: _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];

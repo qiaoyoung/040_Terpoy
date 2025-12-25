@@ -55,7 +55,7 @@ FleetData screenEntryLandscapeConfig = (FleetData){125, (Byte []){43, 71, 1, 80,
 //        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
 //        [_activity startAnimating];
         //: self.progressView.progress = progress;
-        self.pastMind.classify = progress;
+        self.progressView.classify = progress;
     }
 
     //: [self setNeedsLayout];
@@ -143,23 +143,23 @@ FleetData screenEntryLandscapeConfig = (FleetData){125, (Byte []){43, 71, 1, 80,
 //        [self addSubview:_activity];
 
         //: self.progressView = [[ProcessShardDiagonalDrain alloc] initWithFrame:self.bounds];
-        self.pastMind = [[ProcessShardDiagonalDrain alloc] initWithFrame:self.bounds];
+        self.progressView = [[ProcessShardDiagonalDrain alloc] initWithFrame:self.bounds];
         //: self.progressView.backgroundColor = [UIColor clearColor];
-        self.pastMind.backgroundColor = [UIColor clearColor];
+        self.progressView.backgroundColor = [UIColor clearColor];
         //: self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
-        self.pastMind.translatesAutoresizingMaskIntoConstraints = NO;
+        self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
         //: self.progressView.showsText = YES;
-        self.pastMind.expectedReverse = YES;
+        self.progressView.expectedReverse = YES;
         //: self.progressView.tintColor = [UIColor colorWithHexString:@"#A148FF"];
-        self.pastMind.tintColor = [UIColor readReach:StringFromFleetData(&constAccountPath)];
+        self.progressView.tintColor = [UIColor readReach:StringFromFleetData(&constAccountPath)];
 //        self.progressView.tintColor = RGB_COLOR_String(kCommonBGColor_All);
 //        self.progressView.tintColor = [UIColor colorWithPatternImage:[PostboxReducerFont getLinearGradientImage:RGB_COLOR_String(kCommonBGColor_begin) and:RGB_COLOR_String(kCommonBGColor_end) directionType:PostboxReducerFontDirectionLevel]];
 
         //: [self addSubview:self.progressView];
-        [self addSubview:self.pastMind];
+        [self addSubview:self.progressView];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings(_pastMind);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:StringFromFleetData(&screenEntryLandscapeConfig) options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];

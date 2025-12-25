@@ -29,7 +29,7 @@
 //: @property (nonatomic, assign)CGFloat maxProgress;
 @property (nonatomic, assign)CGFloat secretFactory;
 //: @property (nonatomic, strong) ProcessShardDiagonalDrain *progressView;
-@property (nonatomic, strong) ProcessShardDiagonalDrain *pastMind;
+@property (nonatomic, strong) ProcessShardDiagonalDrain *progressView;
 
 //: - (void)setProgress:(CGFloat)progress;
 - (void)setFirst:(CGFloat)progress;

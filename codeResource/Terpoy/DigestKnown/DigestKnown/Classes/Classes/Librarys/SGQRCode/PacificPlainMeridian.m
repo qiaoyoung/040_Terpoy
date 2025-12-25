@@ -52,7 +52,7 @@
     //: if (self.link == nil) {
     if (self.power == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[ScatterPaginateTower weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.power = [CADisplayLink displayLinkWithTarget:[ScatterPaginateTower expert:self] selector:@selector(updateUI)];
+        self.power = [CADisplayLink displayLinkWithTarget:[ScatterPaginateTower expert:self] selector:@selector(recordingSignal)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.power addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }

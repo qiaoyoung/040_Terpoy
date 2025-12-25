@@ -269,7 +269,7 @@
 }
 
 //: - (id<MeritTaskFunctionArray>)sessionConfig
-- (id<MeritTaskFunctionArray>)content
+- (id<MeritTaskFunctionArray>)detailTurn
 {
     //: if (_sessionConfig == nil) {
     if (_content == nil) {
