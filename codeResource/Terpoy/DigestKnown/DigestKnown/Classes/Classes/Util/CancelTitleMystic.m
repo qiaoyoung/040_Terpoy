@@ -408,7 +408,7 @@ Storage_Data moduleSkillColumnCalculateConfig = (Storage_Data){199, (Byte []){17
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager freshMission];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.stepFielding.digitalIntactsed = 5.f;
+    sessionManager.stepFielding.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.inspectNewses.priorityTreeing = [NSSet setWithObjects:StringFromStorage_Data(&layoutEntityString), StringFromStorage_Data(&colorGlimpseSupplyPath), StringFromStorage_Data(&commonLaunchPreference), StringFromStorage_Data(&viewEqualAcrossNumber), StringFromStorage_Data(&globalDarkKey), StringFromStorage_Data(&moduleDesertWillingMessage), StringFromStorage_Data(&globalSecureResource), nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

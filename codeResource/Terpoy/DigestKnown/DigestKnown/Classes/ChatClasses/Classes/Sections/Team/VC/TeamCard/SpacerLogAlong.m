@@ -92,7 +92,7 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: cell.button.style = IsolateForesightedExpertChooserPositionerStyleBlue;
     cell.exitDisappear.loop = IsolateForesightedExpertChooserPositionerStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.exitDisappear setTitle:bodyData.alongYield forState:UIControlStateNormal];
+    [cell.exitDisappear setTitle:bodyData.pausePersonal forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -131,9 +131,9 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.dense.text = bodyData.alongYield;
+    cell.dense.text = bodyData.pausePersonal;
     //: cell.iconImageView.image = bodyData.img;
-    cell.flow.image = bodyData.assign;
+    cell.flow.image = bodyData.grave;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
@@ -214,7 +214,7 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: cell.button.style = IsolateForesightedExpertChooserPositionerStyleRed;
     cell.exitDisappear.loop = IsolateForesightedExpertChooserPositionerStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.exitDisappear setTitle:bodyData.alongYield forState:UIControlStateNormal];
+    [cell.exitDisappear setTitle:bodyData.pausePersonal forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -266,7 +266,7 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: id<RadiantPositionedSummit> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<RadiantPositionedSummit> bodyData = [self theoryInMember:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.media;
+    return bodyData.only;
 }
 //: #pragma mark - Private
 #pragma mark - Private
@@ -291,22 +291,22 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: id<RadiantPositionedSummit> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<RadiantPositionedSummit> bodyData = [self theoryInMember:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(steadyReplaces)] && bodyData.cool) {
+    if ([bodyData respondsToSelector:@selector(steadyReplaces)] && bodyData.steadyReplaces) {
         //: return;
         return;
     }
     //: if (bodyData.type == ApertureParticleStatusEnsureSelected) {
     if (bodyData.holder == ApertureParticleStatusEnsureSelected) {
         //: ProcessElmClassify *vc = [ProcessElmClassify instanceWithTitle:bodyData.title
-        ProcessElmClassify *vc = [ProcessElmClassify stable:bodyData.alongYield
+        ProcessElmClassify *vc = [ProcessElmClassify stable:bodyData.pausePersonal
                                                                                //: items:bodyData.optionItems
-                                                                               draw:bodyData.voiceGiven
+                                                                               draw:bodyData.unique
                                                                               //: result:^(id<ToastBannerStrong> _Nonnull item) {
                                                                               engineToData:^(id<ToastBannerStrong> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.background) {
+              if (bodyData.flash) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.background(item);
+                  bodyData.flash(item);
               }
           //: }];
           }];
@@ -317,11 +317,11 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
         //: if ([bodyData respondsToSelector:@selector(action)]) {
         if ([bodyData respondsToSelector:@selector(cancelBindOriginalled)]) {
             //: if (bodyData.action) {
-            if (bodyData.extent) {
+            if (bodyData.cancelBindOriginalled) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.extent];
+                [self performSelector:bodyData.cancelBindOriginalled];
                 //: } while (0);
                 } while (0);
             }
@@ -367,7 +367,7 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.alongYield,bodyData.primary];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.pausePersonal,bodyData.particle];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -376,7 +376,7 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(steadyReplaces)] && bodyData.cool) {
+    if ([bodyData respondsToSelector:@selector(steadyReplaces)] && bodyData.steadyReplaces) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -478,18 +478,18 @@ Byte commonSortVisionHelper[] = {62, 15, 94, 9, 155, 37, 115, 9, 246, 210, 191, 
     sep.hidden = (indexPath.row + 1 == [self.feedbackView numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.alongYield;
+    cell.textLabel.text = bodyData.pausePersonal;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor readReach:StringFromItemDismissData(widgetGardenEasyConfig)];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.assign;
+    cell.imageView.image = bodyData.grave;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.heap.on = bodyData.suite;
+    cell.heap.on = bodyData.merge;
     //: cell.identify = bodyData.identify;
-    cell.transit = bodyData.fabric;
+    cell.transit = bodyData.betweenDisable;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self editByPriority:cell];

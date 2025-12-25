@@ -772,9 +772,9 @@ Byte moduleSlateValue[] = {84, 3, 75, 13, 96, 178, 155, 13, 218, 81, 144, 192, 1
     AFHTTPSessionManager *manager = [LocalizeElevateModest cartOff].screenPrimary;
     // 记录原始超时时间，避免影响后续请求
     //: NSTimeInterval originalTimeout = manager.requestSerializer.timeoutInterval;
-    NSTimeInterval originalTimeout = manager.stepFielding.digitalIntactsed;
+    NSTimeInterval originalTimeout = manager.stepFielding.timeoutInterval;
     //: manager.requestSerializer.timeoutInterval = 5;
-    manager.stepFielding.digitalIntactsed = 5;
+    manager.stepFielding.timeoutInterval = 5;
     //: [manager GET:urlStr
     [manager tiny:urlStr
       //: parameters:params
@@ -788,7 +788,7 @@ Byte moduleSlateValue[] = {84, 3, 75, 13, 96, 178, 155, 13, 218, 81, 144, 192, 1
         } dawnHeaven:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
             // 恢复超时时间
             //: manager.requestSerializer.timeoutInterval = originalTimeout;
-            manager.stepFielding.digitalIntactsed = originalTimeout;
+            manager.stepFielding.timeoutInterval = originalTimeout;
             //: if (success) {
             if (success) {
                 //: success(responseObject);
@@ -798,7 +798,7 @@ Byte moduleSlateValue[] = {84, 3, 75, 13, 96, 178, 155, 13, 218, 81, 144, 192, 1
         } sign:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             // 恢复超时时间
             //: manager.requestSerializer.timeoutInterval = originalTimeout;
-            manager.stepFielding.digitalIntactsed = originalTimeout;
+            manager.stepFielding.timeoutInterval = originalTimeout;
             //: if (failed) {
             if (failed) {
                 //: failed(nil, error);

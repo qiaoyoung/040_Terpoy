@@ -253,11 +253,11 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.passage.image = [UIImage imageNamed:bodyData.scatterAcross];
+    cell.passage.image = [UIImage imageNamed:bodyData.grave];
     //: cell.titleLabel.text = bodyData.title;
-    cell.skill.text = bodyData.protection;
+    cell.skill.text = bodyData.pausePersonal;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.presentation.hidden = ![bodyData sub];
+    cell.presentation.hidden = ![bodyData skin];
 
     //: return cell;
     return cell;
@@ -487,7 +487,7 @@
         //: [items enumerateObjectsUsingBlock:^(id<ToastBannerStrong> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<ToastBannerStrong> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.sub) {
+            if (obj.skin) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.universal = idx;
             }
@@ -521,7 +521,7 @@
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setSub:selected];
+        [obj setSkin:selected];
     //: }];
     }];
     //: [self.tableView reloadData];

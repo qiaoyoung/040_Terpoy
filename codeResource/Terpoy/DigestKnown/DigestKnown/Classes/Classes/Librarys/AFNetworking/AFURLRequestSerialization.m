@@ -658,7 +658,7 @@ static NSArray * episodeTitle() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(steelCollectorsed)), NSStringFromSelector(@selector(episodeRed)), NSStringFromSelector(@selector(sourceNoveling)), NSStringFromSelector(@selector(stageVining)), NSStringFromSelector(@selector(consistentInvites)), NSStringFromSelector(@selector(digitalIntactsed))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(steelCollectorsed)), NSStringFromSelector(@selector(episodeRed)), NSStringFromSelector(@selector(sourceNoveling)), NSStringFromSelector(@selector(stageVining)), NSStringFromSelector(@selector(consistentInvites)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -915,14 +915,10 @@ static void *k_thirdValue = &k_thirdValue;
     }
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setDigitalIntactsed:(NSTimeInterval)timeoutInterval {
-    //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(digitalIntactsed))];
-    //: _timeoutInterval = timeoutInterval;
-    _digitalIntactsed = timeoutInterval;
-    //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(digitalIntactsed))];
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
+    _timeoutInterval = timeoutInterval;
+    [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
 }
 
 //: - (void)setQueryStringSerializationWithBlock:(NSString *(^)(NSURLRequest *, id, NSError *__autoreleasing *))block {

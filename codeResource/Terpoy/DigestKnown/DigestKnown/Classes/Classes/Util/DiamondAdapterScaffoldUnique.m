@@ -278,7 +278,7 @@ static AFHTTPSessionManager *componentRichHelper;
     //: _sessionManager = [AFHTTPSessionManager manager];
     componentRichHelper = [AFHTTPSessionManager freshMission];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    componentRichHelper.stepFielding.digitalIntactsed = 15.f;
+    componentRichHelper.stepFielding.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     componentRichHelper.inspectNewses.priorityTreeing = [NSSet setWithObjects:StringFromExecute_Data(&componentWindowWoodAlert), StringFromExecute_Data(&screenTransitNumber), StringFromExecute_Data(&colorDrawerPlatform), StringFromExecute_Data(&constThresholdTimer), StringFromExecute_Data(&layoutAmendValue), StringFromExecute_Data(&viewThroughoutPath), StringFromExecute_Data(&viewYieldResource), nil];
     // 打开状态栏的等待菊花
@@ -311,7 +311,7 @@ static AFHTTPSessionManager *componentRichHelper;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setDeep:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    componentRichHelper.stepFielding.digitalIntactsed = time;
+    componentRichHelper.stepFielding.timeoutInterval = time;
 }
 
 //: #pragma mark - 上传多张图片

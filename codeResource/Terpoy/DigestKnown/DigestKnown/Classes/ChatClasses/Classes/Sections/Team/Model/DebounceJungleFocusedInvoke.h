@@ -39,7 +39,7 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <ToastBannerStrong> item);
 @property(nonatomic,strong) NIMTeamCardRowSelectedBlock flash;
 
 //: @property(nonatomic,assign) ApertureParticleStatusEnsure type;
-@property(nonatomic,assign) ApertureParticleStatusEnsure signatureAgilePlain;
+@property(nonatomic,assign) ApertureParticleStatusEnsure holder;
 
 //: @property(nonatomic,assign) BOOL disableUserInteraction;
 @property(nonatomic,assign) BOOL route;

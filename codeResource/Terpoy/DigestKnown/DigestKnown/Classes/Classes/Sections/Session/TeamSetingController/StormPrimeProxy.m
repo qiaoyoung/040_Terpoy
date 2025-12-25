@@ -1008,7 +1008,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamShareCart.rowHeight = 50.f;
     teamShareCart.only = 50.f;
     //: teamShareCart.type = ApertureParticleStatusEnsureCommon;
-    teamShareCart.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamShareCart.holder = ApertureParticleStatusEnsureCommon;
 //    teamShareCart.actionDisabled = !canEdit;
     //: teamShareCart.img = [UIImage imageNamed:@"ic_card_share"];
     teamShareCart.grave = [UIImage imageNamed:StringFromBackgroundData(globalJungleGravityHelper)];
@@ -1024,7 +1024,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamMembers.rowHeight = 50.f;
     teamMembers.only = 50.f;
     //: teamMembers.type = ApertureParticleStatusEnsureCommon;
-    teamMembers.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamMembers.holder = ApertureParticleStatusEnsureCommon;
     //: teamMembers.actionDisabled = !self.canAddFriend;
     teamMembers.steadyReplaces = !self.gender;
     //: teamMembers.img = [UIImage imageNamed:@"ic_group_members"];
@@ -1041,7 +1041,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamAnnoucement.rowHeight = 50.f;
     teamAnnoucement.only = 50.f;
     //: teamAnnoucement.type = ApertureParticleStatusEnsureCommon;
-    teamAnnoucement.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamAnnoucement.holder = ApertureParticleStatusEnsureCommon;
 //    teamAnnoucement.actionDisabled = !canEdit;
     //: teamAnnoucement.img = [UIImage imageNamed:@"ic_announcement"];
     teamAnnoucement.grave = [UIImage imageNamed:StringFromBackgroundData(kAmongOntoMessage)];
@@ -1057,7 +1057,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamName.rowHeight = 50.f;
     teamName.only = 50.f;
     //: teamName.type = ApertureParticleStatusEnsureCommon;
-    teamName.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamName.holder = ApertureParticleStatusEnsureCommon;
     //: teamName.actionDisabled = !canEdit;
     teamName.steadyReplaces = !canEdit;
     //: teamName.img = [UIImage imageNamed:@"ic_group_edit"];
@@ -1075,7 +1075,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamNick.rowHeight = 50.f;
     teamNick.only = 50.f;
     //: teamNick.type = ApertureParticleStatusEnsureCommon;
-    teamNick.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamNick.holder = ApertureParticleStatusEnsureCommon;
     //: teamNick.img = [UIImage imageNamed:@"ic_group_nick"];
     teamNick.grave = [UIImage imageNamed:StringFromBackgroundData(userArchitectureValue)];
 
@@ -1090,7 +1090,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamIntro.rowHeight = 50.f;
     teamIntro.only = 50.f;
     //: teamIntro.type = ApertureParticleStatusEnsureCommon;
-    teamIntro.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamIntro.holder = ApertureParticleStatusEnsureCommon;
     //: teamIntro.actionDisabled = !canEdit;
     teamIntro.steadyReplaces = !canEdit;
     //: teamIntro.img = [UIImage imageNamed:@"ic_group_introduction"];
@@ -1116,7 +1116,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamMute.rowHeight = 50.f;
     teamMute.only = 50.f;
     //: teamMute.type = ApertureParticleStatusEnsureSwitch;
-    teamMute.signatureAgilePlain = ApertureParticleStatusEnsureSwitch;
+    teamMute.holder = ApertureParticleStatusEnsureSwitch;
     //: teamMute.optionItems = [SupremeGridlineReplayPortal teamMuteItemsWithSeleced:inAllMuteMode];
     teamMute.unique = [SupremeGridlineReplayPortal hide:inAllMuteMode];
     //: teamMute.actionDisabled = !canEdit;
@@ -1124,7 +1124,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamMute.selectedBlock = ^(id<ToastBannerStrong> item) {
     teamMute.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf towardYield:[item.artifact integerValue]];
+        [weakSelf towardYield:[item.attributeConstraint integerValue]];
     //: };
     };
     //: teamMute.identify = EmitFairySourceWatchBelowMute;
@@ -1139,7 +1139,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamMuteList.rowHeight = 50.f;
     teamMuteList.only = 50.f;
     //: teamMuteList.type = ApertureParticleStatusEnsureCommon;
-    teamMuteList.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamMuteList.holder = ApertureParticleStatusEnsureCommon;
     //: teamMuteList.action = @selector(enterMuteList);
     teamMuteList.cancelBindOriginalled = @selector(freshMuse);
     //: teamMuteList.img = [UIImage imageNamed:@"ic_card_black"];
@@ -1154,13 +1154,13 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamNotify.rowHeight = 50.f;
     teamNotify.only = 50.f;
     //: teamNotify.type = ApertureParticleStatusEnsureSelected;
-    teamNotify.signatureAgilePlain = ApertureParticleStatusEnsureSelected;
+    teamNotify.holder = ApertureParticleStatusEnsureSelected;
     //: teamNotify.optionItems = [SupremeGridlineReplayPortal notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.unique = [SupremeGridlineReplayPortal entity:self.fair.honestSpectrum.notifyStateForNewMsg];
     //: teamNotify.selectedBlock = ^(id<ToastBannerStrong> item) {
     teamNotify.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf at:[item.artifact integerValue]];
+        [weakSelf at:[item.attributeConstraint integerValue]];
     //: };
     };
     //: teamNotify.img = [UIImage imageNamed:@"ic_card_notice"];
@@ -1178,13 +1178,13 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: itemAuth.rowHeight = 50.f;
     itemAuth.only = 50.f;
     //: itemAuth.type = ApertureParticleStatusEnsureSelected;
-    itemAuth.signatureAgilePlain = ApertureParticleStatusEnsureSelected;
+    itemAuth.holder = ApertureParticleStatusEnsureSelected;
     //: itemAuth.optionItems = [SupremeGridlineReplayPortal joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
     itemAuth.unique = [SupremeGridlineReplayPortal snow:self.fair.honestSpectrum.joinMode];
     //: itemAuth.selectedBlock = ^(id<ToastBannerStrong> item) {
     itemAuth.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf body:[item.artifact integerValue]];
+        [weakSelf body:[item.attributeConstraint integerValue]];
     //: };
     };
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
@@ -1201,13 +1201,13 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: itemInvite.rowHeight = 50.f;
     itemInvite.only = 50.f;
     //: itemInvite.type = ApertureParticleStatusEnsureSelected;
-    itemInvite.signatureAgilePlain = ApertureParticleStatusEnsureSelected;
+    itemInvite.holder = ApertureParticleStatusEnsureSelected;
     //: itemInvite.optionItems = [SupremeGridlineReplayPortal InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
     itemInvite.unique = [SupremeGridlineReplayPortal current:self.fair.honestSpectrum.inviteMode];
     //: itemInvite.selectedBlock = ^(id<ToastBannerStrong> item) {
     itemInvite.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf pastPrime:[item.artifact integerValue]];
+        [weakSelf pastPrime:[item.attributeConstraint integerValue]];
     //: };
     };
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
@@ -1224,13 +1224,13 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: itemUpdateInfo.rowHeight = 50.f;
     itemUpdateInfo.only = 50.f;
     //: itemUpdateInfo.type = ApertureParticleStatusEnsureSelected;
-    itemUpdateInfo.signatureAgilePlain = ApertureParticleStatusEnsureSelected;
+    itemUpdateInfo.holder = ApertureParticleStatusEnsureSelected;
     //: itemUpdateInfo.optionItems = [SupremeGridlineReplayPortal updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.unique = [SupremeGridlineReplayPortal split:self.fair.honestSpectrum.updateInfoMode];
     //: itemUpdateInfo.selectedBlock = ^(id<ToastBannerStrong> item) {
     itemUpdateInfo.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf paint:[item.artifact integerValue]];
+        [weakSelf paint:[item.attributeConstraint integerValue]];
     //: };
     };
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
@@ -1247,13 +1247,13 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: itemBeInvite.rowHeight = 50.f;
     itemBeInvite.only = 50.f;
     //: itemBeInvite.type = ApertureParticleStatusEnsureSelected;
-    itemBeInvite.signatureAgilePlain = ApertureParticleStatusEnsureSelected;
+    itemBeInvite.holder = ApertureParticleStatusEnsureSelected;
     //: itemBeInvite.optionItems = [SupremeGridlineReplayPortal beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
     itemBeInvite.unique = [SupremeGridlineReplayPortal characterResult:self.fair.honestSpectrum.beInviteMode];
     //: itemBeInvite.selectedBlock = ^(id<ToastBannerStrong> item) {
     itemBeInvite.flash = ^(id<ToastBannerStrong> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf notice:[item.artifact integerValue]];
+        [weakSelf notice:[item.attributeConstraint integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
@@ -1268,7 +1268,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: itemTop.rowHeight = 50.f;
     itemTop.only = 50.f;
     //: itemTop.type = ApertureParticleStatusEnsureSwitch;
-    itemTop.signatureAgilePlain = ApertureParticleStatusEnsureSwitch;
+    itemTop.holder = ApertureParticleStatusEnsureSwitch;
     //: itemTop.identify = EmitFairySourceWatchBelowTop;
     itemTop.betweenDisable = EmitFairySourceWatchBelowTop;
     //: itemTop.img = [UIImage imageNamed:@"ic_group_top"];
@@ -1290,7 +1290,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
         //: itemDismiss.rowHeight = 50.f;
         itemDismiss.only = 50.f;
         //: itemDismiss.type = ApertureParticleStatusEnsureRedButton;
-        itemDismiss.signatureAgilePlain = ApertureParticleStatusEnsureRedButton;
+        itemDismiss.holder = ApertureParticleStatusEnsureRedButton;
     //: itemDismiss.img = [UIImage imageNamed:@"ic_announcement"];
     itemDismiss.grave = [UIImage imageNamed:StringFromBackgroundData(kAmongOntoMessage)];
 
@@ -1301,7 +1301,7 @@ MightProbeArenaDominantUnary,CalculateKnownExactDelegate,UINavigationControllerD
     //: teamChange.rowHeight = 50.f;
     teamChange.only = 50.f;
     //: teamChange.type = ApertureParticleStatusEnsureCommon;
-    teamChange.signatureAgilePlain = ApertureParticleStatusEnsureCommon;
+    teamChange.holder = ApertureParticleStatusEnsureCommon;
     //: teamChange.action = @selector(onMore);
     teamChange.cancelBindOriginalled = @selector(reliableTitle);
     //: teamChange.img = [UIImage imageNamed:@"ic_group_transfer"];
