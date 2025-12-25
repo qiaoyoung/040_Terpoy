@@ -131,7 +131,7 @@ typedef struct {
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.honey ? [NSURL URLWithString:info.honey] : nil;
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:info.avatarImage options:SDWebImageRetryFailed];
-    [_stemRule brilliant:url action:info.frame exceptInsertMind:SDWebImageRetryFailed];
+    [_stemRule brilliant:url action:info.avatarImage exceptInsertMind:SDWebImageRetryFailed];
 }
 
 //: - (void)addDelegate:(id)delegate{

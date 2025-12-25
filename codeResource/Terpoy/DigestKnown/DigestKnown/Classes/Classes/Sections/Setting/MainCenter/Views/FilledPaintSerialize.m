@@ -284,17 +284,17 @@
     //: self.member = member;
     self.quantityoMount = member;
     //: self.labName.text = [FaintSplendidMonster showNick:member.info.infoId inSession:nil];
-    self.on.text = [FaintSplendidMonster chipPerform:member.filter.pin beyondGrain:nil];
+    self.on.text = [FaintSplendidMonster chipPerform:member.info.pin beyondGrain:nil];
 //    [self.textLabel sizeToFit];
     //: NSURL *url;
     NSURL *url;
     //: if (member.info.avatarUrlString.length) {
-    if (member.filter.honey.length) {
+    if (member.info.honey.length) {
         //: url = [NSURL URLWithString:member.info.avatarUrlString];
-        url = [NSURL URLWithString:member.filter.honey];
+        url = [NSURL URLWithString:member.info.honey];
     }
     //: [_avatarImageView sd_setImageWithURL:url placeholderImage:member.info.avatarImage];
-    [_cart sd_setImageWithURL:url placeholderImage:member.filter.frame];
+    [_cart sd_setImageWithURL:url placeholderImage:member.info.avatarImage];
 }
 
 

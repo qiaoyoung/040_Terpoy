@@ -1306,7 +1306,7 @@ typedef struct {
     //: self.accountLabel.text = [NSString stringWithFormat:@"%@",emptyString([SearchWindowAutosavePlot standardUserDefaults].accountName)];
     self.dual.text = [NSString stringWithFormat:@"%@",processingData([SearchWindowAutosavePlot tweenInsert].pause)];
     //: [self.headerImage sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
-    [self.recentForce sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.frame];
+    [self.recentForce sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
 
 
     //: _lablang.text = self.language;
@@ -1391,7 +1391,7 @@ typedef struct {
     //: _headerImage.layer.masksToBounds = YES;
     _recentForce.layer.masksToBounds = YES;
     //: [_headerImage sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
-    [_recentForce sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.frame];
+    [_recentForce sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
 
     //: [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.scene];

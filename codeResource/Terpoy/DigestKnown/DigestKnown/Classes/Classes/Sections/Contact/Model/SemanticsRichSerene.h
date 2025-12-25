@@ -16,7 +16,7 @@
 @interface SemanticsRichSerene : NSObject
 
 //: @property (nonatomic,strong) PrioritizeObjectDeployMemberConstrain *info;
-@property (nonatomic,strong) PrioritizeObjectDeployMemberConstrain *filter;
+@property (nonatomic,strong) PrioritizeObjectDeployMemberConstrain *info;
 
 //: @end
 @end

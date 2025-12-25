@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, ShadeAcrossBehind){
  *  头像图片
  */
 //: @property (nonatomic,strong) UIImage *avatarImage;
-@property (nonatomic,strong) UIImage *frame;
+@property (nonatomic,strong) UIImage *avatarImage;
 
 
 /**

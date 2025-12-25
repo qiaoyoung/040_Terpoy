@@ -24,8 +24,8 @@ Byte kConstructTimer[] = {56, 18, 52, 5, 115, 52, 49, 45, 48, 43, 48, 49, 50, 45
 #import "SoftenedEstimateNeat.h"
 //: #import "objc/runtime.h"
 #import "objc/runtime.h"
-//: #import "SwatchLayoutEndlessPeak.h"
-#import "SwatchLayoutEndlessPeak.h"
+//:  
+ 
 //: #import "PerformAcknowledgePoolState.h"
 #import "PerformAcknowledgePoolState.h"
 //: #import "GlobalCrownArithmeticNative.h"
@@ -245,14 +245,14 @@ Byte kConstructTimer[] = {56, 18, 52, 5, 115, 52, 49, 45, 48, 43, 48, 49, 50, 45
         info = [[PerformAcknowledgePoolState rock] segmentGravity:session.sessionId wish:nil];
 //        info.avatarImage = [UIImage grayImageWithName:@"contact_group_header" color:RGB_COLOR_String(kCommonBGColor_All)];
         //: info.avatarImage = [UIImage imageNamed:@"head_default_group"];
-        info.frame = [UIImage imageNamed:StringFromTransition_Data(kConstructTimer)];
+        info.avatarImage = [UIImage imageNamed:StringFromTransition_Data(kConstructTimer)];
     //: } else if (session.sessionType == NIMSessionTypeSuperTeam) {
     } else if (session.sessionType == NIMSessionTypeSuperTeam) {
         //: info = [[PerformAcknowledgePoolState sharedKit] infoBySuperTeam:session.sessionId option:nil];
         info = [[PerformAcknowledgePoolState rock] liberalWith:session.sessionId icon:nil];
 //        info.avatarImage = [UIImage grayImageWithName:@"contact_group_header" color:RGB_COLOR_String(kCommonBGColor_All)];
         //: info.avatarImage = [UIImage imageNamed:@"head_default_group"];
-        info.frame = [UIImage imageNamed:StringFromTransition_Data(kConstructTimer)];
+        info.avatarImage = [UIImage imageNamed:StringFromTransition_Data(kConstructTimer)];
     //: } else {
     } else {
         //: GlobalCrownArithmeticNative *option = [[GlobalCrownArithmeticNative alloc] init];
@@ -263,7 +263,7 @@ Byte kConstructTimer[] = {56, 18, 52, 5, 115, 52, 49, 45, 48, 43, 48, 49, 50, 45
         info = [[PerformAcknowledgePoolState rock] nim:session.sessionId frameDown:option];
     }
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
-    [self cell:info.honey faintOn:info.frame listIn:0];
+    [self cell:info.honey faintOn:info.avatarImage listIn:0];
 }
 
 //: - (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options {
@@ -284,7 +284,7 @@ Byte kConstructTimer[] = {56, 18, 52, 5, 115, 52, 49, 45, 48, 43, 48, 49, 50, 45
     //: PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState sharedKit] infoByUser:from option:option];
     PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState rock] nim:from frameDown:option];
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
-    [self cell:info.honey faintOn:info.frame listIn:0];
+    [self cell:info.honey faintOn:info.avatarImage listIn:0];
 }
 
 //: - (CGPathRef)path

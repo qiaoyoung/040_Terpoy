@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 //: Class object_getClass(id object);
-Class greatRetain(id object);
+Class object_getClass(id object);
 
 //: @protocol StepAmbientHeroicViewDelegate;
 @protocol StepAmbientHeroicViewDelegate;

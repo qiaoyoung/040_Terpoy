@@ -1340,8 +1340,8 @@ PlazaCreatorActivityByGuardDelegate> {
         if ([contactItem respondsToSelector:@selector(deployPlanner)] && [contactItem deployPlanner].length) {
             //: SEL sel = NSSelectorFromString([contactItem selName]);
             SEL sel = NSSelectorFromString([contactItem deployPlanner]);
-            //: SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
-            SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
+            //:  ([self performSelector:sel withObject:nil]);
+             ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
         else if (contactItem.cartCircuit.length) {

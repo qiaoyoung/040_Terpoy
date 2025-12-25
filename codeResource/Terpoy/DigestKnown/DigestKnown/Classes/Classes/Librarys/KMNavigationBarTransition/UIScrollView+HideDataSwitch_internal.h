@@ -30,7 +30,8 @@
 //: @interface UIScrollView (HideDataSwitch_internal)
 @interface UIScrollView (HideDataSwitch_internal)
 
-
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior albumCan;
+@property (nonatomic, assign) BOOL fireOr;
 
 
 

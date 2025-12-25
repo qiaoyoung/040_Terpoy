@@ -47,7 +47,7 @@
     //: PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState sharedKit] infoByUser:self.userId option:nil];
     PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState rock] nim:self.keepConditionned frameDown:nil];
     //: return info.avatarImage;
-    return info.frame;
+    return info.avatarImage;
 }
 
 //: - (void)setUserType:(NIMTeamMemberType)userType {

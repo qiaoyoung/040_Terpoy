@@ -129,9 +129,7 @@ Consume_Data userThresholdMessage = (Consume_Data){25, (Byte []){19, 19, 52, 52,
 
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setLake:(id)menuModel {
-    //: _menuModel = menuModel;
-    _menuModel = menuModel;
-
+ 
     //: PopulateServiceFriendlyModel *realMenuModel = (PopulateServiceFriendlyModel *)menuModel;
     PopulateServiceFriendlyModel *realMenuModel = (PopulateServiceFriendlyModel *)menuModel;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;

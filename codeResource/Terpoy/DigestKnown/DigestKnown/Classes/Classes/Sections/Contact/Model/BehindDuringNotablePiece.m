@@ -34,7 +34,7 @@
         //: SemanticsRichSerene *contact = [[SemanticsRichSerene alloc] init];
         SemanticsRichSerene *contact = [[SemanticsRichSerene alloc] init];
         //: contact.info = info;
-        contact.filter = info;
+        contact.info = info;
         //: [contacts addObject:contact];
         [contacts addObject:contact];
     }

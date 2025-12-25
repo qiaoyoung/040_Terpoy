@@ -163,7 +163,7 @@ enum RefreshType
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.honey ? [NSURL URLWithString:info.honey] : nil;
     //: [avatar nim_setImageWithURL:url placeholderImage:info.avatarImage options:SDWebImageRetryFailed];
-    [avatar brilliant:url action:info.frame exceptInsertMind:SDWebImageRetryFailed];
+    [avatar brilliant:url action:info.avatarImage exceptInsertMind:SDWebImageRetryFailed];
     //: avatar.userId = info.infoId;
     avatar.keepConditionned = info.pin;
     //: [self addAvatarView:avatar];

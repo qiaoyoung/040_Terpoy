@@ -266,7 +266,7 @@ Byte dataBlueString[] = {38, 7, 18, 10, 88, 76, 242, 236, 3, 84, 117, 122, 115, 
     //: [_box addSubview:self.iconImageView];
     [_ratio addSubview:self.wise];
     //: [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
-    [self.wise sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.frame];
+    [self.wise sd_setImageWithURL:[NSURL URLWithString:me.userInfo.avatarUrl] placeholderImage:info.avatarImage];
     //: self.iconImageView.frame = CGRectMake(([[UIScreen mainScreen] bounds].size.width-40-60)/2, 24, 60, 60);
     self.wise.frame = CGRectMake(([[UIScreen mainScreen] bounds].size.width-40-60)/2, 24, 60, 60);
 

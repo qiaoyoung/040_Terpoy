@@ -48,7 +48,7 @@ NS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
 @property (nonatomic) IBInspectable CGFloat classify;
 
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *holderAllowInput
+@property (nonatomic) UIBlurEffect *holderAllowInput;
 //: - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
 - (void)cover:(CGFloat)progress foot:(BOOL)animated;
 

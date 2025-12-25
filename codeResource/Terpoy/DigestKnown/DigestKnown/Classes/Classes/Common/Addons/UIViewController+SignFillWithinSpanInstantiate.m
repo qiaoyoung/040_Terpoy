@@ -81,8 +81,8 @@ Byte viewDisableKey[] = {3, 11, 49, 5, 76, 166, 164, 150, 116, 157, 150, 146, 16
     BOOL use = NO;
     //: if ([self respondsToSelector:sel]) {
     if ([self respondsToSelector:sel]) {
-        //: SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
+        //:  (use = (BOOL)[self performSelector:sel]);
+         (use = (BOOL)[self performSelector:sel]);
     }
     //: return use;
     return use;

@@ -188,7 +188,7 @@
     //: if (&UIGraphicsBeginImageContextWithOptions != NULL) {
     if (&UIGraphicsBeginImageContextWithOptions != NULL) {
         //: UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-        UIGraphicsBeginImageContextWithOptions(rect.variableSecret, NO, 0);
+        UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
     }
     //    else {
     //        UIGraphicsBeginImageContext(rect.size);
@@ -202,7 +202,7 @@
         //: CGContextRotateCTM(ctx, 3.14159265358979323846264338327950288);
         CGContextRotateCTM(ctx, 3.14159265358979323846264338327950288);
         //: CGContextTranslateCTM(ctx, -rect.size.width, -rect.size.height);
-        CGContextTranslateCTM(ctx, -rect.variableSecret.width, -rect.variableSecret.height);
+        CGContextTranslateCTM(ctx, -rect.size.width, -rect.size.height);
     }
     //: CGContextDrawImage(ctx, rect, self.CGImage);
     CGContextDrawImage(ctx, rect, self.CGImage);
@@ -354,7 +354,7 @@
     NSString *dateString = [df stringFromDate:date];
 
     //: CGSize size = [dateString boundingRectWithSize:CGSizeMake(self.size.width, 1.7976931348623157e+308) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.0f]}context:nil].size;
-    CGSize size = [dateString boundingRectWithSize:CGSizeMake(self.size.width, 1.7976931348623157e+308) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.0f]}context:nil].variableSecret;
+    CGSize size = [dateString boundingRectWithSize:CGSizeMake(self.size.width, 1.7976931348623157e+308) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16.0f]}context:nil].size;
     //    [dateString sizeWithFont:[UIFont boldSystemFontOfSize:16.0f]
     //                         constrainedToSize:CGSizeMake(self.size.width, CGFLOAT_MAX)
     //                             lineBreakMode:NSLineBreakByCharWrapping];
@@ -378,7 +378,7 @@
     //: CGSize imageSize = CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
     CGSize imageSize = CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
     //: CGRect imageRect = (CGRect){.origin = CGPointZero, .size = imageSize};
-    CGRect imageRect = (CGRect){.forward = CGPointZero, .variableSecret = imageSize};
+    CGRect imageRect = (CGRect){.origin = CGPointZero, .size = imageSize};
 
     //: CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
@@ -593,11 +593,11 @@
     //: CGRect thumbnailRect = CGRectZero;
     CGRect thumbnailRect = CGRectZero;
     //: thumbnailRect.origin = thumbnailPoint;
-    thumbnailRect.forward = thumbnailPoint;
+    thumbnailRect.origin = thumbnailPoint;
     //: thumbnailRect.size.width= scaledWidth;
-    thumbnailRect.variableSecret.width= scaledWidth;
+    thumbnailRect.size.width= scaledWidth;
     //: thumbnailRect.size.height = scaledHeight;
-    thumbnailRect.variableSecret.height = scaledHeight;
+    thumbnailRect.size.height = scaledHeight;
 
     //: [sourceImage drawInRect:thumbnailRect];
     [sourceImage drawInRect:thumbnailRect];
@@ -624,7 +624,7 @@
     //: CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     //: UIGraphicsBeginImageContextWithOptions(rect.size,NO, 0);
-    UIGraphicsBeginImageContextWithOptions(rect.variableSecret,NO, 0);
+    UIGraphicsBeginImageContextWithOptions(rect.size,NO, 0);
     //: CGContextRef context =UIGraphicsGetCurrentContext();
     CGContextRef context =UIGraphicsGetCurrentContext();
     //: CGContextSetFillColorWithColor(context, color.CGColor);
@@ -722,7 +722,7 @@ CGFloat actualEquipment(CGFloat radians) {return radians * 180/3.141592653589793
     //: rotatedViewBox.transform = t;
     rotatedViewBox.transform = t;
     //: CGSize rotatedSize = rotatedViewBox.frame.size;
-    CGSize rotatedSize = rotatedViewBox.frame.variableSecret;
+    CGSize rotatedSize = rotatedViewBox.frame.size;
 
     // Create the bitmap context
     //: UIGraphicsBeginImageContext(rotatedSize);
@@ -845,11 +845,11 @@ CGFloat actualEquipment(CGFloat radians) {return radians * 180/3.141592653589793
     //: CGRect thumbnailRect = CGRectZero;
     CGRect thumbnailRect = CGRectZero;
     //: thumbnailRect.origin = thumbnailPoint;
-    thumbnailRect.forward = thumbnailPoint;
+    thumbnailRect.origin = thumbnailPoint;
     //: thumbnailRect.size.width= scaledWidth;
-    thumbnailRect.variableSecret.width= scaledWidth;
+    thumbnailRect.size.width= scaledWidth;
     //: thumbnailRect.size.height = scaledHeight;
-    thumbnailRect.variableSecret.height = scaledHeight;
+    thumbnailRect.size.height = scaledHeight;
 
     //: [sourceImage drawInRect:thumbnailRect];
     [sourceImage drawInRect:thumbnailRect];

@@ -83,7 +83,7 @@
 //: - (id)sortKey {
 - (id)quit {
     //: return [[DividerAbortMixer sharedCenter] spellingForString:self.info.showName].shortSpelling;
-    return [[DividerAbortMixer wild] tiny:self.filter.circle].notice;
+    return [[DividerAbortMixer wild] tiny:self.info.circle].notice;
 }
 
 //: - (BOOL)isEqual:(id)object{
@@ -94,7 +94,7 @@
         return NO;
     }
     //: return [self.info.infoId isEqualToString:[[object info] infoId]];
-    return [self.filter.pin isEqualToString:[[object filter] pin]];
+    return [self.info.pin isEqualToString:[[object info] pin]];
 }
 
 //: - (BOOL)showAccessoryView{
@@ -106,25 +106,25 @@
 //: - (NSString *)showName{
 - (NSString *)transport{
     //: return self.info.showName;
-    return self.filter.circle;
+    return self.info.circle;
 }
 
 //: - (UIImage *)icon{
 - (UIImage *)tense{
     //: return self.info.avatarImage;
-    return self.filter.frame;
+    return self.info.avatarImage;
 }
 
 //: - (NSString *)userId{
 - (NSString *)account{
     //: return self.info.infoId;
-    return self.filter.pin;
+    return self.info.pin;
 }
 
 //: - (NSString *)groupTitle {
 - (NSString *)seek {
     //: NSString *title = [[DividerAbortMixer sharedCenter] firstLetter:self.info.showName].capitalizedString;
-    NSString *title = [[DividerAbortMixer wild] roundEqualNeed:self.filter.circle].capitalizedString;
+    NSString *title = [[DividerAbortMixer wild] roundEqualNeed:self.info.circle].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
     //: if (character >= 'A' && character <= 'Z') {
@@ -141,7 +141,7 @@
 //: - (NSString *)avatarUrl{
 - (NSString *)from{
     //: return self.info.avatarUrlString;
-    return self.filter.honey;
+    return self.info.honey;
 }
 
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
@@ -155,7 +155,7 @@
 //: - (NSString *)memberId{
 - (NSString *)skirt{
     //: return self.info.infoId;
-    return self.filter.pin;
+    return self.info.pin;
 }
 
 //: - (NSString *)badge{

@@ -24,7 +24,7 @@
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     //: [FilterComposeContext handleRemoteNotificationRegistration:app deviceToken:deviceToken];
-    [FilterComposeContext handleRemoteNotificationRegistration:app deviceToken:deviceToken];
+    [FilterComposeContext minAuthorize:app force:deviceToken];
 }
 
 //: #pragma mark - openURL
@@ -45,7 +45,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
     //: [FilterComposeContext performApplicationInitializationWithWindow:self.window];
-    [FilterComposeContext performApplicationInitializationWithWindow:self.window];
+    [FilterComposeContext video:self.window];
     //: return YES;
     return YES;
 }
@@ -53,7 +53,7 @@
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [FilterComposeContext handleApplicationDidEnterBackground:application];
-    [FilterComposeContext handleApplicationDidEnterBackground:application];
+    [FilterComposeContext picture:application];
 }
 
 //: #pragma mark - ApplicationDelegate
@@ -61,7 +61,7 @@
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //: [FilterComposeContext handleApplicationDidBecomeActive:application];
-    [FilterComposeContext handleApplicationDidBecomeActive:application];
+    [FilterComposeContext background:application];
 }
 
 //: @end

@@ -82,11 +82,11 @@ Byte kAccelerateEasyTitle[] = {9, 15, 11, 213, 97, 209, 101, 43, 236, 142, 98, 1
         //: if (scrollView) {
         if (scrollView) {
             //: if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
-            if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
+            if (scrollView.fireOr) {
                 //: scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
-                scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
+                scrollView.contentInsetAdjustmentBehavior = scrollView.albumCan;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
+                scrollView.fireOr = NO;
             }
         }
     }
@@ -245,7 +245,7 @@ Byte kAccelerateEasyTitle[] = {9, 15, 11, 213, 97, 209, 101, 43, 236, 142, 98, 1
     //: [self.km_transitionNavigationBar removeFromSuperview];
     [self.engineDecided removeFromSuperview];
     //: self.km_transitionNavigationBar = bar;
-    self.km_transitionNavigationBarsetEngineDecided = bar;
+    self.engineDecided = bar;
     //: [self km_resizeTransitionNavigationBarFrame];
     [self liberal];
     //: if (!self.navigationController.navigationBarHidden && !self.navigationController.navigationBar.hidden) {
@@ -283,7 +283,7 @@ Byte kAccelerateEasyTitle[] = {9, 15, 11, 213, 97, 209, 101, 43, 236, 142, 98, 1
             //: [self.km_transitionNavigationBar removeFromSuperview];
             [self.engineDecided removeFromSuperview];
             //: self.km_transitionNavigationBar = nil;
-            self.km_transitionNavigationBarsetEngineDecided = nil;
+            self.engineDecided = nil;
         }
     }
     //: if ([transitionViewController isEqual:self]) {
@@ -362,11 +362,11 @@ Byte kAccelerateEasyTitle[] = {9, 15, 11, 213, 97, 209, 101, 43, 236, 142, 98, 1
             //: if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
             if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
                 //: scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
-                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                scrollView.albumCan = contentInsetAdjustmentBehavior;
                 //: scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+                scrollView.fireOr = YES;
             }
         }
     }

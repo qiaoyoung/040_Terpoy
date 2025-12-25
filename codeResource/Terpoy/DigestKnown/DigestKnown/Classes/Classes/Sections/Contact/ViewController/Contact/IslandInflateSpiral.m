@@ -271,7 +271,7 @@
     //: [ScaffoldOntoOrchestrate show];
     [ScaffoldOntoOrchestrate barVocal];
     //: [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.info.infoId completion:^(NSError *error) {
-    [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.filter.pin completion:^(NSError *error) {
+    [[NIMSDK sharedSDK].userManager removeFromBlackBlackList:dataMemeber.info.pin completion:^(NSError *error) {
         //: [ScaffoldOntoOrchestrate dismiss];
         [ScaffoldOntoOrchestrate civicShrink];
         //: if (!error) {
@@ -419,7 +419,7 @@
     SemanticsRichSerene *member = self.before[indexPath.section];
 
     //: FocusedUpdateCloneFlash *vc = [[FocusedUpdateCloneFlash alloc] initWithUserId:member.info.infoId];
-    FocusedUpdateCloneFlash *vc = [[FocusedUpdateCloneFlash alloc] initWithNearAdditionalRelief:member.filter.pin];
+    FocusedUpdateCloneFlash *vc = [[FocusedUpdateCloneFlash alloc] initWithNearAdditionalRelief:member.info.pin];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 
@@ -544,7 +544,7 @@
     //: for (SemanticsRichSerene *member in self.data) {
     for (SemanticsRichSerene *member in self.before) {
         //: [users addObject:member.info.infoId];
-        [users addObject:member.filter.pin];
+        [users addObject:member.info.pin];
     }
     //: FlukeValidationWall *config = [[FlukeValidationWall alloc] init];
     FlukeValidationWall *config = [[FlukeValidationWall alloc] init];
@@ -633,7 +633,7 @@
         //: PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState sharedKit] infoByUser:user.userId option:nil];
         PrioritizeObjectDeployMemberConstrain *info = [[PerformAcknowledgePoolState rock] nim:user.userId frameDown:nil];
         //: member.info = info;
-        member.filter = info;
+        member.info = info;
         //: [list addObject:member];
         [list addObject:member];
     }

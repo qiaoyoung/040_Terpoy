@@ -154,8 +154,8 @@
 #import "OwlMagnifyWallSlider.h"
 //: #import "OccasionElevatedPrimeUnload.h"
 #import "OccasionElevatedPrimeUnload.h"
-//: #import "SwatchLayoutEndlessPeak.h"
-#import "SwatchLayoutEndlessPeak.h"
+//:  
+ 
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
 //: #import "RecalculateDelicateGenerator.h"

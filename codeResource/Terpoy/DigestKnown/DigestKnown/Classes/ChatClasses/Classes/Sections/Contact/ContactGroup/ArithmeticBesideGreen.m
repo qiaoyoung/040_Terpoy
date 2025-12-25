@@ -51,7 +51,7 @@
 //: - (UIImage *)avatarImage {
 - (UIImage *)job {
     //: return self.info.avatarImage;
-    return self.representation.frame;
+    return self.representation.avatarImage;
 }
 
 //: - (NSString *)groupTitle{
@@ -155,7 +155,7 @@
 //: - (UIImage *)avatarImage {
 - (UIImage *)job {
     //: return self.info.avatarImage;
-    return self.logicalLaunch.frame;
+    return self.logicalLaunch.avatarImage;
 }
 
 //: - (instancetype)initWithUserId:(NSString *)userId
@@ -258,7 +258,7 @@
 //: - (UIImage *)avatarImage {
 - (UIImage *)job {
     //: return self.info.avatarImage;
-    return self.sunny.frame;
+    return self.sunny.avatarImage;
 }
 
 //: - (id)sortKey{

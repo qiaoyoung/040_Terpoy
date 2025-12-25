@@ -40,7 +40,7 @@
     //: if ([self.delegate respondsToSelector:@selector(didTouchUserListAvatar:)]) {
     if ([self.carefulSlipsed respondsToSelector:@selector(centrals:)]) {
         //: [self.delegate didTouchUserListAvatar:self.member.info.infoId];
-        [self.carefulSlipsed centrals:self.global.filter.pin];
+        [self.carefulSlipsed centrals:self.global.info.pin];
     }
 }
 
@@ -83,18 +83,18 @@
     //: self.member = member;
     self.global = member;
     //: self.textLabel.text = [FaintSplendidMonster showNick:member.info.infoId inSession:nil];
-    self.textLabel.text = [FaintSplendidMonster chipPerform:member.filter.pin beyondGrain:nil];
+    self.textLabel.text = [FaintSplendidMonster chipPerform:member.info.pin beyondGrain:nil];
     //: [self.textLabel sizeToFit];
     [self.textLabel sizeToFit];
     //: NSURL *url;
     NSURL *url;
     //: if (member.info.avatarUrlString.length) {
-    if (member.filter.honey.length) {
+    if (member.info.honey.length) {
         //: url = [NSURL URLWithString:member.info.avatarUrlString];
-        url = [NSURL URLWithString:member.filter.honey];
+        url = [NSURL URLWithString:member.info.honey];
     }
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:member.info.avatarImage options:SDWebImageRetryFailed];
-    [_location brilliant:url action:member.filter.frame exceptInsertMind:SDWebImageRetryFailed];
+    [_location brilliant:url action:member.info.avatarImage exceptInsertMind:SDWebImageRetryFailed];
 }
 
 

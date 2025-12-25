@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "SwatchLayoutEndlessPeak.h"
-#import "SwatchLayoutEndlessPeak.h"
+//:  
+ 
 
 //: @interface DualNavigationDisplayCycle : UIControl
 @interface DualNavigationDisplayCycle : UIControl

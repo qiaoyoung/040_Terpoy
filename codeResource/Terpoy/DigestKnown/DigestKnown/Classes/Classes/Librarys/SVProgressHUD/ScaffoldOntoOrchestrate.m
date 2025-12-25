@@ -679,10 +679,10 @@ static const CGFloat commonClassicValue (NSString *value) {
     [self calculate].detail = hapticsEnabled;
 }
 
-//: + (void)setMinimumSize:(CGSize)minimumSize {
-+ (void)setSection:(CGSize)minimumSize {
++ (void)setMinimumSize:(CGSize)minimumSize {
+//+ (void)setSection:(CGSize)minimumSize {
     //: [self sharedView].minimumSize = minimumSize;
-    [self calculate].read = minimumSize;
+    [self calculate].minimumSize = minimumSize;
 }
 
 //: - (UIColor*)foregroundColorForStyle {
@@ -1110,7 +1110,7 @@ static const CGFloat commonClassicValue (NSString *value) {
         //: _defaultAnimationType = ScaffoldOntoOrchestrateAnimationTypeFlat;
         _destination = ScaffoldOntoOrchestrateAnimationTypeFlat;
         //: _minimumSize = CGSizeZero;
-        _read = CGSizeZero;
+        _minimumSize = CGSizeZero;
         //: _font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
         _marker = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 
@@ -1696,10 +1696,10 @@ static const CGFloat commonClassicValue (NSString *value) {
     [self advanced:nil];
 }
 
-//: - (void)setMinimumSize:(CGSize)minimumSize {
-- (void)setRead:(CGSize)minimumSize {
+- (void)setMinimumSize:(CGSize)minimumSize {
+//- (void)setRead:(CGSize)minimumSize {
     //: if (!_isInitializing) _minimumSize = minimumSize;
-    if (!_worldWellCover) _read = minimumSize;
+    if (!_worldWellCover) _minimumSize = minimumSize;
 }
 
 //: - (TwistPathCrestline*)backgroundRingView {
@@ -2271,7 +2271,7 @@ static const CGFloat commonClassicValue (NSString *value) {
 
     // Update values on subviews
     //: self.hudView.bounds = CGRectMake(0.0f, 0.0f, ((self.minimumSize.width) > (hudWidth) ? (self.minimumSize.width) : (hudWidth)), ((self.minimumSize.height) > (hudHeight) ? (self.minimumSize.height) : (hudHeight)));
-    self.urban.bounds = CGRectMake(0.0f, 0.0f, ((self.read.width) > (hudWidth) ? (self.read.width) : (hudWidth)), ((self.read.height) > (hudHeight) ? (self.read.height) : (hudHeight)));
+    self.urban.bounds = CGRectMake(0.0f, 0.0f, ((self.minimumSize.width) > (hudWidth) ? (self.minimumSize.width) : (hudWidth)), ((self.minimumSize.height) > (hudHeight) ? (self.minimumSize.height) : (hudHeight)));
 
     // Animate value update
     //: [CATransaction begin];
@@ -2285,7 +2285,7 @@ static const CGFloat commonClassicValue (NSString *value) {
     //: if(self.statusLabel.text) {
     if(self.coordinatorThatAmong.text) {
         //: CGFloat yOffset = ((ScaffoldOntoOrchestrateVerticalSpacing) > ((self.minimumSize.height - contentHeight - ScaffoldOntoOrchestrateLabelSpacing - labelHeight) / 2.0f) ? (ScaffoldOntoOrchestrateVerticalSpacing) : ((self.minimumSize.height - contentHeight - ScaffoldOntoOrchestrateLabelSpacing - labelHeight) / 2.0f));
-        CGFloat yOffset = ((viewSensorConfig(nil)) > ((self.read.height - contentHeight - commonClassicValue(nil) - labelHeight) / 2.0f) ? (viewSensorConfig(nil)) : ((self.read.height - contentHeight - commonClassicValue(nil) - labelHeight) / 2.0f));
+        CGFloat yOffset = ((viewSensorConfig(nil)) > ((self.minimumSize.height - contentHeight - commonClassicValue(nil) - labelHeight) / 2.0f) ? (viewSensorConfig(nil)) : ((self.minimumSize.height - contentHeight - commonClassicValue(nil) - labelHeight) / 2.0f));
         //: centerY = yOffset + contentHeight / 2.0f;
         centerY = yOffset + contentHeight / 2.0f;
     //: } else {

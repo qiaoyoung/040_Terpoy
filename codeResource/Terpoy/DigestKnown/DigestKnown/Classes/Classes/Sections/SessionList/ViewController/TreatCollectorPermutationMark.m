@@ -731,7 +731,7 @@ typedef struct {
 //: @property (nonatomic, strong) UIButton *resqBtn;
 @property (nonatomic, strong) UIButton *media;
 
-@property (nonatomic, strong) PopulateServiceFriendlyView *hide//: @property (nonatomic, strong) UIButton *mesBtn;
+@property (nonatomic, strong) PopulateServiceFriendlyView *hide;//: @property (nonatomic, strong) UIButton *mesBtn;
 @property (nonatomic, strong) UIButton *reply;
 
 //: @property (nonatomic, strong) UIView *reqView;

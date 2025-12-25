@@ -288,7 +288,7 @@
     //: info.infoId = teamId;
     info.pin = teamId;
     //: info.avatarImage = self.defaultTeamAvatar;
-    info.frame = self.dominant;
+    info.avatarImage = self.dominant;
     //: info.avatarUrlString = team.thumbAvatarUrl;
     info.honey = team.thumbAvatarUrl;
     //: return info;
@@ -360,7 +360,7 @@
     //: info.infoId = teamId;
     info.pin = teamId;
     //: info.avatarImage = self.defaultTeamAvatar;
-    info.frame = self.dominant;
+    info.avatarImage = self.dominant;
     //: info.avatarUrlString = team.thumbAvatarUrl;
     info.honey = team.thumbAvatarUrl;
     //: return info;
@@ -601,7 +601,7 @@
         //: info.avatarUrlString = userInfo.thumbAvatarUrl;
         info.honey = userInfo.thumbAvatarUrl;
         //: info.avatarImage = self.defaultUserAvatar;
-        info.frame = self.topicApp;
+        info.avatarImage = self.topicApp;
     }
     //: return info;
     return info;
@@ -741,7 +741,7 @@
     }
 
     //: info.avatarImage = self.defaultUserAvatar;
-    info.frame = self.topicApp;
+    info.avatarImage = self.topicApp;
     //: return info;
     return info;
 }
@@ -825,7 +825,7 @@
         //: info.showName = userId; 
         info.circle = userId; //默认值
         //: info.avatarImage = self.defaultUserAvatar;
-        info.frame = self.topicApp;
+        info.avatarImage = self.topicApp;
     }
     //: return info;
     return info;
@@ -871,7 +871,7 @@
         //: info.avatarUrlString = userInfo.thumbAvatarUrl;
         info.honey = userInfo.thumbAvatarUrl;
         //: info.avatarImage = self.defaultUserAvatar;
-        info.frame = self.topicApp;
+        info.avatarImage = self.topicApp;
     }
     //: return info;
     return info;
@@ -952,7 +952,7 @@
         //: info.avatarUrlString = userInfo.thumbAvatarUrl;
         info.honey = userInfo.thumbAvatarUrl;
         //: info.avatarImage = self.defaultUserAvatar;
-        info.frame = self.topicApp;
+        info.avatarImage = self.topicApp;
     }
     //: return info;
     return info;

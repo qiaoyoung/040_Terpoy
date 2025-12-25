@@ -186,7 +186,7 @@
         avatarURL = [NSURL URLWithString:info.honey];
     }
     //: [_imageView nim_setImageWithURL:avatarURL placeholderImage:info.avatarImage];
-    [_flatBasic betweenExclusive:avatarURL instructionFor:info.frame];
+    [_flatBasic betweenExclusive:avatarURL instructionFor:info.avatarImage];
 
     //: NSString *showName = (info.showName ?: @"");
     NSString *showName = (info.circle ?: @"");

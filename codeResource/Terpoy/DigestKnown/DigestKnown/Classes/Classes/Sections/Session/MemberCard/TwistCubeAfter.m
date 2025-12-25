@@ -275,8 +275,8 @@ typedef struct {
 #import "MusicBaselineImage.h"
 //: #import "TrainAroundSupremeMultiply.h"
 #import "TrainAroundSupremeMultiply.h"
-//: #import "SwatchLayoutEndlessPeak.h"
-#import "SwatchLayoutEndlessPeak.h"
+//:  
+ 
 //: #import "RecalculateDelicateGenerator.h"
 #import "RecalculateDelicateGenerator.h"
 //: #import "OccasionElevatedPrimeUnload.h"
@@ -353,7 +353,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     //: [cell reloadWithUserId:uId];
     [cell command:uId];
     //: [cell.roleImageView sd_setImageWithURL:[NSURL URLWithString:usrInfo.avatarUrlString] placeholderImage:usrInfo.avatarImage];
-    [cell.plain sd_setImageWithURL:[NSURL URLWithString:usrInfo.honey] placeholderImage:usrInfo.frame];
+    [cell.plain sd_setImageWithURL:[NSURL URLWithString:usrInfo.honey] placeholderImage:usrInfo.avatarImage];
     //: cell.titleLabel.text = usrInfo.showName;
     cell.brightLabel.text = usrInfo.circle;
     //: cell.subtitleLabel.text = [PoolFormatStructure getTextWithKey:@"group_member_info_activity_team_creator"];

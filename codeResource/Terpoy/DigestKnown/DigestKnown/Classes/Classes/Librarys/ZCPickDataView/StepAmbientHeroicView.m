@@ -466,7 +466,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)ported:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = greatRetain(self.carefulSlipsed);
+    Class currentClass = object_getClass(self.carefulSlipsed);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == parentInspect) && [self.carefulSlipsed respondsToSelector:@selector(untilChecked)]) {
         //: [self.delegate dismissDataPickerView];
@@ -501,7 +501,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)topicced:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = greatRetain(self.carefulSlipsed);
+    Class currentClass = object_getClass(self.carefulSlipsed);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == parentInspect) && [self.carefulSlipsed respondsToSelector:@selector(untilChecked)]) {
         //: [self.delegate dismissDataPickerView];
@@ -557,7 +557,7 @@
     //: self.delegate = delegate;
     self.carefulSlipsed = delegate;
     //: delegateClass = object_getClass(delegate);
-    parentInspect = greatRetain(delegate);
+    parentInspect = object_getClass(delegate);
 }
 
 

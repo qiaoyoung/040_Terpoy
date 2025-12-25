@@ -100,8 +100,8 @@ static void insertWhisper(SystemSoundID soundID, void *data)
     {
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([CounteractStartData k_methodMessage]);
-        //: SuppressPerformSelectorLeakWarning([(PlanetOrientationKinetic *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(PlanetOrientationKinetic *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        //:  ([(PlanetOrientationKinetic *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+         ([(PlanetOrientationKinetic *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
     }
 }
 

@@ -491,7 +491,7 @@ static char styleHoneyTitle;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.priority, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -667,7 +667,7 @@ static char styleHoneyTitle;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)child {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.gender.contentOffset.priority * -1) > (0) ? (self.gender.contentOffset.priority * -1) : (0));
+    CGFloat offset = ((self.gender.contentOffset.y * -1) > (0) ? (self.gender.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.gender.contentInset;
     //: switch (self.position) {
@@ -885,7 +885,7 @@ static char styleHoneyTitle;
         case ChordInvertAdaptPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.gender.contentOffset.priority) < 1.19209290e-7F)) {
+            if((fabs(self.gender.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.gender setContentOffset:CGPointMake(self.gender.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -902,11 +902,11 @@ static char styleHoneyTitle;
         case ChordInvertAdaptPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.gender.contentOffset.priority) < 1.19209290e-7F) && self.gender.contentSize.height < self.gender.bounds.size.height)
+            if(((fabs(self.gender.contentOffset.y) < 1.19209290e-7F) && self.gender.contentSize.height < self.gender.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.gender.contentOffset.priority) - (self.gender.contentSize.height - self.gender.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.gender.contentOffset.y) - (self.gender.contentSize.height - self.gender.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.priority = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.gender setContentOffset:(CGPoint){.y = ((self.gender.contentSize.height - self.gender.bounds.size.height) > (0.0f) ? (self.gender.contentSize.height - self.gender.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.firstPiece = NO;
             }
@@ -1102,7 +1102,7 @@ static char styleHoneyTitle;
             //: case ChordInvertAdaptPositionTop:
             case ChordInvertAdaptPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.priority - self.error;
+                scrollOffsetThreshold = self.frame.origin.y - self.error;
                 //: break;
                 break;
             //: case ChordInvertAdaptPositionBottom:
@@ -1118,19 +1118,19 @@ static char styleHoneyTitle;
             //: self.state = ChordInvertAdaptStateLoading;
             self.kindArtifacting = ChordInvertAdaptStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == ChordInvertAdaptStateStopped && self.position == ChordInvertAdaptPositionTop)
-        else if(contentOffset.priority < scrollOffsetThreshold && self.gender.isDragging && self.kindArtifacting == ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.gender.isDragging && self.kindArtifacting == ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionTop)
             //: self.state = ChordInvertAdaptStateTriggered;
             self.kindArtifacting = ChordInvertAdaptStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != ChordInvertAdaptStateStopped && self.position == ChordInvertAdaptPositionTop)
-        else if(contentOffset.priority >= scrollOffsetThreshold && self.kindArtifacting != ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.kindArtifacting != ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionTop)
             //: self.state = ChordInvertAdaptStateStopped;
             self.kindArtifacting = ChordInvertAdaptStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == ChordInvertAdaptStateStopped && self.position == ChordInvertAdaptPositionBottom)
-        else if(contentOffset.priority > scrollOffsetThreshold && self.gender.isDragging && self.kindArtifacting == ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.gender.isDragging && self.kindArtifacting == ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionBottom)
             //: self.state = ChordInvertAdaptStateTriggered;
             self.kindArtifacting = ChordInvertAdaptStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != ChordInvertAdaptStateStopped && self.position == ChordInvertAdaptPositionBottom)
-        else if(contentOffset.priority <= scrollOffsetThreshold && self.kindArtifacting != ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.kindArtifacting != ChordInvertAdaptStateStopped && self.resource == ChordInvertAdaptPositionBottom)
             //: self.state = ChordInvertAdaptStateStopped;
             self.kindArtifacting = ChordInvertAdaptStateStopped;
     //: } else {
@@ -1144,7 +1144,7 @@ static char styleHoneyTitle;
             //: case ChordInvertAdaptPositionTop:
             case ChordInvertAdaptPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.gender.contentOffset.priority * -1) > (0.0f) ? (self.gender.contentOffset.priority * -1) : (0.0f));
+                offset = ((self.gender.contentOffset.y * -1) > (0.0f) ? (self.gender.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.error + self.bounds.size.height) ? (offset) : (self.error + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;

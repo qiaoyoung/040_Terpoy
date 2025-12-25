@@ -140,8 +140,8 @@
     BOOL use = NO;
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
-        //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        //:  (use = (BOOL)[vc performSelector:sel]);
+         (use = (BOOL)[vc performSelector:sel]);
     }
     //: return use;
     return use;
@@ -328,8 +328,8 @@
     BOOL use = NO;
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
-        //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        //:  (use = (BOOL)[vc performSelector:sel]);
+         (use = (BOOL)[vc performSelector:sel]);
     }
     //: return use;
     return use;

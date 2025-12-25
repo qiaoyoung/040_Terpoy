@@ -556,7 +556,7 @@
     }
 //    [self.avatarImageView nim_setImageWithURL:url placeholderImage:sourceMember.avatarImage options:SDWebImageRetryFailed];
     //: [self.avatarImageView sd_setImageWithURL:url placeholderImage:sourceMember.avatarImage];
-    [self.remote sd_setImageWithURL:url placeholderImage:sourceMember.frame];
+    [self.remote sd_setImageWithURL:url placeholderImage:sourceMember.avatarImage];
     //: self.titleLabel.text = sourceMember.showName;
     self.conversation.text = sourceMember.circle;
     //: switch (type) {
