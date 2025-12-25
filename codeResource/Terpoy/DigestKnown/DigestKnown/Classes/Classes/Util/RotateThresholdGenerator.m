@@ -77,7 +77,7 @@
 
 - (BOOL)autoRemoveAlias
 {
-    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"auto_remove_alias"] boolValue];
+    return YES;
 }
 
 - (BOOL)autoRemoveSnapMessage
