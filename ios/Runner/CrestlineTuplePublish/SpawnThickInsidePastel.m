@@ -4,6 +4,10 @@
 
 @implementation SpawnThickInsidePastel
 
+- (NSInteger)toOperandComposer {
+    return 200;
+}
+
 - (void)deleteMultiplicationVentureFontEdge {
     LegacyFetchHydrateAudit *matchCandidPlaceInstruction = [[LegacyFetchHydrateAudit alloc] init];
     [matchCandidPlaceInstruction migrateRadioResiliencePureInfinite];
