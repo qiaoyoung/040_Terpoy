@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deleteStrategy</key>
+    <string>DocumentAccount</string>
+    <key>updateAccessoryArena</key>
+    <string>TangibleOwnerCollateDispatcherCombiner</string>
+    <key>monitorBroad</key>
+    <string>IncrementalSnappyFrameConduitConnector</string>
+    <key>sourceMonsterSaturated</key>
+    <string>PopulateCharacterFairy</string>
+    <key>feasibleDismiss</key>
+    <string>QuaternionScaleFinishEndWarmup</string>
+    <key>parallelConsumerGenerateEmber</key>
+    <string>PassageThickAuthenticateOver</string>
+    <key>coalesceStrokeSunGranular</key>
+    <string>FlameRadioAnimateBeacon</string>
+    <key>honeyConnectState</key>
+    <string>PopulateEntryCompute</string>
+</dict>
+</plist>
